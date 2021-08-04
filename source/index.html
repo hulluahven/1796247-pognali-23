@@ -4,26 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <!--элемент__логотипа-->
-      <img src="./img/logo.svg" width="200" height="52" alt="Сервис для путешествий - Погнали">
-    </a>
+    <a class="page-header__logo">Погнали?</a>
   </header>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <div class="main-nav__wrapper">
-      <!--Центровщик-->
       <ul class="main-nav__list site-list">
-        <!--миксование, а блок списка в элементе?-->
-        <!--main-nav__list позиц-ниe внутри wrapper-->
         <li class="site-list__item site-list__item--current">
-          <!--не оч понятно по макету где находимся-->
           <a href="#">О сервисе</a>
         </li>
         <li class="site-list__item">
@@ -34,38 +28,48 @@
         </li>
       </ul>
       <div class="main-nav__list user-list">
-        <!-- ставить ли div вместо ul так как может поменяться кнопка на другую но кнопок здесь много-->
-        <a class="user-list__login" href="#">Авторизация</a>
-        <!--возм здесь спиок, т.к есть еще кнопка написать и телефон-->
+        <li class="user-list__item">
+          <a class="item-login" href="#">Авторизация</a>
+        </li>
+        <li class="user-list__item">
+          <a class="item-phone" href="#">
+            <span class="phone__svg">Почта</span>
+          </a>
+        </li>
+        <li class="user-list__item">
+          <a class="item-mail" href="#">
+            <span class="mail__svg">Телефон</span>
+          </a>
+        </li>
       </div>
       <p class="review">
-        <q>Лучшее приложение,<br> что я видел в жизни!</q>
-        <cite>Мурат Эльтазин главный редактор газеты &laquoгаджетлайф&raquo</cite>
+        <q class="review__quote">Лучшее приложение,<br> что я видел в жизни!</q>
+        <cite class="review__cite">Мурат Эльтазин главный редактор газеты &laquoгаджетлайф&raquo</cite>
       </p>
     </div>
   </nav>
   <main class="page-main">
     <h1 class="visually-hidden">"Погнали?" - сервис для поиска попутчиков</h1>
-    <p class="slogan">В путешествие с крутыми попутчиками!</p>
+    <p class="index-header">В путешествие с крутыми попутчиками!</p>
     <section class="promo-list">
       <div class="promo-list__wrapper">
         <header class="promo-list__header">
           <h2 class="visually-hidden">Как пользоваться сервисом?</h2>
-          <div class="list__item">
-            <p class="promo__text">Выберите направление</p>
-            <span class="promo__number">1</span>
+          <div class="promo-list__item item-first">
+            <p class="first__text">Выберите направление</p>
+            <span class="first__number">1</span>
           </div>
-          <div class="list__item">
-            <p class="promo__text">Изучите идеи путешественников</p>
-            <span class="promo__number">2</span>
+          <div class="promo-list__item item-second">
+            <p class="second__text">Изучите идеи путешественников</p>
+            <span class="second____number">2</span>
           </div>
-          <div class="list__item">
-            <p class="promo__text">Находите тех, кто похож на вас</p>
-            <span class="promo__number">3</span>
+          <div class="promo-list__item item-third">
+            <p class="third__text">Находите тех, кто похож на вас</p>
+            <span class="third__number">3</span>
           </div>
-          <div class="list__item">
-            <p class="promo__text">Путешествуйте вместе</p>
-            <span class="promo__number">4</span>
+          <div class="promo-list__item item-fourth">
+            <p class="fourth__text">Путешествуйте вместе</p>
+            <span class="fourth__number">4</span>
           </div>
         </header>
       </div>
@@ -82,33 +86,34 @@
         <a class="button__more" href="#">Подробнее<span class="triangle"></span></a>
       </div>
     </section>
-    <section class="trip-directions">
-      <h2 class="trip-directions__header">Направления</h2>
-      <p class="trip-directions__description">
+    <section class="directions">
+      <h2 class="directions__header">Направления</h2>
+      <p class="directions__description">
         Мы не продаем туры и ничего не рекламируем.
         Люди сами пишут о странах, куда хотели бы отправиться
         и чем можно там заняться.
       </p>
-      <ul class="Trip-directions__list">
-        <li class="trip-directions__item">
+      <ul class="directions__list">
+        <li class="directions__item">
           <div class="item__wrapper">
-            <img>
+            <img class="item__picture">
             <p class="item__header">Тайланд</p>
             <span class="item__title">Джунгли зовут!</span>
             <span class="item__numbers">18321</span>
+            <!--добавить флаг и иконку числа пользователей-->
           </div>
         </li>
-        <li class="trip-directions__item">
+        <li class="directions__item">
           <div class="item__wrapper">
-            <img>
+            <img class="item__picture">
             <p class="item__header">Франция</p>
             <span class="item__title">Тре бьен, манифик!</span>
             <span class="item__numbers">12518</span>
           </div>
         </li>
-        <li class="trip-directions__item">
+        <li class="directions__item">
           <div class="item__wrapper">
-            <img>
+            <img class="item__picture">
             <p class="item__header">Чехия</p>
             <span class="item__title">Закоулки старой Европы</span>
             <span class="item__numbers">5326</span>
@@ -116,8 +121,8 @@
         </li>
       </ul>
       <div class="button-link__wrapper">
-        <a class="trip-directions__button" href="#">Показать все<span class="triangle"></span></a>
-        <!--возможно кнопка должна развернуть поле?-->
+        <a class="directions__button" href="form.html">Показать все<span class="triangle"></span></a>
+        <!--ведёт на страницу формы-->
       </div>
     </section>
     <section class="travelers">
@@ -135,20 +140,23 @@
               <span class="level__name">level</span>
             </div>
             <figure class="traveler__image">
-              <img class="image__tanya" src="./img/tanya.jpg" width="270" height="270" alt="Карточка путешественника">
+              <figure class="traveler-image">
+                <a class="traveler__photo" href="">
+                  <img class="image__tanya" src="./img/tanya.jpg" width="270" height="270" alt="Девушка в бассейне">
+                </a>
+              </figure>
             </figure>
-            <div class="container">
+            <div class="traveler-container">
               <a class="traveler__name" href="#">Таня Фирсова</a>
-              <ul class="traveler_flags">
-                <li class="flag">
-                  <!--как лучше разметить посещенные страны?-->
-                  <span></span>
+              <ul class="traveler__flags">
+                <li class="flag-item">
+                  <span class="flag__srilank"></span>
                 </li>
-                <li class="flag">
-                  <span></span>
+                <li class="flag-item">
+                  <span class="flag__thai"></span>
                 </li>
-                <li class="flag">
-                  <span></span>
+                <li class="flag-item">
+                  <span class="flag__seychell"></span>
                 </li>
               </ul>
               <ul class="traveler__tags">
@@ -175,18 +183,20 @@
               <span class="level__number">80</span>
               <span class="level__name">level</span>
             </div>
-            <figure class="traveler__image">
-              <img class="image__tanya" src="./img/petya.jpg" width="270" height="270" alt="Карточка путешественника">
+            <figure class="traveler-image">
+              <a class="traveler__photo" href="">
+                <img class="image__petya" src="./img/petya.jpg" width="270" height="270" alt="Молодой человек в очках и с бородой">
+              </a>
             </figure>
-            <div class="container">
+            <div class="traveler-container">
               <a class="traveler__name" href="#">Петя Демин</a>
               <ul class="traveler_flags">
-                <li class="flag">
+                <li class="flag-item">
                   <!--как лучше разметить посещенные страны?-->
-                  <span></span>
+                  <span class="flag__belg"></span>
                 </li>
-                <li class="flag">
-                  <span></span>
+                <li class="flag-item">
+                  <span class="flag__cz"></span>
                 </li>
               </ul>
               <ul class="traveler__tags">
@@ -207,7 +217,7 @@
           </div>
         </li>
       </ul>
-      <a class="travelers-list__button" href="#">Показать всех<span class="triangle"></span></a>
+      <a class="travelers-list__button" href="catalog">Показать всех<span class="triangle"></span></a>
     </section>
     <section class="sign-in">
       <p class="sign-in__header">Добавте свой профиль</p>
@@ -224,14 +234,17 @@
         </li>
       </ol>
       <a class="sign-in__button" href="#">Показать тарифы для бизнеса</a>
+      <!--здесь будет модалка см техз-->
     </section>
     <section class="contacts">
       <p class="contacts__header">Заинтересовались?</p>
       <p class="contacts__text">
-        Зарегестрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="profile__link" href="#">авторизуйтесь</a>
+        Зарегестрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="profile__link"
+          href="#">авторизуйтесь</a>
       </p>
       <div class="contacts__mail">
         <label class="visually-hidden" for="user-mail"><span class="triangle"></span></label>
+        <!-- Кнопка «Регистрация» отвечает за отправку формы.-->
         <input class="mail-input" id="user-mail" type="text" name="mail" placeholder="E-mail">
       </div>
       <div class="contacts__feedback">
@@ -246,8 +259,10 @@
       </address>
       <a class="adress__route" href="#"><span class="triangle"></span></a>
       <div class="map__container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192.64233837643397!2d30.323176703265883!3d59.938624943365106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1627406385371!5m2!1sen!2sru"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d192.64233837643397!2d30.323176703265883!3d59.938624943365106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1627406385371!5m2!1sen!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <!--карта не вфутере-->
       </div>
       <div class="footer__social">
         <p class="social__promo">Погнали?</p>
@@ -269,7 +284,8 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright"><!--стоит ли миксовать-->
+      <div class="page-footer__copyright copyright">
+        <!--стоит ли миксовать-->
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
