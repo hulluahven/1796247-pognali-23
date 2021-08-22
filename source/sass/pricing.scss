@@ -1,0 +1,69 @@
+.pricing {
+  background-color: #e6e8f1;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+
+}
+
+.pricing__wrapper {
+  width: 320px;
+  padding: 0px 26px 0 27px;
+}
+
+.pricing__header {
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  color: #ff8d30;
+  padding: 51px 0 0 26px;
+  margin: 0;
+  position: relative;
+  width: 107px;
+}
+
+.pricing__header::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/rates.png");
+  top: 37px;
+  left: 169px;
+}
+
+.pricing__button {
+  text-decoration: none;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  color: #132576;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+@media(min-width: $tablet) {
+  .pricing__wrapper {
+    width: 768px;
+    padding: 0;
+    margin: 0;
+
+  }
+
+
+  .pricing__header {
+    font-size: 45px;
+    line-height: 45px;
+    display: block;
+    width: 100%;
+    margin: 19px 0 0 88px;
+  }
+
+  .pricing__header::after {
+
+  }
+}

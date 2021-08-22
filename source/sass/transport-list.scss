@@ -1,0 +1,164 @@
+
+.transport-list {
+  margin: 0;
+  padding :20px 20px 20px 20px;
+  list-style: none;
+  position: relative;
+  display: flex;
+}
+
+.transport-list__item {
+  padding :0;
+}
+
+.transport-list__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.transport-list__input--plane+label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    // background-color: #ffffff;
+    box-sizing: border-box;
+    background-image: url("../img/plane-enabled.svg");
+    background-repeat: no-repeat;
+    opacity: 0.15
+
+  }
+
+}
+
+.transport-list__input--enabled+label {
+  background-color: #ffffff;
+}
+
+.transport-list__input--plane:checked+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 68px;
+    top: 16px;
+    width: 16px;
+    height: 35px;
+    background-image: url("../img/plane-enabled.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: 3;
+
+  }
+}
+
+
+.transport-list__input--car+label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+}
+
+.transport-list__input--car:checked+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 108px;
+    top: 16px;
+    width: 16px;
+    height: 35px;
+    background-image: url("../img/car-enabled.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+}
+
+.transport-list__input--bike+label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 140px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+}
+
+.transport-list__input--bike:checked+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 149px;
+    top: 16px;
+    width: 16px;
+    height: 35px;
+    background-image: url("../img/bike-enabled.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+}
+
+.transport-list__input--onfoot+label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 181px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+}
+
+
+.transport-list__input--onfoot:checked+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 187px;
+    top: 18px;
+    width: 16px;
+    height: 35px;
+    background-image: url("../img/onfoot-enabled.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+}
+
+// .transport-list__input--plane:checked+label::after {
+//   content: "";
+//   position: absolute;
+//   left: 181px;
+//   top: 10px;
+//   width: 32px;
+//   height: 32px;
+//   border-radius: 50%;
+//   background-color: red;
+//   box-sizing: border-box;
+//   z-index: 1;
+

@@ -1,0 +1,49 @@
+.tariffs-list {
+  list-style: none;
+  margin: 0 0 139px 0;
+  padding: 0;
+}
+
+.tariffs-list__item {
+  width: 200px;
+  border-top: 1px solid #e1e3e9;
+  // display: flex;
+  padding: 44px 0 0 27px;
+}
+
+.tariffs-list__item:last-child {
+  border-bottom: 1px solid #e1e3e9;;
+}
+
+.tariffs-list__name {
+  font-family: "BloggersansL", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 16px;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+}
+
+
+.tariffs-list__number {
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  color: #ffffff;
+  position: relative;
+}
+
+.tariffs-list__number::after {
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #ff8d30;
+  top: -10px;
+  // left: 213px;
+}

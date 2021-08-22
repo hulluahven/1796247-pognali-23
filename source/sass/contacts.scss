@@ -1,0 +1,108 @@
+.contacts {
+  background-color: #192144;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+  padding: 0 0 53px 0;
+
+}
+
+.contacts__header {
+  padding: 0;
+  margin: 0;
+  font-family: "BloggersansB", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+
+}
+
+.contacts__text {
+  padding: 0;
+  margin: 0;
+  font-family: "BloggersansL", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.contacts__link-enter {
+  text-decoration: none;
+  color: #ffd74b;
+  border-bottom: 1px solid #ffd74b;
+}
+
+.contacts__link-enter:hover,
+.contacts__link-enter:focus {
+  color: #ff8d30;
+  border-bottom: 1px solid #ff8d30;
+}
+
+.contacts__link-enter:active {
+  color: #ff8d30;
+  border-bottom: 1px solid #ff8d30;
+  opacity: 0.3;
+}
+
+.contacts__feedback-text {
+  margin: 0;
+  padding: 0;
+  font-family: "BloggersansL", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color :#ffffff;
+}
+
+.contacts__feedback-phone {
+  text-decoration: none;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffd74b;
+  position: relative;
+}
+
+.contacts__feedback-phone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #121936;
+  background-image: url("../img/feedbackphone.svg");
+  width: 45px;
+  height: 45px;
+}
+
+.contacts__feedback-mail {
+  text-decoration: none;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffd74b;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.contacts__feedback-mail::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #121936;
+  background-image: url("../img/feedbackmail.svg");
+  width: 45px;
+  height: 45px;
+}
+

@@ -1,0 +1,60 @@
+
+.calendar__header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-self: center;
+  border-top: 1px solid #d6d9e6;;
+  border-bottom: 1px solid #d6d9e6;
+}
+
+.calendar__month-title {
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #1d2e5b;
+}
+
+.calendar__month-button--back {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  width: 9px;
+  height: 18px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9px;
+      height: 18px;
+      box-sizing: border-box;
+      display: block;
+      background-image: url("../img/back.svg");
+      background-repeat: no-repeat;
+
+    }
+}
+
+.calendar__month-button--next {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  width: 9px;
+  height: 18px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9px;
+      height: 18px;
+      box-sizing: border-box;
+      display: block;
+      background-image: url("../img/nextsvg.svg");
+      background-repeat: no-repeat;
+    }
+}

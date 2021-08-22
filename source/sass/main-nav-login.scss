@@ -1,0 +1,36 @@
+.main-nav-login {
+  background-color: #ffd74b;
+  display: block;
+  margin-left: 26px;
+  margin-right: 26px;
+  text-align: center;
+  font-size: 17px;
+  color: #161c35;
+  text-decoration: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+@media(min-width: $tablet) {
+  .main-nav-login {
+    font-family: "Bloggersans", Arial, sans-serif;
+    font-weight: 400;
+    background-color: #ffd74b;
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+    color: #161c35;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    padding: 15px 47px 15px 29px;
+    top: -91px;
+    right: -9px;
+    margin-left: 27px;
+    margin-right: 26px;
+  }
+}

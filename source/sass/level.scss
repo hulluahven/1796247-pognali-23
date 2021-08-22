@@ -1,0 +1,35 @@
+.level {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 305px;
+  left: 23px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.level__number {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.level__name {
+  color: #ffffff;
+
+}
+
+.level--form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 145px;
+  left: 152px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-radius: 50%;
+}

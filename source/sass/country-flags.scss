@@ -1,0 +1,39 @@
+.country-flags {
+  position: relative;
+
+}
+
+.country-flags::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -12px;
+  left: 15px;
+}
+
+.country-flags--thailand {
+  position: relative;
+}
+
+.country-flags--thailand::before {
+  background-image: url("../img/Thailand.png");
+}
+
+.country-flags--france {
+  position: relative;
+}
+
+.country-flags--france::before {
+  background-image: url("../img/France.png");
+}
+
+.country-flags--czechia {
+  position: relative;
+}
+
+.country-flags--czechia::before {
+  background-image: url("../img/Czechia.png");
+}

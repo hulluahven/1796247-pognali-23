@@ -1,0 +1,63 @@
+.directions {
+  background-color: #edeff6;
+  margin: 0 auto;
+  padding-top: 69px;
+  padding-left: 27px;
+  padding-right: 26px;
+
+}
+
+.directions__header {
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+  padding: 0;
+  margin: 0 0 20px 32px;
+}
+
+.directions__description {
+  font-family: "BloggersansL", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+  margin: 0 0 61px 31px;
+  width: 216px;
+}
+
+.directions__button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@media(min-width: $tablet) {
+
+  .directions__header {
+    font-size: 45px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0px 0px 0 44px;
+    position: relative;
+      &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../img/flags-tablet.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      padding-bottom: 419px;
+      width: 288px;
+      height: 574px;
+      top: -202px;
+      right: -1px;
+    }
+  }
+
+  .directions__description {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 0 0 107px 0;
+    margin: 59px 0 0 48px;
+    width: 378px;
+  }
+}

@@ -1,0 +1,68 @@
+.promo-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -21px 0 20px 2px;
+  padding: 0;
+  position: relative;
+}
+
+.promo-list__item {
+  margin-bottom: 5px;
+
+}
+
+.promo-list__link {
+  position: relative;
+  min-height: 40px;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: block;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff8d30;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.promo-list__link--phone::before {
+  background-image: url("../img/call.svg");
+}
+
+.promo-list__link--phone:hover::before,
+.promo-list__link--phone:focus::before {
+  background-color: #f26926;
+}
+
+.promo-list__link--phone:active::before {
+  color: rgba(0, 0, 0, 0.25);
+  // не прописать отчегто
+}
+
+.promo-list__link--mail::before {
+  background-image: url("../img/post.svg");
+  background-color: #ffbd30;
+}
+
+.promo-list__link--mail:hover::before,
+.promo-list__link--mail:focus::before {
+  background-color: #ff8d30;
+}
+
+.promo-list__link--mail:active::before {
+  opacity: 0.25;
+}
+
+@media (min-width: $tablet) {
+
+}

@@ -1,0 +1,27 @@
+
+
+
+.profile-data__user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile-data__button {
+  font-family:"BloggersansM", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #161c35;
+  background-color: #dfe3f0;
+  border-radius: 20px;
+  cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: #d1d7e9;
+    }
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+    }
+}

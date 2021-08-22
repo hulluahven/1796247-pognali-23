@@ -1,0 +1,43 @@
+
+.kid-checkbox__label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.kid-checkbox__input--enabled+label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 10px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cdced9;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+
+  }
+
+}
+
+.kid-checkbox__input--enabled:checked+label {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 68px;
+    top: 16px;
+    width: 8px;
+    height: 8px;
+    background-position: center;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    z-index: 3;
+
+  }
+}

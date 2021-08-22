@@ -1,13 +1,51 @@
-// .main-nav{
+.main-nav {
+  background-color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+  position: relative;
+}
 
-// }
+.main-nav__wrapper {
+  text-align: center;
+  padding-bottom: 27px;
+  padding-top: 75px;
+  display: none;
+}
 
-// .main-nav__toggle{
+.main-nav__toggle {
+  position: absolute;
+  right: 29px;
+  top: -47px;
+  border: none;
+  background: url("../img/mobile-close.svg") no-repeat center center;
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 19px;
+}
 
-// }
-// .main-nav__wrapper{
+.main-nav__list {
+  margin: -34px 0 55px;
+}
 
-// }
-// .main-nav__list{
+.main-nav__login{
+  margin-bottom: 56px;
 
-// }
+}
+
+.main-nav__contacts {
+  margin: 0 0 32px;
+}
+
+@media(min-width: $tablet) {
+  .main-nav__toggle {
+    right: unset;
+    left: 51%;
+    transform: translateX(-50%);
+    top: -74px;
+  }
+
+
+}
+

@@ -1,0 +1,64 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d2e5b;
+  position: relative;
+
+}
+
+.button--countries {
+  background-color: #ffd74b;
+  border-radius: 10px;
+  margin: 37px 0px 22px 0px;
+  padding: 10px 0px 23px 3px;
+}
+
+.button--countries:hover,
+.button--countries:focus {
+  background-color: #ffbd30;
+}
+
+.button--countries:active {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+.button--travelers {
+  text-decoration: none;
+  font-family:"BloggerdsansB", Arial, sans-serif;
+  font-weight: 700;
+  background-color: #ffd74b;
+  padding: 16px 49px 19px 35px;
+  margin: 0px 0 38px 26px;
+}
+
+.button--travelers:hover,
+.button--travelers:focus {
+  background-color: #ffbd30;
+}
+
+.button--travelers:active {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+
+.button--travelers::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/triangle.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  top: 20px;
+  left: 189px;
+
+}
+
+@media(min-width: $tablet) {
+ .button--travelers {
+  width: 581px;
+  border-radius: 20px;
+ }
+}

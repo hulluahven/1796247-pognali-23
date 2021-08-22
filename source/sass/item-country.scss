@@ -1,0 +1,36 @@
+.item-country {
+  position: relative;
+}
+
+.item-country::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 24px;
+  background-size: cover;
+}
+
+.item-country--sri-lanka::before {
+  background-image: url("../img/Sri\ Lanka.png");
+  background-repeat: no-repeat;
+}
+
+.item-country--thailand::before {
+  background-image: url("../img/Thailand.png");
+  background-repeat: no-repeat;
+}
+
+.item-country--seychell::before {
+  background-image: url("../img/Seychelles.png");
+  background-repeat: no-repeat;
+}
+
+.item-country--belgium::before {
+  background-image: url("../img/Belgium.png");
+  background-repeat: no-repeat;
+}
+
+.item-country--czechia::before {
+  background-image: url("../img/Czechia.png");
+  background-repeat: no-repeat;
+}
