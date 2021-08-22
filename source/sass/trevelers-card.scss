@@ -1,0 +1,42 @@
+.travelers-card__wrapper {
+  background-color: #ffffff;
+  margin: -12px 0 31px 0px;
+  position: relative;
+}
+
+// .travelers-card__level {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   bottom: 305px;
+//   left: 23px;
+
+
+// }
+
+.travelers-card__name-link {
+  text-decoration: none;
+}
+
+.travelers-card__name {
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: #1d2e5b;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+
+}
+
+.travelers-card__name:hover,
+.travelers-card__name:focus {
+  opacity: 0.7;
+}
+
+.travelers-card__name:active {
+  opacity: 0.3;
+}
+
+.travelers-card__item {
+
+}

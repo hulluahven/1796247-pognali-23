@@ -1,0 +1,22 @@
+.tags-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width : 188px;
+}
+
+.tags-list__item {
+
+}
+
+.tags-list__name {
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}

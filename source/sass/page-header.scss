@@ -1,0 +1,54 @@
+.page-header {
+  background-color: white;
+  padding-top: 73px;
+  position: relative;
+}
+
+.page-header__logo {
+  display: block;
+  position: absolute;
+  left: 27px;
+  top: 26px;
+}
+
+.page-header__svg {
+  fill: #192144;
+}
+
+.page-header__svg {
+  display: none;
+}
+
+.page-header__svg--m {
+  display: block;
+}
+
+@media(min-width: $tablet) {
+  .page-header__svg--m {
+    display: none;
+  }
+
+  .page-header__svg--t {
+    display: block;
+  }
+
+  .page-header__svg-text {
+    fill: #192144;
+  }
+
+  .page-header__logo:hover .page-header__svg-text{
+    fill: red;
+  }
+
+  .page-header {
+    padding-top: 132px;
+  }
+
+  .page-header__logo {
+    left: 40px;
+    top: 44px;
+  }
+
+
+}
+

@@ -1,0 +1,41 @@
+.route {
+  margin: 0;
+  padding: 0;
+  background-color: #ffd74b;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+
+}
+
+.route__container {
+
+}
+
+.route__adress {
+  margin: 0;
+  padding: 0;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1d2e5b;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 40px 0 40px 0;
+  position: relative;
+}
+
+.route__adress::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #121936;
+  background-image: url(../img/adressmarker.svg);
+  width: 45px;
+  height: 45px;
+}

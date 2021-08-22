@@ -1,0 +1,45 @@
+.site-list {
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  // text-transform: uppercase;
+  // color: #192144;
+  // text-align: center;
+
+}
+
+
+.site-list__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #192144;
+  text-align: center;
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 35px;
+}
+// красить лишку-не применяется-покрасил ссылку
+
+@media (min-width: $tablet) {
+  .site-list {
+    padding: 9px 0px 0px 96px;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 155px;
+  }
+
+  .site-list__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #192144;
+    text-align: center;
+    font-family: "BloggersansM", Arial, sans-serif;
+    font-size: 60px;
+    line-height: 71px;
+  }
+
+}
+
+

@@ -1,0 +1,67 @@
+.promo-review{
+  margin: 0px 105px 30px 51px;
+}
+
+.promo-review__quote {
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.promo-review__cite {
+  font-family: "BloggersansB", Arial, sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+  font-style: normal;
+}
+
+@media (min-width: $tablet) {
+  .promo-review {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 345px 77px 72px;
+    min-height: 399px;
+    position: relative;
+    &::before {
+      content: "";
+      width: 372px;
+      height: 451px;
+      position: absolute;
+      background-image: url("../img/traveller-tablet.svg");
+      background-repeat: no-repeat;
+      left: 50%;
+      transform: translateX(-27%);
+      bottom: 0;
+      background-position: center bottom;
+    }
+
+  }
+
+  .promo-review__quote {
+    display: block;
+    font-family:"BloggersansL", Arial, sans-serif;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: left;
+    padding-bottom: 46px;
+  }
+
+  .promo-review__cite {
+    display: block;
+    font-family:"BloggersansB", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+}

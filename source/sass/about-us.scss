@@ -1,0 +1,157 @@
+.about-us {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #182044;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 28px;
+  padding-bottom: 83px;
+  box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    display: none;
+    content: "";
+    width: calc(100% - 40px);
+    left: 20px;
+    top: 20px;
+    height: 221px;
+    background: #141B3B;
+    border-radius: 20px;
+    position: absolute;
+
+  }
+
+  &::after {
+    display: none;
+    content: "";
+    width: 376px;
+    height: 548px;
+    background-image: url("../img/about-mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+}
+
+.about-us__header {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+  font-weight: normal;
+  font-family: "BloggerSansB", Arial, sans-serif;
+}
+
+.about-us__description {
+  font-family: "BloggersansL", Arial, sans-serif;
+  padding: 0;
+  margin: 0 0 19px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
+}
+
+.about-us__promo {
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-align: left;
+}
+
+.about-us__wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about-us__button-container {
+  display: none;
+}
+
+
+// НИЖЕ ТОЛЬКО МЕДИА
+
+@media(min-width: $tablet) {
+
+  .about-us {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 0;
+    padding-bottom: 234px;
+    background-position: right;
+    &::before {
+      display: block;
+      content: "";
+      width: calc(100% - 40px);
+      left: 20px;
+      top: 20px;
+      height: 221px;
+      background: #141B3B;
+      border-radius: 20px;
+      position: absolute;
+
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      top: 20px;
+      display: block;
+      content: "";
+      width: 376px;
+      height: 548px;
+      background-image: url("../img/about-tablet.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
+  }
+
+  .about-us__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px 345px 77px 74px;
+    min-height: 399px;
+    position: relative;
+  }
+
+
+  .about-us__header {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0;
+  }
+
+  .about-us__description {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0;
+  }
+
+  .about-us__promo {
+    font-family: "BloggersansB", Arial, sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .about-us__button-container {
+    display: block;
+    width: 334px;
+
+  }
+
+}

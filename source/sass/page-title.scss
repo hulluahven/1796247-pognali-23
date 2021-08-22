@@ -1,0 +1,42 @@
+.page-title {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 30px;
+    display: block;
+    background: #ffd74b;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #182044 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+}
+
+.page-title__text {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+  padding: 14px 0 16px 12px;
+  display: block;
+}

@@ -1,0 +1,22 @@
+
+.week-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.week-list__item-day {
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+}
+
+.week-list__item-day--saturday,
+.week-list__item-day--sunday {
+  color: #ff5c23;
+}

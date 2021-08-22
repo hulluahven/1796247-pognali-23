@@ -1,0 +1,33 @@
+.form-signin__button {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 62px;
+  position: relative;
+  border-radius: 20px;
+
+}
+
+.form-signin__button::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/triangle.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  top: 24px;
+  left: 37px;
+}
+
+.form-signin__input {
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  width: 18px;
+  line-height: 18px;
+  height: 62px;
+  background-color: #ffffff;
+  height: 62px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0 0 0 22px;
+}
