@@ -6,6 +6,11 @@
 
 }
 
+.contacts__feedback-wrapper {
+  width: 320px;
+
+}
+
 .contacts__header {
   padding: 0;
   margin: 0;
@@ -20,7 +25,7 @@
 .contacts__text {
   padding: 0;
   margin: 0;
-  font-family: "BloggersansL", Helvetica, sans-serif;
+  font-family: "BloggersansL", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
@@ -55,7 +60,13 @@
   color :#ffffff;
 }
 
-.contacts__feedback-phone {
+.contacts__feedback-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list__item-phone {
   text-decoration: none;
   font-family: "BloggersansB", Arial, sans-serif;
   font-weight: 700;
@@ -65,7 +76,7 @@
   position: relative;
 }
 
-.contacts__feedback-phone::before {
+.contacts-list__item-phone::before {
   content: "";
   position: absolute;
   display: block;
@@ -80,7 +91,7 @@
   height: 45px;
 }
 
-.contacts__feedback-mail {
+.contacts-list__item-mail {
   text-decoration: none;
   font-family: "BloggersansB", Arial, sans-serif;
   font-weight: 700;
@@ -91,7 +102,7 @@
   position: relative;
 }
 
-.contacts__feedback-mail::before {
+.contacts-list__item-mail::before {
   content: "";
   position: absolute;
   display: block;
@@ -105,4 +116,3 @@
   width: 45px;
   height: 45px;
 }
-

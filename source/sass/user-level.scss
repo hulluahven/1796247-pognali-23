@@ -3,10 +3,9 @@
   padding: 0;
 }
 .level__number {
-  color: #161c35;
   font-weight: 700;
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -16,4 +15,5 @@
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }

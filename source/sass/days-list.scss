@@ -2,10 +2,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
   display: grid;
-  // grid-template-columns: repeat(7,45px);
+  display: grid;
+  text-align: center;
+  grid-template-columns: 30px 30px 30px 30px 30px 30px 30px;
+
 }
 
 .days-list__item{
