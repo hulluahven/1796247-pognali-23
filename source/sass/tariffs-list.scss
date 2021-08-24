@@ -1,14 +1,14 @@
 .tariffs-list {
   list-style: none;
-  margin: 0 0 139px 0;
+  margin: 0 0 111px 0;
   padding: 0;
 }
 
 .tariffs-list__item {
   width: 200px;
   border-top: 1px solid #e1e3e9;
-  // display: flex;
   padding: 44px 0 0 27px;
+  position: relative;
 }
 
 .tariffs-list__item:last-child {
@@ -34,16 +34,24 @@
   font-style: normal;
   line-height: 16px;
   color: #ffffff;
-  position: relative;
-}
-
-.tariffs-list__number::after {
-  content: "";
-  position: absolute;
   width: 34px;
   height: 34px;
   border-radius: 50%;
   background-color: #ff8d30;
-  top: -10px;
-  // left: 213px;
+  position: absolute;
+  align-items: center;
+  right: -61px;
+  top: 39px;
+  text-align: center;
 }
+
+// .tariffs-list__number::after {
+//   content: "";
+//   position: absolute;
+//   width: 34px;
+//   height: 34px;
+//   border-radius: 50%;
+//   background-color: #ff8d30;
+//   top: -10px;
+
+// }
