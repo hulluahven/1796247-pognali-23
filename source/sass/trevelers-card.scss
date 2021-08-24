@@ -1,13 +1,20 @@
 
+.traveler-card {
+  list-style: none;
+  padding: 0px 26px 0 27px;
+  margin: 0 auto;
+}
+
 .travelers-card__image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: block;
 }
 
 
 .travelers-card__wrapper {
   background-color: #ffffff;
-  margin: -12px 0 31px 0px;
+  margin: 0 0 31px 0px;
   position: relative;
   width: 270px;
   border-bottom-left-radius: 10px;
