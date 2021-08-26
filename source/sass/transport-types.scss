@@ -1,6 +1,46 @@
 .transport-types {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px 0;
   display: flex;
+}
+
+.transport-types__item {
+  position: relative;
+  margin: 16px;
+}
+
+.transport-types__item-name {
+  display: none;
+  padding: 10px;
+  background: blue;
+  color: aliceblue;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.transport-types__item::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 21px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.transport-types__item--plane::before {
+  background-image: url("../img/plane-enabled.svg");
+}
+
+.transport-types__item--car::before {
+  background-image: url("../img/car-enabled.svg");
+}
+
+.transport-types__item--bike::before {
+  background-image: url("../img/bike-enabled.svg");
+}
+
+.transport-types__item--onfoot::before {
+  background-image: url("../img/onfoot-enabled.svg");
 }

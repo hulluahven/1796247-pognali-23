@@ -2,23 +2,31 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: 305px;
-  left: 23px;
+  top: 17px;
+  left: 18px;
   background-color: rgba(0, 0, 0, 0.6);
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .level__number {
   color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
+  padding-top: 5px;
 }
 
 .level__name {
   color: #ffffff;
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: block;
+  margin: 0;
+  padding: 2px 4px 2px 1px;
 }
 
 .level--form {
