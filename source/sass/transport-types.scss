@@ -8,17 +8,30 @@
 .transport-types__item {
   position: relative;
   margin: 16px;
+  cursor: pointer;
 }
 
 .transport-types__item-name {
   display: none;
   padding: 10px;
-  background: blue;
-  color: aliceblue;
+  background: #101d41;
+  font-family: "Bloggersans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
   position: absolute;
   top: 100%;
   left: 0;
+  border-radius: 4px;
+  margin: 27px 0px 0 -11px;
+  z-index: 3;
 }
+
+.transport-types__item:hover .transport-types__item-name {
+  display: block;
+}
+
 
 .transport-types__item::before {
   content: "";
@@ -39,8 +52,52 @@
 
 .transport-types__item--bike::before {
   background-image: url("../img/bike-enabled.svg");
+  opacity: 0.15;
 }
 
 .transport-types__item--onfoot::before {
   background-image: url("../img/onfoot-enabled.svg");
+}
+
+
+
+.transport-types__item::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border-top: 6px solid #101d41;
+  border-right: 6px solid #101d41;
+  transform: rotate(-45deg);
+  top: 0px;
+  right: 0px;
+}
+
+
+
+.transport-types__item--plane:hover::after {
+  display: block;
+  top: 25px;
+  right: -21px;
+
+}
+
+.transport-types__item--car:hover::after {
+  display: block;
+  top: 25px;
+  right: -21px;
+}
+
+.transport-types__item--bike:hover::after {
+  display: block;
+  top: 25px;
+  right: -15px;
+}
+
+.transport-types__item--onfoot:hover::after {
+  display: block;
+  top: 25px;
+  right: -18px;
 }
