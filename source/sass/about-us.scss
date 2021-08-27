@@ -11,6 +11,7 @@
   padding-bottom: 83px;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 
   &::before {
     display: none;
@@ -32,8 +33,11 @@
     height: 548px;
     background-image: url("../img/about-mobile.png");
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: top right;
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    right: -20px;
   }
 
 }
@@ -73,6 +77,8 @@
 .about-us__wrapper {
   margin: 0 auto;
   padding: 0;
+  z-index: 2;
+  position: relative
 }
 
 .about-us__button-container {

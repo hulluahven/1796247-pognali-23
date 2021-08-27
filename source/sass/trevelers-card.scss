@@ -1,15 +1,25 @@
 
+.travelers-card {
+  list-style: none;
+  padding: 25px;
+
+}
+
+.travelers-card__item {
+  margin-bottom: 10px;
+  position: relative;
+}
+
 .travelers-card__image {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: block;
 }
 
 
 .travelers-card__wrapper {
   background-color: #ffffff;
-  margin: -12px 0 31px 0px;
-  position: relative;
-  width: 270px;
+  margin: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -41,8 +51,4 @@
 
 .travelers-card__name:active {
   opacity: 0.3;
-}
-
-.travelers-card__item {
-
 }

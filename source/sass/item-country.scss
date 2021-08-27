@@ -1,5 +1,30 @@
 .item-country {
+  width: 35px;
+  height: 24px;
   position: relative;
+  margin: 0px 0 18px 13px;
+  cursor: pointer;
+}
+
+
+.item-country__name {
+  display: none;
+  padding: 10px;
+  background: #101d41;
+  font-family: "Bloggersans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  margin: 10px 0px 0 -25px;
+}
+
+.item-country:hover .item-country__name {
+  display: block;
 }
 
 .item-country::before {
@@ -11,7 +36,7 @@
 }
 
 .item-country--sri-lanka::before {
-  background-image: url("../img/Sri-Lanka.png");
+  background-image: url("../img/srilanka.png");
   background-repeat: no-repeat;
 }
 
@@ -33,4 +58,49 @@
 .item-country--czechia::before {
   background-image: url("../img/Czechia.png");
   background-repeat: no-repeat;
+}
+
+.item-country::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  box-sizing: border-box;
+  border-top: 6px solid #101d41;
+  border-right: 6px solid #101d41;
+  transform: rotate(-45deg);
+  top: 24px;
+  right: 35px;
+}
+
+.item-country--sri-lanka:hover::after {
+  display: block;
+  top: 30px;
+  right: 15px;
+
+}
+
+.item-country--thailand:hover::after {
+  display: block;
+  top: 30px;
+  right: 12px;
+}
+
+.item-country--seychell:hover::after {
+  display: block;
+  top: 30px;
+  right: 15px;
+}
+
+.item-country--belgium:hover::after {
+display: block;
+top: 24px;
+right: 35px;
+}
+
+.item-country--czechia:hover::after {
+display: block;
+top: 24px;
+right: 35px;
 }
