@@ -161,3 +161,68 @@
   }
 
 }
+
+@media(min-width:$desktop) {
+  .about-us__wrapper {
+    margin: 0 auto;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+    width: $content-width;
+  }
+
+  .about-us {
+    padding-bottom: 164px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 212px;
+      left: 20px;
+      top: 20px;
+      height: 212px;
+      background: #141B3B;
+      border-radius: 20px;
+      position: absolute;
+    }
+
+    &::after {
+      position: absolute;
+      right: 130px;
+      top: 58px;
+      display: block;
+      content: "";
+      width: 630px;
+      height: 665px;
+      background-image: url("../img/about-desktop.png");
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+  }
+
+  .about-us__header {
+    padding: 102px 0 0 70px;
+  }
+
+  .about-us__description {
+    margin: 0;
+    max-width: 620px;
+    padding: 60px 0 0 70px;
+  }
+
+  .about-us__promo {
+    padding: 40px 778px 85px 71px;
+  }
+
+ .about-us__button-container {
+    margin: 0px 0 0 71px;
+ }
+
+ .yellow-button {
+  margin: 0px 58px 0px 0px;
+  padding: 29px 79px 29px 33px;
+}
+}

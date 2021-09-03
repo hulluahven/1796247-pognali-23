@@ -71,10 +71,13 @@
   text-align: center;
   border-radius: 20px;
   text-align: left;
-  position: relative;
-  padding: 24px 36px;
-  margin: 0px 0 38px 26px;
-  width: 214px;
+  border-radius: 7px;
+    text-align: left;
+    position: relative;
+    padding: 17px 57px 19px 20px;
+    margin: -1px 0 19px 35px;
+    width: 270px;
+    box-sizing: border-box;
   &::after {
     content: "";
     position: absolute;
@@ -82,8 +85,8 @@
     background-repeat: no-repeat;
     width: 14px;
     height: 14px;
-    top: 27px;
-    right: 32px;
+    top: 21px;
+    right: 16px;
     display: block;
   }
 }

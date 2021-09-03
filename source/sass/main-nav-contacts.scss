@@ -53,10 +53,7 @@
     margin-bottom: 158px;
     margin-left: 104px;
   }
-}
 
-
-@media(min-width: $tablet) {
   .main-nav-contacts__link {
     position: relative;
     padding-left: 64px;
@@ -82,4 +79,21 @@
   .main-nav-contacts__link--mail {
     text-transform: uppercase;
   }
+}
+
+
+@media(min-width: $desktop) {
+  .main-nav-contacts {
+    min-width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .main-nav-contacts__link {
+    display: none;
+}
+
 }

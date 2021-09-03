@@ -61,3 +61,55 @@
     width: 378px;
   }
 }
+
+@media(min-width:$desktop) {
+  .directions {
+    position: relative;
+  }
+
+  .directions::before {
+    content: "";
+    position: absolute;
+    background-image: url(../img/flags-tablet.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 419px;
+    width: 288px;
+    height: 574px;
+    top: -202px;
+    right: 0;
+  }
+
+  .directions__container {
+    display: grid;
+    width: $content-width;
+    margin: 0 auto;
+
+  }
+
+  .directions__header {
+    margin: 0;
+  }
+
+  .directions__header::before {
+    display: none;
+  }
+
+  .directions__description {
+    padding: 0;
+    margin: 0;
+    width: 378px;
+
+    right: 0;
+    top: 128px;
+  }
+
+  .directions__button .button {
+    position: absolute;
+    right: 0px;
+    bottom: 54px;
+  }
+}
+
+
+

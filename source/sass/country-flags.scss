@@ -37,3 +37,13 @@
 .country-flags--czechia::before {
   background-image: url("../img/Czechia.png");
 }
+
+@media(min-width:$desktop) {
+  .country-flags::before {
+    width: 70px;
+    height: 47px;
+    top: 18px;
+    left: 330px;
+  }
+
+}

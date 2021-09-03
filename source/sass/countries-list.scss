@@ -18,11 +18,6 @@
 
 @media(min-width: $tablet) {
 
-  // .countries-list {
-  //   display: grid;
-  //   grid-template-rows: 1fr 1fr 1fr;
-  // }
-
   .countries-list__item {
     margin: 0 0 12px 0;
     padding: 0;
@@ -33,4 +28,14 @@
     height: 140px;
   }
 
+}
+
+@media(min-width: $desktop) {
+  .countries-list {
+    max-width: 560px;
+  }
+
+  .countries-list__img {
+    height: 100%;
+  }
 }

@@ -1,15 +1,16 @@
+
 .promo-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -21px 0 20px 2px;
+  margin: -20px 23px 23px 3px;
   padding: 0;
   position: relative;
 }
 
 .promo-list__item {
-  margin-bottom: 5px;
+  margin-bottom: -1px;
 
 }
 
@@ -64,5 +65,9 @@
 }
 
 @media (min-width: $tablet) {
+
+}
+
+@media (min-width: $desktop) {
 
 }

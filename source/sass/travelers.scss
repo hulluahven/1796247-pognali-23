@@ -15,7 +15,17 @@
   top: 53px;
   right: 33px;
 }
-// +::after
+
+.travelers::after {
+  content: "";
+  position: absolute;
+  background: url("../img/mobile-back.png");
+  background-repeat: no-repeat;
+  width: 113px;
+  height: 132px;
+  top: 37px;
+  left: -5px;
+}
 
 .travelers__section-wrapper {
   z-index: 2;
@@ -45,6 +55,17 @@
   position: relative;
 }
 
+.travelers__description::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/rogovaya-mobile.png");
+  background-repeat: no-repeat;
+  width: 64px;
+  height: 71px;
+  top: 241px;
+  left: -51px;
+}
+
 .travelers__promo {
   padding: 0;
   margin: 0px 0 56px 51px;
@@ -54,17 +75,31 @@
   color: #ffffff;
 }
 
-// .travelers__list {
-//   list-style: none;
-//   padding: 0px 26px 0 27px;
-//   margin: 0 auto;
-// }
-
 
 @media (min-width: $tablet) {
 
   .travelers {
     padding-bottom: 221px;
+  }
+
+  .travelers::before {
+    top: 472px;
+    left: 55px;
+  }
+
+  .travelers::after {
+    background: url("../img/back-tablet.png");
+    width: 212px;
+    height: 212px;
+    top: 37px;
+    left: -5px;
+  }
+
+  .travelers__section-wrapper {
+    z-index: 2;
+    position: relative;
+    width: 768px;
+    margin: 0 auto;
   }
 
   .travelers__header {
@@ -82,32 +117,18 @@
   }
 
   .travelers__description::before {
-    content: "";
-    position: absolute;
-    background-image: url(../img/rogovaya.png);
-    background-repeat: no-repeat;
+    background-image: url("../img/rogovaya.png");
     width: 285px;
     height: 285px;
-    bottom: 10px;
-    left: 332px;
+    top: -59px;
+    left: 379px;
   }
 
   .travelers__promo {
     font-size: 21px;
     line-height: 24px;
     margin: 1px 379px 76px 75px;
-    position: relative;
-  }
 
-  .travelers__promo::before {
-    content: "";
-    position: absolute;
-    background-image: url(../img/smolov.png);
-    background-repeat: no-repeat;
-    width: 143px;
-    height: 143px;
-    top: 12px;
-    left: -35px;
   }
 
   .travelers__list {
@@ -116,3 +137,50 @@
   }
 
 }
+
+@media(min-width: $desktop) {
+
+  .travelers::before {
+    top: 134px;
+    left: 620px;
+  }
+
+  .travelers::after {
+    top: 70px;
+    left: 132px;
+}
+
+  .travelers__section-wrapper {
+    width: $content-width;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .travelers__header {
+    padding: 127px 0 0 69px;
+  }
+
+  .travelers__description {
+    line-height: 33px;
+    margin: 56px 152px 38px 70px;
+  }
+
+  .travelers__description::before {
+    top: 157px;
+    left: 59px;
+}
+
+  .travelers__promo {
+    margin: 0px 321px 0px 70px;
+    padding-top: 3px;
+}
+
+
+  .button--travelers {
+    position: absolute;
+    bottom: -183px;
+    width: 280px;
+  }
+}
+

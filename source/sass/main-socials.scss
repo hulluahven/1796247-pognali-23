@@ -26,8 +26,8 @@
 }
 
 .main-socials__link--instagram {
-  width: 18px;
-  height: 21px;
+  width: 24px;
+  height: 24px;
   background-image: url("../img/instagram.svg");
 }
 
@@ -35,4 +35,12 @@
   width: 11px;
   height: 21px;
   background-image: url("../img/facebook.svg");
+}
+
+
+@media(min-width: $desktop) {
+  .main-socials {
+    display: none;
+  }
+
 }
