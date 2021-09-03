@@ -11,8 +11,8 @@
 
 }
 
-.route__adress {
-  margin: 0;
+.route__address {
+  margin: -8px 63px -5px 51px;
   padding: 0;
   font-family: "BloggersansB", Arial, sans-serif;
   font-weight: 700;
@@ -24,18 +24,30 @@
   padding: 40px 0 40px 0;
   position: relative;
 }
-
-.route__adress::before {
-  content: "";
-  position: absolute;
+.route__address-marker {
   display: block;
   border-radius: 50%;
-  left: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
+  // left: 0;
+  // top: 0;
+  // background-repeat: no-repeat;
+  // background-position: center center;
   background-color: #121936;
-  background-image: url(../img/adressmarker.svg);
+  // background-image: url(../img/adressmarker.svg);
   width: 45px;
   height: 45px;
+  position: relative;
+  top: 31px;
+  left: 36px;
+}
+
+.route__address-marker::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/adressmarker.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }

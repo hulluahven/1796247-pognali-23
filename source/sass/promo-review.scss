@@ -10,7 +10,8 @@
   font-weight: 300;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
+  padding-top: 3px;
 }
 
 .promo-review__cite {
@@ -64,4 +65,28 @@
     line-height: 25px;
   }
 
+}
+
+@media(min-width: $desktop) {
+  .promo-review {
+    box-sizing: content-box;
+    top: 118px;
+    left: 325px;
+    width: 264px;
+    &::before {
+      display: none;
+    }
+  }
+
+  .promo-review__quote {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0;
+    padding-bottom: 47px;
+  }
+
+  .promo-review__cite {
+    font-size: 21px;
+    line-height: 24.4px;
+  }
 }

@@ -1,9 +1,9 @@
 .contacts {
   background-color: #192144;
-  border-bottom-left-radius: 31px;
-  border-bottom-right-radius: 31px;
-  padding: 0 0 53px 0;
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 0 0 20px 0;
 }
 
 .contacts__feedback-wrapper {
@@ -12,24 +12,28 @@
 }
 
 .contacts__header {
-  padding: 0;
+  padding: 76px 0px 3px 21px;
   margin: 0;
   font-family: "BloggersansB", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: #ff8d30;
+  text-align: center;
 
 }
 
 .contacts__text {
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
+  width: 210px;
+  padding: 0 10px 0px 0px;
+  margin: 19px 29px 26px 66px;
   font-family: "BloggersansL", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
+  text-align: center;
 }
 
 .contacts__link-enter {
@@ -51,68 +55,19 @@
 }
 
 .contacts__feedback-text {
-  margin: 0;
+  margin: 21px 39px 30px 53px;
   padding: 0;
-  font-family: "BloggersansL", Arial, sans-serif;
+  font-family: "Bloggersans", Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   color :#ffffff;
+  text-align: center;
 }
 
 .contacts__feedback-list {
   list-style: none;
-  margin: 0;
+  margin: 25px 0 0 96px;
   padding: 0;
 }
 
-.contacts-list__item-phone {
-  text-decoration: none;
-  font-family: "BloggersansB", Arial, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffd74b;
-  position: relative;
-}
-
-.contacts-list__item-phone::before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #121936;
-  background-image: url("../img/feedbackphone.svg");
-  width: 45px;
-  height: 45px;
-}
-
-.contacts-list__item-mail {
-  text-decoration: none;
-  font-family: "BloggersansB", Arial, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffd74b;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.contacts-list__item-mail::before {
-  content: "";
-  position: absolute;
-  display: block;
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #121936;
-  background-image: url("../img/feedbackmail.svg");
-  width: 45px;
-  height: 45px;
-}

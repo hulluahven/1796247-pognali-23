@@ -1,0 +1,17 @@
+.nav-toggle {
+  position: absolute;
+  right: 60px;
+  top: -54px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+  width: 18px;
+  height: 19px;
+}
+
+@media(min-width: $desktop) {
+  .nav-toggle {
+    display: none;
+  }
+}

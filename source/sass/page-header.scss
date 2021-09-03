@@ -1,18 +1,53 @@
 .page-header {
-  background-color: white;
+  background-color: #161c35;
   padding-top: 73px;
   position: relative;
+}
+
+.page-header--nav-opened {
+  background-color: #ffffff;
+}
+
+.page-header--scrolled {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 .page-header__logo {
   display: block;
   position: absolute;
-  left: 27px;
-  top: 26px;
+  left: 26px;
+  top: 20px;
 }
 
+
 .page-header__svg {
-  fill: #192144;
+  fill: #ffffff;
+}
+
+.page-header--nav-opened .page-header__svg {
+  fill: #161c35;
+}
+
+.page-header--scrolled .page-header__svg {
+  fill: #161c35;
+}
+
+.main-nav__burger {
+  fill: #ffffff;
+}
+
+.page-header--nav-opened .main-nav__burger {
+  fill: #161c35;
+}
+
+.page-header--scrolled .main-nav__burger  {
+  fill: #cccccc;
+
 }
 
 .page-header__svg {
@@ -21,6 +56,7 @@
 
 .page-header__svg--m {
   display: block;
+
 }
 
 @media(min-width: $tablet) {
@@ -33,21 +69,77 @@
   }
 
   .page-header__svg-text {
+    // fill: #192144;
+    fill: #ffffff;
+  }
+
+  .page-header--scrolled .page-header__svg-text {
+    fill: #192144;
+  }
+
+  .page-header--nav-opened .page-header__svg-text {
     fill: #192144;
   }
 
   .page-header__logo:hover .page-header__svg-text{
-    fill: red;
+    fill: #192144;
   }
 
   .page-header {
     padding-top: 132px;
+    background-color: #182044;
+  }
+
+  .page-header--nav-opened {
+    background-color: #ffffff;
+  }
+
+  .page-header--scrolled .page-header {
+    background-color: #ffffff;
   }
 
   .page-header__logo {
     left: 40px;
     top: 44px;
   }
+}
 
+@media(min-width: $desktop) {
+  .page-header {
+    padding-top: 0;
+    background-color: #161c35;
+
+  }
+
+  .page-header--scrolled {
+    background-color: #ffffff;
+    z-index: 11;
+
+  }
+
+  .page-header__logo {
+    left: 2px;
+    top: 47px;
+  }
+
+  .page-header__container {
+    width: $content-width;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 262px;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 273px;
+  }
+
+  .page-header__svg {
+    width: 200px;
+    height: 50px;
+  }
+
+  .page-header__svg-text {
+    fill: #ffffff;
+  }
 
 }

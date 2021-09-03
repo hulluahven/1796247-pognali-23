@@ -52,13 +52,15 @@
 
 .transport-types__item--bike::before {
   background-image: url("../img/bike-enabled.svg");
-  opacity: 0.15;
 }
 
 .transport-types__item--onfoot::before {
   background-image: url("../img/onfoot-enabled.svg");
 }
 
+.transport-types__item--disabled::before  {
+  opacity: 0.15;
+}
 
 
 .transport-types__item::after {

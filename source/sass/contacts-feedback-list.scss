@@ -1,0 +1,51 @@
+.contacts-feedback-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contacts-feedback-list__item {
+  padding-bottom: 22px;
+}
+
+.contacts-feedback-list__phone, .contacts-feedback-list__mail {
+  text-decoration: none;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffd74b;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.contacts-feedback-list__phone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -61px;
+  bottom: -15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #121936;
+  background-image: url("../img/feedbackphone.svg");
+  width: 45px;
+  height: 45px;
+}
+
+
+.contacts-feedback-list__mail::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  left: -58px;
+  bottom: -17px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #121936;
+  background-image: url("../img/feedbackmail.svg");
+  width: 45px;
+  height: 45px;
+}

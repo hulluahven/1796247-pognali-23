@@ -4,9 +4,6 @@
 }
 
 .site-list__item {
-  // text-transform: uppercase;
-  // color: #192144;
-  // text-align: center;
 
 }
 
@@ -20,7 +17,6 @@
   font-size: 30px;
   line-height: 35px;
 }
-// красить лишку-не применяется-покрасил ссылку
 
 @media (min-width: $tablet) {
   .site-list {
@@ -40,4 +36,39 @@
     line-height: 71px;
   }
 
+}
+
+@media (min-width: $desktop) {
+  .site-list {
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -34px;
+    padding-left: 83px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 2px;
+      top: 10px;
+      left: 13px;
+      background-color: #ffffff;
+    }
+  }
+
+
+  .site-list__item {
+    margin-left: 34px;
+  }
+
+  .site-list__link {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

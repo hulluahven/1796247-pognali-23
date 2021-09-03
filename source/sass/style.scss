@@ -3,11 +3,13 @@
 @import "page-body";
 @import "page-header";
 @import "page-title";
+@import "nav-toggle";
 @import "main-nav";
 @import "site-list";
 @import "main-nav-login";
 @import "main-nav-contacts";
 @import "main-socials";
+@import "page-main";
 @import "visually-hidden";
 @import "yellow-button";
 @import "promo-list";
@@ -32,6 +34,7 @@
 @import "pricing";
 @import "tariffs-list";
 @import "contacts";
+@import "contacts-feedback-list";
 @import "form-enter";
 @import "route";
 @import "page-footer";
@@ -57,3 +60,6 @@
 @import "fun";
 @import "fun-list";
 @import "map";
+@import "catalog";
+@import "catalog-head";
+

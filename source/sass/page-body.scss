@@ -6,3 +6,14 @@
   font-size: 16px;
   line-height: 22px;
 }
+
+
+@media(min-width: $desktop) {
+  .page-body__header.page-header--scrolled + .page-body__main .page-body__promo-list {
+    position: fixed;
+    right: 50%;
+    margin-right: -660px;
+    top:0;
+  }
+
+}
