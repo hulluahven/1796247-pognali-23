@@ -3,6 +3,9 @@
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
   position: relative;
+  padding-left: 27px;
+  padding-right: 26px;
+  padding-bottom: 31px;
 }
 
 .travelers::before {
@@ -30,7 +33,6 @@
 .travelers__section-wrapper {
   z-index: 2;
   position: relative;
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -41,13 +43,13 @@
   font-size: 24px;
   line-height: 24px;
   color: #ff8d30;
-  padding: 66px 0 0 51px;
+  padding: 66px 0 0 22px;
   margin: 0 0 0 0;
 }
 
 .travelers__description {
   padding: 0;
-  margin: 20px 57px 21px 51px;
+  margin: 20px 28px 21px 22px;
   font-family: "BloggersansL", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -68,17 +70,51 @@
 
 .travelers__promo {
   padding: 0;
-  margin: 0px 0 56px 51px;
+  margin: 0 50px 57px 24px;
   font-family: "BloggersansB", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #ffffff;
 }
 
+.travelers__button {
+  text-decoration: none;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-weight: 700;
+  background-color: #ffd74b;
+  padding: 21px 64px 22px 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.travelers__button:hover,
+.travelers__button:focus {
+  background-color: #ffbd30;
+}
+
+.travelers__button:active {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+
+.travelers__button::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/svg/triangle.svg");
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  top: 25px;
+  right: 20px;
+
+}
 
 @media (min-width: $tablet) {
 
   .travelers {
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 221px;
   }
 
@@ -134,6 +170,20 @@
   .travelers__list {
     display: flex;
     justify-content: space-around;
+  }
+
+  .travelers__button {
+    width: 617px;
+    border-radius: 20px;
+    padding: 26px 32px;
+    margin: 72px 0px 0px 74px;
+    font-size: 24px;
+    line-height: 24px;
+      &::after {
+        top: 34px;
+        right: 31px;
+
+      }
   }
 
 }

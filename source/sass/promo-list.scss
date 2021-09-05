@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -20px 23px 23px 3px;
+  margin: -20px 1px 23px 3px;
   padding: 0;
   position: relative;
 }
@@ -37,7 +37,7 @@
 }
 
 .promo-list__link--phone::before {
-  background-image: url("../img/call.svg");
+  background-image: url("../img/svg/call.svg");
 }
 
 .promo-list__link--phone:hover::before,
@@ -51,7 +51,7 @@
 }
 
 .promo-list__link--mail::before {
-  background-image: url("../img/post.svg");
+  background-image: url("../img/svg/post.svg");
   background-color: #ffbd30;
 }
 

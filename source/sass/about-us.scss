@@ -8,22 +8,23 @@
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 28px;
-  padding-bottom: 83px;
+  padding-bottom: 62px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
 
   &::before {
-    display: none;
     content: "";
-    width: calc(100% - 40px);
-    left: 20px;
-    top: 20px;
-    height: 221px;
-    background: #141B3B;
+    width: calc(100% - 208px);
+    left: 0px;
+    top: 0px;
+    height: 131px;
+    background: gray;
     border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     position: absolute;
-
+    // #141B3B;
   }
 
   &::after {
@@ -31,13 +32,13 @@
     content: "";
     width: 376px;
     height: 548px;
-    background-image: url("../img/about-mobile.png");
+    background-image: url("../img/backs/about-mobile.png");
     background-repeat: no-repeat;
     background-position: top right;
     position: absolute;
     z-index: 1;
     top: -3px;
-    right: -20px;
+    right: 5px;
   }
 
 }
@@ -81,12 +82,12 @@
   position: relative
 }
 
-.about-us__button-container {
+// .about-us__button-container {
+//   display: none;
+// }
+.about-us__button {
   display: none;
 }
-
-
-// НИЖЕ ТОЛЬКО МЕДИА
 
 @media(min-width: $tablet) {
 
@@ -94,7 +95,7 @@
     padding-right: 40px;
     padding-left: 40px;
     padding-top: 0;
-    padding-bottom: 234px;
+    padding-bottom: 90px;
     background-position: right;
     &::before {
       display: block;
@@ -111,13 +112,13 @@
 
     &::after {
       position: absolute;
-      right: 0;
-      top: 20px;
+      right: 8px;
+      top: 75px;
       display: block;
       content: "";
       width: 376px;
       height: 548px;
-      background-image: url("../img/about-tablet.png");
+      background-image: url("../img/backs/about-tablet.png");
       background-repeat: no-repeat;
       background-position: center;
 
@@ -126,11 +127,8 @@
   }
 
   .about-us__wrapper {
-    width: 100%;
-    box-sizing: border-box;
     margin: 0;
-    padding: 0px 345px 77px 74px;
-    min-height: 399px;
+    padding: 0p;
     position: relative;
   }
 
@@ -138,13 +136,14 @@
   .about-us__header {
     font-size: 45px;
     line-height: 45px;
-    margin: 0;
+    margin: 63px 17px 41px 33px;
   }
 
   .about-us__description {
     font-size: 28px;
     line-height: 33px;
     margin: 0;
+    padding: 0 352px 0 35px;
   }
 
   .about-us__promo {
@@ -152,12 +151,22 @@
     font-size: 21px;
     line-height: 25px;
     margin: 0;
+    padding: 31px 342px 0 33px;
   }
 
-  .about-us__button-container {
-    display: block;
-    width: 334px;
+  // .about-us__button-container {
+  //   display: block;
+  //   margin: 0;
+  // }
 
+  .about-us__button {
+    display: block;
+    padding: 28px 32px;
+    margin: 54px 378px 0px 34px;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
   }
 
 }
@@ -196,7 +205,7 @@
       content: "";
       width: 630px;
       height: 665px;
-      background-image: url("../img/about-desktop.png");
+      background-image: url("../img/backs/about-desktop.png");
       background-repeat: no-repeat;
       background-position: center;
 

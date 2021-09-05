@@ -4,7 +4,7 @@
   padding-top: 69px;
   padding-left: 27px;
   padding-right: 26px;
-
+  padding-bottom: 33px;
 }
 
 .directions__header {
@@ -13,7 +13,7 @@
   line-height: 24px;
   color: #ff8d30;
   padding: 0;
-  margin: 0 0 20px 32px;
+  margin: 0 0 20px 24px;
 }
 
 .directions__description {
@@ -21,17 +21,24 @@
   font-size: 16px;
   line-height: 22px;
   color: #444444;
-  margin: 0 0 61px 31px;
-  width: 216px;
+  margin: 0 44px 61px 25px;
 }
 
+
 .directions__button {
-  margin: 0;
-  padding: 0;
+  margin: 0px 0px 0px -2px;
+  padding: 21px 19px 23px 23px;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 @media(min-width: $tablet) {
+
+  .directions {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 82px;
+  }
 
   .directions__header {
     font-size: 45px;
@@ -60,7 +67,17 @@
     margin: 59px 0 0 48px;
     width: 378px;
   }
+
+  .directions__button{
+    padding: 29px 33px;
+    margin: 48px 0px 0px 47px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
 }
+
+}
+
 
 @media(min-width:$desktop) {
   .directions {

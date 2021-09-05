@@ -16,6 +16,7 @@
   left: 0;
   background-color: #ffffff;
   z-index: 10;
+  display: none;
 }
 
 .main-nav--no-js .main-nav__wrapper{
@@ -61,9 +62,12 @@
 }
 
 @media(min-width: $tablet) {
+  .main-nav__wrapper {
+    display: none
+  }
   .main-nav__toggle {
     right: unset;
-    left: 51%;
+    left: 49%;
     transform: translateX(-50%);
     top: -74px;
   }

@@ -6,7 +6,7 @@
 }
 
 .promo__container {
-  background-image: url("../img/globe-mobile.png");
+  background-image: url("../img/covers/globe-mobile.png");
   background-repeat: no-repeat;
   background-position: 0px -20px;
   position: relative;
@@ -20,9 +20,9 @@
   width: 195px;
   height: 272px;
   position: absolute;
-  background-image: url("../img/traveller-mobile.png");
+  background-image: url("../img/svg/traveller-mobile.svg");
   background-repeat: no-repeat;
-  left: 47%;
+  left: 50%;
   transform: translateX(-42%);
   bottom: 0;
   background-position: center bottom;
@@ -35,7 +35,7 @@
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  padding: 18px 19px 266px 0px;
+  padding: 18px 1px 266px 0px;
   width: 280px;
 }
 
@@ -68,10 +68,24 @@
 
 
 @media (min-width: $tablet) {
-  .promo {
-    background-image: url("../img/globetablet.png");
-    background-size: cover;
+.promo {
+  padding-right: 40px;
+  padding-left: 40px;
+  background-image: url("../img/covers/globetablet.png");
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 431px;
+    height: 640px;
+    background-image: url("../img/svg/traveller-tablet.svg");
+    left: 257px;
+    bottom: 350px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
   }
+}
 
   .promo__list {
     display: none;
@@ -83,7 +97,8 @@
     line-height: 70px;
     width: 399px;
     margin: 0 auto;
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 26px;
   }
 
   .promo__container {
@@ -100,16 +115,16 @@
 
 @media (min-width: $desktop) {
   .promo {
-    background-image: url("../img/globe-desktop.png");
+    background-image: url("../img/covers/globe-desktop.png");
     overflow: visible;
     &::before {
       content: "  ";
       position: absolute;
       width: 431px;
       height: 640px;
-      background-image: url("../img/traveller-desktop.svg");
-      left: 675px;
-      bottom: 0;
+      background-image: url("../img/svg/traveller-desktop.svg");
+      left: 676px;
+      bottom: 75px;
       background-position: center bottom;
     }
   }

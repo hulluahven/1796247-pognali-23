@@ -33,20 +33,6 @@
     margin: 0;
     padding: 0px 345px 77px 72px;
     min-height: 399px;
-    position: relative;
-    &::before {
-      content: "";
-      width: 372px;
-      height: 451px;
-      position: absolute;
-      background-image: url("../img/traveller-tablet.svg");
-      background-repeat: no-repeat;
-      left: 50%;
-      transform: translateX(-27%);
-      bottom: 0;
-      background-position: center bottom;
-    }
-
   }
 
   .promo-review__quote {
@@ -55,7 +41,7 @@
     font-size: 28px;
     line-height: 33px;
     text-align: left;
-    padding-bottom: 46px;
+    padding-bottom: 28px;
   }
 
   .promo-review__cite {

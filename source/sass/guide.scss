@@ -16,7 +16,7 @@
   font-weight: 700;
   color: #161c35;
   justify-content: space-between;
-  margin: -10px 20px 0;
+  margin: -9px 23px 0px;
   position: relative;
   box-sizing: border-box;
   padding: 31px 21px 17px 26px;
@@ -33,7 +33,7 @@
   display: block;
   background: #161c35;
   position: absolute;
-  top: -10px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -90,15 +90,22 @@
 }
 
 @media (min-width: $tablet) {
+  .guide {
+    padding-top: 0px;
+    background-color: transparent;
+  }
+
   .guide__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 17px 43px 0px 45px;
+    padding: 5px 56px 30px 39px;
   }
 
   .guide__item {
     width: 100%;
-    padding: 24px 42px 72px 40px;
+    padding: 24px 42px 25px 40px;
+    margin: 0;
+    display: block;
   }
 
   .guide__item::after {
@@ -107,6 +114,7 @@
 
   .guide__item:first-child::before {
     top: 0px;
+    background-color: transparent;
   }
 
   .guide__point {

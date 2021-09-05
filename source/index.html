@@ -229,12 +229,12 @@
       <div class="about-us__wrapper">
         <h2 class="about-us__header">О сервисе</h2>
         <p class="about-us__description">Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с тобой!
-          Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+          Делитесь своими идеями путешествий и черпайте вдохновение в&nbsp;чужих.
         </p>
         <p class="about-us__promo">А если найдете кого-то близкого по духу &mdash;&mdash; скорее зовите в совместный
           трип!</p>
         <div class="about-us__button-container">
-          <a class="about-us__button yellow-button" href="#">Подробнее</a>
+          <a class="yellow-button about-us__button" href="#">Подробнее</a>
         </div>
       </div>
     </section>
@@ -249,8 +249,12 @@
       <ul class="directions__list countries-list">
         <li class="countries-list__item">
           <picture>
-            <img class="countries-list__img" src="./img/thailand-mobile .jpg"
-              alt="Вид на лазурный пляж, со скалистым островом">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/directions/thailand-desktop@1x.webp 1x, img/directions/thailand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/directions/thailand-desktop@1x.webp 1x, img/directions/thailand-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/directions/thailand-mobile@1x.webp 1x, img/directions/thailand-desktop@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/directions/thailand-desktop.jpg 1x, img/directions/thailand-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/directions/thailand-desktop.jpg 1x, img/directions/thailand-desktop@2x.jpg 2x">
+            <img class="countries-list__img" src="./img/directions/thailand-mobile.jpg" srcset="./img/directions/thailand-mobile@2x.jpg 2x" alt="Вид на лазурный пляж, со скалистым островом" width="270" height="110">
           </picture>
           <div class="countries-list__data country-data country-flags country-flags--thailand">
             <h3 class="country-data__header">Тайланд</h3>
@@ -281,7 +285,7 @@
           </div>
         </li>
       </ul>
-      <a class="directions__button button yellow-button" href="form.html">
+      <a class="button yellow-button directions__button" href="form.html">
         Показать все
       </a>
       </div>
@@ -292,15 +296,15 @@
           <h2 class="travelers__header">Попутчики</h2>
         <p class="travelers__description">
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
-          Одному нужен пляж и коктейль,<br>а другому маршрут для хайкинга.
+          Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <p class="travelers__promo">Теперь можно легко<br> найти единомышленников!</p>
+        <p class="travelers__promo">Теперь можно легко&nbsp;найти единомышленников!</p>
         </div>
         <ul class="travelers__list travelers-card">
           <li class="travelers-card__item">
             <a class="travelers-card__photo-link" href="#">
               <picture>
-                <img class="travelers-card__image" src="./img/tanya.jpg" alt="Девушка купается в море лежа на спине">
+                <img class="travelers-card__image" src="./img/travelers/Firsova-desktop.jpg" srcset="./img/travelers/Firsova-desktop@2x.jpg 2x" alt="Девушка купается в море лежа на спине">
               </picture>
             </a>
             <div class="travelers-card__wrapper">
@@ -365,7 +369,7 @@
           <li class="travelers-card__item">
             <a class="travelers-card__photo-link" href="#">
               <picture>
-                <img class="travelers-card__image" src="./img/petya.jpg"
+                <img class="travelers-card__image" src="./img/travelers/demin-desktop.jpg" srcset="./img/travelers/demin-desktop@2x.jpg 2x"
                   alt="Молодой человек в солнцезащитных очках с бородой в черной шапке и черной рубашке">
               </picture>
             </a>
@@ -422,7 +426,7 @@
             </div>
           </li>
         </ul>
-        <a class="button yellow-button button--travelers" href="catalog.html">
+        <a class="button yellow-button travelers__button" href="catalog.html">
           Показать всех
         </a>
       </div>
@@ -466,11 +470,11 @@
           <form class="contacts__form form-enter" action="http://echo.htmlacademy.tu">
             <input class="form-enter__input" type="email" name="mail" placeholder="E-mail"
               aria-label="Пожалуйста введите Вашу электронную почту">
-            <button class="button button--travelers form-enter__button" type="submit">
-            <span class="form-enter__button-text">Регисрация</span>
+            <button class="button yellow-button form-enter__button" type="submit">
+            <span class="form-enter__button-text">Регистрация</span>
             </button>
           </form>
-          <p class="contacts__feedback-text">Остались вопросы? Мы&nbsp;с&nbsp;радостью на них ответим!</p>
+          <p class="contacts__feedback-text">Остались вопросы?<br> Мы с радостью на&nbsp;них&nbsp;ответим!</p>
           <ul class="contacts__feedback-list contacts-feedback-list">
             <li class="contacts-feedback-list__item">
               <a class="contacts-feedback-list__phone" href="tel:88005558628">8 800 555-86-28</a>
@@ -485,12 +489,11 @@
       <div class="route__container">
         <h2 class="visually-hidden">Проложить маршрут</h2>
         <div class="route__address-wrapper">
-          <span class="route__address-marker"></span>
           <address class="route__address">
-            ул. Большая конюшенная, 19/8
+            ул. Большая конюшенная,&nbsp;19/8
           </address>
         </div>
-        <a class="button button--route" href="#">
+        <a class="button route__button" href="#">
           Проложить маршрут
         </a>
       </div>

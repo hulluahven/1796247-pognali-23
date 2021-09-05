@@ -25,82 +25,6 @@
   color: rgba(29, 46, 91, 0.3);
 }
 
-.button--travelers {
-  text-decoration: none;
-  font-family:"BloggerdsansB", Arial, sans-serif;
-  font-weight: 700;
-  background-color: #ffd74b;
-  padding: 24px 31px;
-  margin: 0px 0 38px 26px;
-  width: 214px;
-}
-
-.button--travelers:hover,
-.button--travelers:focus {
-  background-color: #ffbd30;
-}
-
-.button--travelers:active {
-  color: rgba(29, 46, 91, 0.3);
-}
-
-
-.button--travelers::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/triangle.svg");
-  background-repeat: no-repeat;
-  width: 14px;
-  height: 14px;
-  top: 20px;
-  left: 189px;
-}
-
-.directions__button {
-  width: 270px;
-  border-radius: 20px;
-  width: 214px;
-  border-radius: 20px;
-  padding: 24px 36px;
-}
-
-.button--route {
-  border: solid 3px #192144;
-  text-decoration: none;
-  background-color: transparent;
-  text-align: center;
-  border-radius: 20px;
-  text-align: left;
-  border-radius: 7px;
-    text-align: left;
-    position: relative;
-    padding: 17px 57px 19px 20px;
-    margin: -1px 0 19px 35px;
-    width: 270px;
-    box-sizing: border-box;
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/triangle.svg");
-    background-repeat: no-repeat;
-    width: 14px;
-    height: 14px;
-    top: 21px;
-    right: 16px;
-    display: block;
-  }
-}
-
-.button--route:hover,
-.button--route:focus {
-  color: #ffffff;
-  background-color: #192144;
-}
-
-.button--route:hover::after,
-.button--route:focus::after {
-  color: #ffffff;
-}
 
 // Ка ппрписать наведение для after
 .button--steps {
@@ -111,8 +35,14 @@
 }
 
 @media(min-width: $tablet) {
-.button--travelers {
-  width: 581px;
-  border-radius: 20px;
+
+  .button {
+    width: 619px;
+    font-size: 24px;
+    line-height: 24px;
+    display: block;
+    box-sizing: border-box;
+  }
+
 }
-}
+

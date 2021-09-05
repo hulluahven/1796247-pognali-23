@@ -43,19 +43,19 @@
 }
 
 .transport-types__item--plane::before {
-  background-image: url("../img/plane-enabled.svg");
+  background-image: url("../img/svg/plane-enabled.svg");
 }
 
 .transport-types__item--car::before {
-  background-image: url("../img/car-enabled.svg");
+  background-image: url("../img/svg/car-enabled.svg");
 }
 
 .transport-types__item--bike::before {
-  background-image: url("../img/bike-enabled.svg");
+  background-image: url("../img/svg/bike-enabled.svg");
 }
 
 .transport-types__item--onfoot::before {
-  background-image: url("../img/onfoot-enabled.svg");
+  background-image: url("../img/svg/onfoot-enabled.svg");
 }
 
 .transport-types__item--disabled::before  {
