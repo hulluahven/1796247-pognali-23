@@ -1,11 +1,11 @@
 .yellow-button {
   text-decoration: none;
   color: #1d2e5b;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 18px;
   background-color: #ffd74b;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 10px;
   font-family: "BloggerSansB", Arial, sans-serif;
   text-align: left;
   display: block;
@@ -13,12 +13,12 @@
   &::after {
       content: "";
       position: absolute;
-      background-image: url("../img/triangle.svg");
+      background-image: url("../img/svg/triangle.svg");
       background-repeat: no-repeat;
       width: 14px;
       height: 14px;
-      top: 34px;
-      right: 32px;
+      top: 25px;
+      right: 19px;
       display: block;
   }
 }
@@ -27,11 +27,15 @@
 
 @media (min-width: $tablet) {
 
-  .yellow-button {
-    margin: 0px 56px 0px 0px;
-    padding: 29px 76px 25px 36px;
+.yellow-button {
+  margin: 0px 56px 0px 0px;
+  padding: 29px 76px 28px 32px;
+  &::after {
+      top: 36px;
+      right: 29px;
+    }
 
-  }
+}
 
 }
 

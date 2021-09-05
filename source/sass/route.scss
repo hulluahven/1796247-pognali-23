@@ -4,16 +4,15 @@
   background-color: #ffd74b;
   border-bottom-left-radius: 31px;
   border-bottom-right-radius: 31px;
+  padding-left: 27px;
+  padding-right: 26px;
 
 }
 
-.route__container {
-
-}
 
 .route__address {
-  margin: -8px 63px -5px 51px;
-  padding: 0;
+  margin: 0;
+  padding: 29px 0 0 59px;
   font-family: "BloggersansB", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -21,33 +20,76 @@
   color: #1d2e5b;
   font-style: normal;
   text-transform: uppercase;
-  padding: 40px 0 40px 0;
   position: relative;
-}
-.route__address-marker {
-  display: block;
-  border-radius: 50%;
-  // left: 0;
-  // top: 0;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  background-color: #121936;
-  // background-image: url(../img/adressmarker.svg);
-  width: 45px;
-  height: 45px;
-  position: relative;
-  top: 31px;
-  left: 36px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #121936;
+    width: 45px;
+    height: 45px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+   }
+
+   &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 12px;
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/svg/adressmarker.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+   }
 }
 
-.route__address-marker::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 12px;
-  width: 21px;
-  height: 21px;
-  background-image: url(../img/adressmarker.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
+
+.route__button {
+  border: solid 3px #192144;
+  text-decoration: none;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  text-align: left;
+  border-radius: 7px;
+  text-align: left;
+  position: relative;
+  padding: 17px 57px 19px 20px;
+  margin: 0px 0 19px 0px;
+  box-sizing: border-box;
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/svg/triangle.svg");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 14px;
+      top: 21px;
+      right: 16px;
+      display: block;
+  }
+
+}
+
+.route__button:hover,
+.route__button:focus {
+  color: #ffffff;
+  background-color: #192144;
+}
+
+.route__button:hover::after,
+.route__button:focus::after {
+  color: #ffffff;
+}
+
+@media(min-width: $tablet) {
+  .route {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }

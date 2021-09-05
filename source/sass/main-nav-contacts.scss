@@ -8,9 +8,7 @@
   min-width: 276px;
 }
 
-.main-nav-contacts__item {
 
-}
 
 .main-nav-contacts__link {
   position: relative;
@@ -50,9 +48,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-bottom: 158px;
-    margin-left: 104px;
+    margin-bottom: 109px;
+    margin-left: 123px;
   }
+
+  .main-nav-contacts__item {
+    margin-bottom: 21px;
+    }
 
   .main-nav-contacts__link {
     position: relative;
@@ -69,6 +71,8 @@
     &::before {
       width: 68px;
       height: 68px;
+      left: -26px;
+      top: -22px;
     }
   }
 
