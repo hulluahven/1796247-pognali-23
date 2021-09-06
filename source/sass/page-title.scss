@@ -39,4 +39,17 @@
   z-index: 3;
   padding: 14px 0 16px 12px;
   display: block;
+  letter-spacing: 1.5px;
+  padding: 19px 0 15px 28px;
+}
+
+@media(min-width: $tablet) {
+  .page-title__text {
+    padding: 88px 0 69px 71px;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    font-family: 'BloggerSansB';
+}
+
 }

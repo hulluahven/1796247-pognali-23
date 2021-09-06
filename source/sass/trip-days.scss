@@ -1,14 +1,77 @@
 
+.trip-days__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9px;
+}
+
 .trip-days__title,
 .trip-days__type {
-  font-family: "Bloggersans", Arial, sans-serif;
+  font-family: "BloggersansM", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: #1d2e5b;
   text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1.6px;
 }
 
+.trip-days__title {
+  padding: 19px 0 0px 23px;
+}
+
+
 .trip-days__type {
+  padding: 19px 23px 0px 0;
   opacity: 30%;
+}
+
+.trip-days__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.trip-days__button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.trip-days__button--more {
+  top: 0;
+  right: 25px;
+  height: 45px;
+  width: 45px;
+}
+
+.trip-days__button--less {
+  left: 24px;
+  height: 45px;
+  width: 45px;
+}
+
+.trip-days__count {
+  padding: 12px 18px 11px 105px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 24px 0 23px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  font-family: "BloggerSansM", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 14px;
+  color: #1d2e5b;
+  outline: none;
+  cursor: pointer;
+}
+
+.trip-days__count:hover {
+  border-color: #959bb2;
+}
+
+.trip-days__count:focus, .trip-days__count:active {
+  border-color: #1d2e5e;
 }

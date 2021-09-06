@@ -1,10 +1,13 @@
 
+.calendar {
+  margin: 0 26px 0 24px;
+}
+
 .calendar__header {
   display: flex;
   justify-content: space-between;
-  box-sizing: border-box;
   align-self: center;
-  border-top: 1px solid #d6d9e6;;
+  border-top: 1px solid #d6d9e6;
   border-bottom: 1px solid #d6d9e6;
 }
 
@@ -14,6 +17,8 @@
   font-size: 20px;
   line-height: 20px;
   color: #1d2e5b;
+  margin: 0;
+  padding: 9px 0 13px 0;
 }
 
 .calendar__month-button--back {
@@ -24,21 +29,36 @@
   cursor: pointer;
   width: 9px;
   height: 18px;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 9px;
-      height: 18px;
-      box-sizing: border-box;
-      display: block;
-      background-image: url("../img/back.svg");
-      background-repeat: no-repeat;
+  background-color: transparent;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 9px;
+    height: 16px;
+    display: block;
+    background-image: url("../img/svg/month-back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
 
-    }
+  }
 }
 
-.calendar__month-button--next {
+.calendar__month-button--back:hover,
+.calendar__month-button--back:focus {
+  &::before {
+    opacity: 0.5;
+  }
+}
+
+.calendar__month-button--back:active {
+  &::before {
+    opacity: 0.1;
+  }
+}
+
+.calendar__month-button--next{
   position: relative;
   margin: 0;
   padding: 0;
@@ -46,15 +66,57 @@
   cursor: pointer;
   width: 9px;
   height: 18px;
+  background-color: transparent;
     &::after {
       content: "";
       position: absolute;
-      top: 50%;
+      top: 12px;
+      right: 0px;
       width: 9px;
-      height: 18px;
-      box-sizing: border-box;
+      height: 16px;
       display: block;
-      background-image: url("../img/nextsvg.svg");
+      background-image: url("../img/svg/month-next.svg");
       background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.3;
     }
+}
+
+.calendar__month-button--next:hover,
+.calendar__month-button--next:focus {
+  &::after {
+    opacity: 0.5;
+  }
+}
+
+.calendar__month-button--next:active {
+  &::after {
+    opacity: 0.1;
+  }
+}
+
+.calendare__list {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.calendare__button {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 13px 5px 17px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.calendare__button:hover,
+.calendare__button:focus {
+  background-color: #ffbd30;
+}
+
+.calendare__button:active {
+  color: rgba(29, 46, 91, 0.3);
+  background-color: rgba(255, 189, 48, 1);
 }

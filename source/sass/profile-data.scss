@@ -1,5 +1,31 @@
 
+.profile-data__level-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 
+// .profile-data__level.level__number {
+//   color: red;
+//   padding-top: 5px;
+// }
+
+// .profile-data__level.level__name {
+//   color: red;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 14px;
+//   text-align: center;
+//   border-top: 1px solid rgba(255, 255, 255, 0.3);
+//   display: block;
+//   margin: 0;
+//   padding: 2px 4px 2px 1px;
+// }
+
+.profile-data__photo {
+  padding-top: 23px;
+  padding-right: 16px;
+}
 
 .profile-data__user-photo {
   width: 100px;
@@ -17,6 +43,9 @@
   background-color: #dfe3f0;
   border-radius: 20px;
   cursor: pointer;
+  margin: 14px 0 0 0;
+  padding: 8px 1px 13px 67px;
+  box-sizing: border-box;
     &:hover,
     &:focus {
       background-color: #d1d7e9;
@@ -24,4 +53,19 @@
     &:active {
       color: rgba(22, 28, 53, 0.3);
     }
+}
+
+@media(min-width: $tablet) {
+  .profile-data__photo {
+    padding-top: 67px;
+    padding-right: 48px;
+}
+
+  .profile-data__user-photo {
+    width: 96px;
+    height: 95px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
