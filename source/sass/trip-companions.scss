@@ -1,14 +1,77 @@
 
+.trip-companions__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 9px;
+}
+
 .trip-companions__title,
 .trip-companions__type {
-  font-family: "Bloggersans", Arial, sans-serif;
+  font-family: "BloggersansM", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: #1d2e5b;
   text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1.6px;
 }
 
+.trip-companions__title{
+  padding: 20px 0 0px 23px;
+}
+
+
 .trip-companions__type {
+  padding: 18px 21px 0 0px;
   opacity: 30%;
+}
+
+.trip-companions__input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.trip-companions__button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.trip-companions__button--more {
+  top: 0;
+  right: 25px;
+  height: 45px;
+  width: 45px;
+}
+
+.trip-companions__button--less {
+  left: 24px;
+  height: 45px;
+  width: 45px;
+}
+
+.trip-companions__count {
+  padding: 12px 18px 11px 105px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 24px 0 23px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  font-family: "BloggerSansM", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 14px;
+  color: #1d2e5b;
+  cursor: pointer;
+  outline: none;
+}
+
+.trip-companions__count:hover {
+  border-color: #959bb2;
+}
+
+.trip-companions__count:focus, .trip-companions__count:active {
+  border-color: #1d2e5e;
 }

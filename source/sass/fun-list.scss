@@ -1,3 +1,59 @@
-.fun-list__item {
 
+.fun-list {
+  margin: 0 22px 0 23px;
+}
+
+.fun-list__item {
+  padding-bottom: 20px;
+}
+
+.fun-list__country {
+  font-family: "BloggersansM",  Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d2e5b;
+}
+
+.fun-list__country--first {
+  padding: 0 0 0 11px;
+}
+
+.fun-list__country--second {
+  padding: 0 0 0 11px;
+}
+
+.fun-list__description {
+  font-family: "Bloggersans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(68, 68, 68, 0.3);
+  width: 100%;
+  min-height: 220px;
+  resize: none;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+}
+
+.fun-list__description:hover,
+.fun-list__description:focus {
+  border-color: #959bb2;
+}
+
+.fun-list__description:active {
+  border-color: #161c35;
+}
+
+.fun-list__description--first {
+  margin-top: 13px;
+  padding: 10px 0px 0 13px;
+}
+
+.fun-list__description--second {
+  margin-top: 14px;
+  padding: 8px 10px 0 13px;
+  color: #444444;
 }

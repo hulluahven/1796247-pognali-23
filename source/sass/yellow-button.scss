@@ -23,6 +23,12 @@
   }
 }
 
+.yellow-button--form {
+    &::after {
+      display: none;
+    }
+}
+
 // НИЖЕ ТОЛЬКО МЕДИА
 
 @media (min-width: $tablet) {

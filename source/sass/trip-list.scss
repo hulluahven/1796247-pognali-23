@@ -7,8 +7,9 @@
 
 .trip-list__item {
   background-color: #ffffff;
-  padding: 10px 10px 10px 10px;
-
+  padding: 22px 10px 10px 10px;
+  border-radius: 10px;
+  margin-bottom: 11px;
 }
 
 .trip-list__title-container {
@@ -24,7 +25,18 @@
   font-size: 16px;
   line-height: 16px;
   color: #1d2e5b;
+}
 
+.trip-list__number {
+  padding: 0px 0 0 12px;
+}
+
+.trip-list__title {
+  padding: 1px 0 0 5px;
+}
+
+.trip-list__data-container {
+  padding-bottom: 9px;
 }
 
 .trip-list__companions,
@@ -35,7 +47,17 @@
   line-height: 14px;
   color: #1d2e5b;
   text-transform: uppercase;
+  margin:0;
 
+}
+.trip-list__companions {
+  padding: 20px 0 0 14px;
+  letter-spacing: 1px;
+}
+
+.trip-list__dates {
+  padding: 5px 0px 19px 15px;
+  letter-spacing: 1px;
 }
 
 .trip-list__link {
@@ -46,6 +68,7 @@
   line-height: 14px;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
+  padding-left: 16px;
     &:hover,
     &:focus {
       color: rgba(0, 0, 0, 0.6);
