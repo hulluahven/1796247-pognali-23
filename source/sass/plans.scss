@@ -22,3 +22,36 @@
   margin: 0 0 32px 0;
 
 }
+
+@media(min-width: $tablet){
+  .plans {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 65px;
+    margin-top: -22px;
+  }
+
+  .plans__wrapper {
+    padding: 14px 0 0 0;
+  }
+
+  .plans__header {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 39px 0 51px 0px;
+  }
+
+}
+
+@media(min-width: $desktop) {
+  .plans {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 52px;
+  }
+
+  .plans__header {
+    margin: 37px 0 52px 142px;
+  }
+
+}

@@ -1,3 +1,19 @@
-.country-menu__add {
+
+.country-menu {
+  margin-bottom: 28px;
   border: 1px solid #cbced9;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0px 22px 24px;
+  padding: 8px 18px 7px 11px;
+  letter-spacing: 1.2px;
+}
+
+
+.country-menu__add {
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1d2e5b;
+  text-transform: uppercase;
 }

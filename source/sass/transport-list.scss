@@ -1,10 +1,12 @@
 
 .transport-list {
   margin: 0;
-  padding: 23px 20px 20px 20px;
+  padding: 35px 0px 39px 0px;
   list-style: none;
   position: relative;
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .transport-list__item {
@@ -147,3 +149,8 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .transport-part__list-container{
+    position: absolute;
+  }
+}

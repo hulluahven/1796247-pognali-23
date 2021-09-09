@@ -7,19 +7,87 @@
   padding-bottom: 20px;
 }
 
+.fun-list__item:not(:last-child) .fun-list__country-wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -14px;
+      height: 279px;
+      width: 2px;
+      background-color: #1d2e5b;
+    }
+}
+
+.fun-list__country-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    background-color: #1d2e5b;
+    top: 9px;
+    left: -12px;
+  }
+
+  }
+
+
+
 .fun-list__country {
   font-family: "BloggersansM",  Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #1d2e5b;
+  position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: #1d2e5b;
+      top: 7px;
+      left: -1px;
+    }
+
 }
 
-.fun-list__country--first {
+.fun-list__country--bosnia {
   padding: 0 0 0 11px;
 }
 
-.fun-list__country--second {
+.fun-list__country-flag {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 24px;
+    background-size: cover;
+    right: 3px;
+
+  }
+}
+
+.fun-list__country-flag--bosnia {
+  &::after {
+    background-image: url("../img/flags/Bosnia.png");
+  }
+}
+
+.fun-list__country--czechia {
   padding: 0 0 0 11px;
+}
+
+.fun-list__country-flag--czechia {
+   &::after {
+   background-image: url("../img/flags/Czechia.png");
+
+   }
 }
 
 .fun-list__description {
@@ -56,4 +124,20 @@
   margin-top: 14px;
   padding: 8px 10px 0 13px;
   color: #444444;
+}
+
+
+@media(min-width: $tablet) {
+  .fun-list__country {
+    font-family: "BloggersansB", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .fun-list__country--first {
+    padding: 0px 0 0 20px;
+  }
+
+
+
 }

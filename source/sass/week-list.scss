@@ -5,20 +5,49 @@
   list-style: none;
   display: grid;
   text-align: center;
-  grid-template-columns: 30px 30px 30px 30px 30px 30px 30px;
+  grid-template-columns: repeat(7, 1fr);
   column-gap: 1px;
 }
 
-.week-list__item-day {
+.week-list__item-day,
+.week-list__item-day--point {
   font-family: "BloggersansM", Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-
 }
 
-.week-list__item-day--saturday,
-.week-list__item-day--sunday {
+.week-list__item-day--point {
+  display: none;
+}
+
+.week-list__item-day--weekend {
   color: #ff5c23;
 }
+
+@media(min-width: $tablet) {
+
+  .week-list {
+    padding: 40px 0px 7px 37px;
+    column-gap: 26px;
+  }
+
+  .week-list__item-day,
+  .week-list__item-day--point {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .week-list__item-day--point {
+
+    display: block;
+  }
+
+  .week-list__item {
+    display: flex;
+  }
+
+}
+
+
