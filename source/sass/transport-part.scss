@@ -1,6 +1,5 @@
 
 .transport-part__title {
-  background-color: #edeff6;
   text-transform: uppercase;
   color: #1d2e5b;
   font-family: "BloggersansB" Arial, sans-serif;
@@ -9,6 +8,7 @@
   line-height: 18px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .transport-part__list {
@@ -24,3 +24,15 @@
   padding: 11px 18px 11px 12px;
 
   }
+
+@media (min-width: $tablet) {
+  .transport-part__title {
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #edeff6;
+    position: absolute;
+    top: 88px;
+    left: 98px;
+    display: inline-block;
+  }
+}

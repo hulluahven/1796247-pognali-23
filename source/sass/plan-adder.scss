@@ -2,6 +2,7 @@
   background-color: #d4d9eb;
   padding-left: 27px;
   padding-right: 26px;
+  position: relative;
 }
 
 .plan-adder__wrappper {
@@ -12,7 +13,8 @@
 
 .plan-adder__title-wrapper {
   position: relative;
-  width: 253px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .plan-adder__title {
@@ -28,7 +30,7 @@
 
 .plan-adder__circle {
   top: 40px;
-  right: 1px;
+  right: 18px;
   width: 5px;
   height: 5px;
   background-color: rgba(29, 46, 91, 0.3);
@@ -58,4 +60,24 @@
     border-radius: 50%;
     position: absolute;
   }
+}
+
+@media(min-width: $tablet) {
+  .plan-adder {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .plan-adder__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 50px;
+    padding-bottom: 59px;
+  }
+
+}
+
+
+@media(min-width: $desktop) {
+
 }

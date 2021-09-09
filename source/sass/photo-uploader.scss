@@ -1,0 +1,10 @@
+
+.photo-uploader__button {
+  display: none;
+}
+
+@media(min-width: $desktop) {
+  .photo-uploader__button {
+    display: block;
+  }
+}

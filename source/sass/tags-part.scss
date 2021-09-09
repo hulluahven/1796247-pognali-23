@@ -7,17 +7,18 @@
   background-color: #edeff6;
   text-transform: uppercase;
   color: #1d2e5b;
-  font-family: "BloggersansB" Arial, sans-serif;
+  font-family: "BloggersansB", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .tags-part__area {
   resize: none;
-  font-family: "Bloggersans" Arial, sans-serif;
+  font-family: "Bloggersans", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -28,6 +29,8 @@
   padding: 23px 33px 26px 17px;
   outline: none;
   cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tags-part__area:hover {
@@ -36,4 +39,23 @@
 
 .tags-part__area:active, .tags-part__area:focus {
   border-color: #161c35;
+}
+
+@media(min-width: $tablet) {
+
+  .tags-part__title {
+    font-size: 20px;
+    line-height: 20px;
+    left: 47%;
+    top: 85px;
+    position: absolute;
+  }
+
+  .tags-part__area {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 34px 33px 21px 38px;
+  }
+
+
 }

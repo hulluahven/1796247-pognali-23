@@ -65,3 +65,37 @@
   color: #1d2e5b;
   font-style: normal;
 }
+
+@media(min-width: $tablet) {
+
+  .kid-checkbox__label {
+    padding: 33px 0 0 99px;
+    letter-spacing: 2px;
+  }
+
+  .kid-checkbox__input--enabled + label::before {
+    left: 41px;
+    top: 26px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .kid-checkbox__input--enabled:checked+label {
+    &::after {
+      top: 38px;
+      left: 52px;
+      width: 12px;
+      height: 12px;
+      background-image: url("../img/svg/check-desktop.svg");
+    }
+  }
+
+  .kid-checkbox__toggle {
+    font-family: "BloggersansM", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}

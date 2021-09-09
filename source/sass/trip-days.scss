@@ -54,7 +54,7 @@
 }
 
 .trip-days__count {
-  padding: 12px 18px 11px 105px;
+  padding: 12px 18px 11px 20px;
   box-sizing: border-box;
   width: 100%;
   margin: 0 24px 0 23px;
@@ -66,6 +66,15 @@
   color: #1d2e5b;
   outline: none;
   cursor: pointer;
+  text-align: center;
+}
+
+.trip-days__count--two {
+  display: none;
+}
+
+.trip-days__count--three {
+  display: block;
 }
 
 .trip-days__count:hover {
@@ -74,4 +83,54 @@
 
 .trip-days__count:focus, .trip-days__count:active {
   border-color: #1d2e5e;
+}
+
+@media(min-width: $tablet) {
+  .trip-days__title-wrapper {
+    padding-bottom: 25px;
+
+  }
+
+  .trip-days__title {
+    font-size: 20px;
+    line-height: 18px;
+    padding: 31px 0 0px 40px;
+    letter-spacing: 2px;
+  }
+
+  .trip-days__type {
+    font-size: 20px;
+    line-height: 18px;
+    padding: 32px 37px 0 0px;
+  }
+
+  .trip-days__count {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 38px 0 40px;
+    padding: 21px 26px 23px 18px;
+  }
+
+  .trip-days__count--two {
+    display: block;
+  }
+
+  .trip-days__count--three {
+    display: none;
+  }
+
+  .trip-days__button--less {
+    left: 50px;
+    top: 11px;
+  }
+
+  .trip-days__button--more {
+    top: 13px;
+    right: 50px;
+  }
+
+  .trip-days__input-wrapper {
+    padding-bottom: 59px;
+}
+
 }

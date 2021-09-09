@@ -9,3 +9,25 @@
   padding: 0;
   margin: 0 auto;
 }
+
+@media(min-width: $tablet) {
+  .profile {
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 80px;
+  }
+
+  .profile__form {
+    position: relative;
+  }
+
+}
+
+
+@media(min-width: $desktop) {
+  .profile {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+}

@@ -43,6 +43,15 @@
 
 }
 
+.yellow-button--form {
+  &::after {
+    display: block;
+    top: 35px;
+    right: 32px;
+  }
+
+}
+
 }
 
 // @media (min-width: $desktop) {

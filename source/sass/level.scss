@@ -30,16 +30,13 @@
 }
 
 .level--form {
-  display: flex;
+  display: inherit;
   flex-direction: column;
-  position: absolute;
+  position: inherit;
   background-color: transparent;
-  top: 167px;
-  left: 44px;
   width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border-radius: 50%;
+  height: 97px;
+  border: 3px solid #ff8d30;
 }
 
 .level--form .level__number {
@@ -63,10 +60,17 @@
 
 @media(min-width: $tablet) {
   .level--form {
-    top: 414px;
-    left: 72px;
+    width: 90px;
+    height: 90px;
   }
 
+}
 
 
+@media (min-width: $desktop) {
+  .level--form {
+    top: 103px;
+    left: 65%;
+    z-index: 2;
+  }
 }

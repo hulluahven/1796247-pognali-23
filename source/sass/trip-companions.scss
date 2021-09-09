@@ -54,7 +54,7 @@
 }
 
 .trip-companions__count {
-  padding: 12px 18px 11px 105px;
+  padding: 12px 18px 11px 18px;
   box-sizing: border-box;
   width: 100%;
   margin: 0 24px 0 23px;
@@ -66,6 +66,7 @@
   color: #1d2e5b;
   cursor: pointer;
   outline: none;
+  text-align: center;
 }
 
 .trip-companions__count:hover {
@@ -74,4 +75,41 @@
 
 .trip-companions__count:focus, .trip-companions__count:active {
   border-color: #1d2e5e;
+}
+
+@media(min-width: $tablet) {
+
+  .trip-companions__title-wrapper {
+    padding-bottom: 26px;
+  }
+
+  .trip-companions__title {
+    font-size: 20px;
+    line-height: 18px;
+    padding: 64px 0 0px 40px;
+    letter-spacing: 2px;
+  }
+
+  .trip-companions__type {
+    font-size: 20px;
+    line-height: 18px;
+    padding: 64px 43px 0 0px;
+  }
+
+  .trip-companions__count {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 38px 0 40px;
+    padding: 21px 26px 23px 18px;
+  }
+
+  .trip-companions__button--more {
+    top: 13px;
+    right: 50px;
+  }
+
+  .trip-days__button--less {
+    left: 50px;
+    top: 11px;
+  }
 }
