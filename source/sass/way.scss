@@ -1,5 +1,5 @@
-.way-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+
+.way__list-wrapper {
+  display: grid;
+  grid-template-columns: min-content min-content;
 }

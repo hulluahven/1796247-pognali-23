@@ -7,6 +7,7 @@
   margin: 0px 22px 24px;
   padding: 8px 18px 7px 11px;
   letter-spacing: 1.2px;
+  position: relative;
 }
 
 
@@ -17,3 +18,23 @@
   color: #1d2e5b;
   text-transform: uppercase;
 }
+
+.country-menu__button {
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  position: absolute;
+  top: 18px;
+  right: 14px;
+}
+
+.country-menu__drop-down {
+  display: grid;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+  top: 44px;
+  right: 0px;
+  display: none;
+}
+

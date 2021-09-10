@@ -4,6 +4,8 @@
   border-radius: 10px;
   padding-bottom: 16px;
   margin-bottom: 9px;
+  position: relative;
+  // для списка шагов
 }
 
 .steps__title {
@@ -17,11 +19,11 @@
   padding: 0;
 }
 
-.steps__title--first {
+.steps__title--dates {
   padding: 22px 47px 0 24px;
 }
 
-.steps__title--second {
+.steps__title--way {
   padding: 22px 114px 0 23px;
 }
 
@@ -35,11 +37,11 @@
   padding: 0;
 }
 
-.steps__text--first {
+.steps__text--dates {
   padding: 17px 17px 0 23px;
 }
 
-.steps__text--second {
+.steps__text--way {
   padding: 17px 17px 22px 23px;
 }
 
@@ -52,18 +54,21 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
-  padding: 5px 13px 5px 17px;
   box-sizing: border-box;
   border-radius: 20px;
   cursor: pointer;
 }
 
-.steps__button:hover,
-.steps__button:focus {
+.steps__button--next {
+  padding: 5px 13px 5px 17px;
+}
+
+.steps__button--next:hover,
+.steps__button--next:focus {
   background-color: #ffbd30;
 }
 
-.steps__button:active {
+.steps__button--next:active {
   color: rgba(29, 46, 91, 0.3);
   background-color: rgba(255, 189, 48, 1);
 }
@@ -72,17 +77,27 @@
   color: #1d2e5b;
   text-decoration: none;
   padding: 10px 13px 5px 17px;
+    &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/svg/triangle.svg);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    top: 37px;
+    right: 182px;
+    transform: rotate(60deg);
+    display: none;
+  }
 }
 
 .steps__button--back:hover,
 .steps__button--back:focus {
-  background-color: transparent;
   color: rgba(29, 46, 93, 0.7);
 }
 
 .steps__button--back:active {
   color: rgba(29, 46, 93, 0.3);
-  background-color: transparent;
 }
 
 .steps__second-container {
@@ -90,19 +105,21 @@
   border-radius: 10px;
   padding-bottom: 16px;
   margin-bottom: 9px;
+  position: relative;
 }
 
 .steps__third-container {
   background-color: #ffffff;
   border-radius: 10px;
   padding-bottom: 16px;
+  position: relative;
 }
 
-.steps__title--third {
+.steps__title--fun {
   padding: 23px 101px 0 21px;
 }
 
-.steps__text--third {
+.steps__text--fun {
   padding: 17px 18px 21px 23px;
 }
 
@@ -114,6 +131,7 @@
   .steps__first-container {
     border-radius: 30px;
     margin-bottom: 40px;
+    padding-bottom: 55px;
   }
 
   .steps__container--companios {
@@ -137,7 +155,7 @@
     position: relative;
       &::after {
       content: "";
-      top: 127px;
+      top: 120px;
       right: 37px;
       width: 538px;
       height: 0;
@@ -146,21 +164,21 @@
      }
   }
 
-  .steps__title--first {
+  .steps__title--dates {
     padding: 45px 221px 19px 40px;
   }
 
+  .steps__title--way {
+    padding: 45px 0 17px 42px;
+    padding-right: 52%;
+  }
+
+  .steps__title--fun {
+    padding: 42px 255px 0 43px;
+}
+
   .steps__first-data {
     display: grid;
-  }
-
-  .steps__title--second {
-    padding: 45px 0 0 43px;
-    padding-right: 60%;
-  }
-
-  .steps__title--third {
-    padding: 43px 257px 0 43px;
   }
 
   .steps__text {
@@ -168,37 +186,95 @@
     line-height: 24px;
   }
 
-  .steps__text--first {
+  .steps__text--dates {
     padding: 17px 17px 0 40px;
-
   }
 
-  .steps__text--second {
-    padding: 35px 135px 33px 42px;
-
+  .steps__text--way {
+    padding: 18px 135px 33px 42px;
   }
 
-  .steps__text--third {
-    padding: 35px 59px 21px 43px;
+  .steps__text--fun {
+    padding: 35px 59px 70px 43px;
 }
 
   .steps__button-wrapper {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 286px 286px;
+    padding-top: 100x;
+    padding-bottom: 38px;
+    justify-content: space-around;
   }
+
 
   .steps__button {
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
     text-align: center;
-    padding: 27px 74px 30px 27px;
-    margin: 0px 0px 0 19px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .steps__button--next {
+    margin: 0px 0px 0 21px;
+    padding: 27px 65px 29px 23px;
+  }
+
+  .steps__button--back {
+    margin: 0;
+    padding: 27px 15px 29px 117px;
+      &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/svg/triangle.svg);
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      top: 37px;
+      right: 182px;
+      transform: rotate(60deg);
+      display: block;
+    }
   }
 
   .steps__second-container {
     border-radius: 30px;
-
+    margin-bottom: 50px;
   }
+
+  .steps__third-container {
+    border-radius: 30px;
+  }
+
+  .steps__button--form {
+    margin: 0px 0px 0 21px;
+    padding: 27px 121px 29px 18px;
+    border-radius: 20px;
+  }
+
+}
+
+@media(min-width: $desktop) {
+  .steps__first-container {
+    border-radius: 60px;
+  }
+
+  .steps__second-container {
+    border-radius: 60px;
+    padding-bottom: 29px;
+  }
+
+  .steps__third-container {
+    border-radius: 60px;
+  }
+
+  .steps__title--dates {
+    padding: 98px 221px 19px 215px;
+  }
+
+
+
 
 }

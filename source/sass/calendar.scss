@@ -11,7 +11,7 @@
   border-bottom: 1px solid #d6d9e6;
 }
 
-.calendare__data-wrapper {
+.calendar__data-wrapper {
   display: grid;
   justify-content: center;
 }
@@ -100,12 +100,12 @@
   }
 }
 
-.calendare__list {
+.calendar__list {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
 }
 
-.calendare__button {
+.calendar__button {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
@@ -116,12 +116,12 @@
   cursor: pointer;
 }
 
-.calendare__button:hover,
-.calendare__button:focus {
+.calendar__button:hover,
+.calendar__button:focus {
   background-color: #ffbd30;
 }
 
-.calendare__button:active {
+.calendar__button:active {
   color: rgba(29, 46, 91, 0.3);
   background-color: rgba(255, 189, 48, 1);
 }
@@ -154,12 +154,12 @@
     }
   }
 
-  .calendare__button-wrapper {
+  .calendar__button-wrapper {
     margin: 0;
     max-width: 50%;
   }
 
-  .calendare__button {
+  .calendar__button {
     padding: 27px 65px 29px 23px;
     box-sizing: border-box;
     font-size: 24px;
@@ -167,6 +167,7 @@
     border-radius: 20px;
     text-transform: none;
     width: 100%;
+    margin-left: 16px;
   }
 
 }

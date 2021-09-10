@@ -13,7 +13,7 @@
       position: absolute;
       top: 9px;
       left: -14px;
-      height: 279px;
+      height: 285px;
       width: 2px;
       background-color: #1d2e5b;
     }
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding-bottom: 9px;
   &::before {
     content: "";
     position: absolute;
@@ -32,10 +33,7 @@
     top: 9px;
     left: -12px;
   }
-
-  }
-
-
+}
 
 .fun-list__country {
   font-family: "BloggersansM",  Arial, sans-serif;
@@ -44,16 +42,15 @@
   color: #1d2e5b;
   position: relative;
     &::before {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      width: 6px;
-      height: 6px;
-      background-color: #1d2e5b;
-      top: 7px;
-      left: -1px;
-    }
-
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #1d2e5b;
+    top: 7px;
+    left: -1px;
+  }
 }
 
 .fun-list__country--bosnia {
@@ -69,8 +66,9 @@
     height: 24px;
     background-size: cover;
     right: 3px;
-
+    top: 0;
   }
+
 }
 
 .fun-list__country-flag--bosnia {
@@ -90,6 +88,36 @@
    }
 }
 
+.fun-list__country-point {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    background-color: #1d2e5b;
+    top: 7px;
+    left: -1px;
+    display: none;
+  }
+
+}
+
+.fun-list__country-point:not(:last-child) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -14px;
+      height: 285px;
+      width: 2px;
+      background-color: #1d2e5b;
+      display: none;
+    }
+}
+
+
 .fun-list__description {
   font-family: "Bloggersans", Arial, sans-serif;
   font-weight: 400;
@@ -104,6 +132,8 @@
   box-sizing: border-box;
   cursor: pointer;
   outline: none;
+  margin-top: 10px;
+  padding: 8px 10px 0 14px;
 }
 
 .fun-list__description:hover,
@@ -115,16 +145,16 @@
   border-color: #161c35;
 }
 
-.fun-list__description--first {
-  margin-top: 13px;
-  padding: 10px 0px 0 13px;
-}
+// .fun-list__description--first {
+//   margin-top: 13px;
+//   padding: 10px 0px 0 13px;
+// }
 
-.fun-list__description--second {
-  margin-top: 14px;
-  padding: 8px 10px 0 13px;
-  color: #444444;
-}
+// .fun-list__description--second {
+//   margin-top: 14px;
+//   padding: 8px 10px 0 13px;
+//   color: #444444;
+// }
 
 
 @media(min-width: $tablet) {
@@ -132,12 +162,105 @@
     font-family: "BloggersansB", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    padding: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 0;
+      height: 0;
+      background-color: transparent;
+      top: 0;
+      left: 0;
+    }
   }
 
-  .fun-list__country--first {
-    padding: 0px 0 0 20px;
+  .fun-list__item {
+    padding: 2px 49px 43px 23px;
   }
 
+  .fun-list__item:not(:last-child) .fun-list__country-wrapper {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      background-color: transparent;
+    }
+}
 
+  .fun-list__country-wrapper {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+      }
+  }
+
+  .fun-list__country:not(:last-child) .fun-list__country-wrapper::after {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      background-color: transparent;
+    }
+  }
+
+  .fun-list__country-flag::after {
+    width: 70px;
+    height: 47px;
+    right: 3px;
+    top: -7px;
+  }
+
+  .fun-list__country-point {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      background-color: #1d2e5b;
+      top: 7px;
+      left: -1px;
+      display: block;
+    }
+
+  }
+
+  .fun-list__country-point {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -14px;
+      height: 285px;
+      width: 2px;
+      background-color: #1d2e5b;
+      display: block;
+    }
+  }
+
+  // не могу понять как сделать палку отменяемой и чтоб она тянулась + переполняемость к чему пристегнуть
+
+
+  .fun-list__description {
+    font-size: 20px;
+    line-height: 23px;
+    min-height: 140px;
+    margin-top: 31px;
+    padding: 16px 33px 0 17px;
+  }
 
 }

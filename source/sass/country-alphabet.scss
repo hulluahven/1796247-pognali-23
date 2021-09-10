@@ -1,0 +1,41 @@
+.country-alphabet {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.country-alphabet__item {
+  width: 43px;
+  height: 41px;
+  border: 1px solid #d6d9e6;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.country-alphabet__item:hover,
+.country-alphabet__item:focus {
+  border-color: #1d2e5b;
+}
+
+.country-alphabet__item.country-alphabet__link:active {
+  background-color: #1d2e5b;
+}
+
+// В Н И М А Т Е Л Ь Н О!!!!!!!! разные эктивы!!!!!!!!!!!!!!!!!!!!!!!
+
+.country-alphabet__item--active {
+  background-color: #edeff6;
+}
+
+.country-alphabet__link {
+  text-decoration: none;
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #1d2e5b;
+  padding-top: 8px;
+}
