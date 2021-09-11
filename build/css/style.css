@@ -228,13 +228,52 @@
   padding: 19px 0 15px 28px;
 }
 
+.page-title__link {
+  text-decoration: none;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+.page-title__link::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 73px;
+  width: 32px;
+  height: 16px;
+  margin-top: -11px;
+  background-image: url("../img/svg/arrow-back.svg");
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
 @media (min-width: 768px) {
+  .page-titile--catalog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-title__link {
+    padding-right: 133px;
+    padding-top: 27px;
+  }
+
   .page-title__text {
     padding: 88px 0 69px 71px;
     font-size: 60px;
     line-height: 60px;
     letter-spacing: 1px;
     font-family: "BloggerSansB";
+  }
+
+  .page-title__link {
+    display: unset;
   }
 }
 .nav-toggle {
