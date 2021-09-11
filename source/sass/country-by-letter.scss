@@ -1,0 +1,32 @@
+.country-by-letter {
+  margin: 0;
+  padding: 3px 0 0 21px;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #cdced9;
+  padding: 3px 0 12px 21px;
+}
+
+.country-by-letter__item {
+  padding-bottom: 4px;
+}
+
+.country-by-letter__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Bloggersans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.country-by-letter__link:hover,
+.country-by-letter__link:focus {
+  color: #1d2e5b;
+}
+
+.country-by-letter__link:active {
+  color: rgba(29, 46, 91, 0.3);
+}

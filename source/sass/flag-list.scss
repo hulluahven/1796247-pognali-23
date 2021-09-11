@@ -1,0 +1,41 @@
+.flag-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-rows: min-content;
+}
+
+.flag-list__country {
+  font-size: 0;
+  line-height: 0;
+  width: 53px;
+  height: 42px;
+  border: 1px solid red;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.flag-list__country--bosnia {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 71px;
+    height: 48px;
+    background-size: cover;
+  }
+}
+
+.flag-list__country {
+  background-image: url("../img/flags/Bosnia.png");
+}
+
+.flag-list__country--czechia {
+  background-image: url("../img/flags/Czechia.png");
+}
+
+.flag-list__remove-button {
+  font-size: 0;
+  line-height: 0;
+}

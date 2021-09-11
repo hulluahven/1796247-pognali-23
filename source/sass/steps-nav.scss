@@ -3,8 +3,35 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  top: 0;
-  right: 15px;
+  top: -76px;
+  right: 22px;
+  display: flex;
 }
 
+.steps-nav__item:not(:last-child) {
+  margin-right: 24px;
+}
 
+.steps-nav__name {
+  font-family: "BloggerSans", Arial, sans-serif;
+  // font-size: 20px;
+  // line-height: 24px;
+  font-size: 0px;
+  line-height: 0px;
+  text-transform: uppercase;
+  // color: #000000;
+  color: transparent;
+  letter-spacing: 0.11em;
+  position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: red;
+      // opacity: .3;
+    }
+}
