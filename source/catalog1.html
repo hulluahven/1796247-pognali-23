@@ -24,7 +24,7 @@
   <link rel="icon" href="favicon.ico">
 </head>
 <body class="page-body">
-  <header class="page-header page-body__header">
+  <header class="page-header page-body__header page-header--catalog">
     <div class="page-header__container">
       <a class="page-header__logo">
         <svg class="page-header__svg page-header__svg--m" width="96" height="15" viewBox="0 0 96 15" fill="none"
@@ -179,16 +179,289 @@
     </div>
   </header>
   <main class="page-main">
-    <div class="page-main__inner-wrapper">
-        <h1 class="page-title page-titile--catalog">
-          <span class="page-title__text">Попутчики</span>
+    <div class="page-main__inner-wrapper page-main__inner-wrapper--catalog">
+        <h1 class="page-title page-title--catalog">
+          <span class="page-title__text page-title__text--catalog">Попутчики</span>
           <a class="page-title__link" href="index.html">На главную</a>
         </h1>
-      </div>
     </div>
     <section class="filter">
-      <div class="filter__countrues">
+      <div class="filter__countries filter__countries--hide">
+        <div class="filter__title-wrapper">
+          <h3 class="filter__title">Фильтрация по странам:</h3>
+          <button class="filter__button" type="button">Показать все</button>
+        </div>
+        <div class="filter__list-wrapper">
+          <ul class="filter__list continent-list">
+            <li class="continent-list__item">
+              <a class="continent-list__link continent-list__link--active" href="#">Европа</a>
+            </li>
+            <li class="continent-list__item">
+              <a class="continent-list__link" href="#">Азия</a>
+            </li>
+            <li class="continent-list__item">
+              <a class="continent-list__link" href="#">Америка</a>
+            </li>
+            <li class="continent-list__item">
+              <a class="continent-list__link" href="#">Острова</a>
+            </li>
+          </ul>
+            <ul class="country-alphabet">
+              <li class="country-alphabet__item country-alphabet__item--active">
+                <a class="country-alphabet__link" href="#">А</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Б</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">B</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Г</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Д</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Е</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">З</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">И</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">К</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Л</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">М</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Н</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">О</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">П</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Р</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">С</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Т</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">У</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Ф</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Х</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Ч</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Ш</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Э</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Ю</a>
+              </li>
+              <li class="country-alphabet__item">
+                <a class="country-alphabet__link" href="#">Я</a>
+              </li>
+            </ul>
+            <ul class="country-by-letter country-by-letter--catalog">
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Австралия</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Австрия</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Азербайджан</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Албания</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Алжир</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Ангола</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Андорра</a>
+              </li>
 
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Антигуа и Барбуда</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Аргентина</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Армения</a>
+              </li>
+              <li class="country-by-letter__item country-by-letter__item--catalog">
+                <a class="country-by-letter__link" href="#">Афганистан</a>
+              </li>
+            </ul>
+
+        </div>
+        <button class="button filter__countries-button" type="button">Свернуть</button>
+      </div>
+    </section>
+    <section class="companions">
+      <div class="companions__wrapper">
+        <div class="companions__selection">
+          <form class="companions__form match" action="http://echo.htmlacademy.ru" method="POST">
+            <h2 class="visually-hidden">Подбор попутчиков по интересам</h2>
+            <p class="match__title">Подберите идеального попутчика</p>
+            <ul class="match__list interests-list">
+                <li class="interests-list__item">
+                  <a class="interests-list__link" href="#">
+                    <span class="interests-list__title">Хобби</span>
+                  </a>
+                  <button class="interests-list__button" type="button">Развернуть список</button>
+                <ul class="interests-list__checkbox-list checkbox-list checkbox-list--hidden">
+                  <!-- список сворачиваетcя при переставлении класса -->
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="gym" id="hobby-gym" checked>
+                    <label class="checkbox-name__label" for="hobby-gym">Спортзал</label>
+                  </li>
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="hookah" id="hobby-hookah">
+                    <label class="checkbox-name__label" for="hobby-hookah">Кальян</label>
+                  </li>
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="gym" id="hobby-sofa">
+                    <label class="checkbox-name__label" for="hobby-sofa">Диван</label>
+                  </li>
+                </ul>
+                </li>
+                <li class="interests-list__item">
+                  <a class="interests-list__link" href="#">
+                    <span class="interests-list__title">Музыка</span>
+                  </a>
+                  <button class="interests-list__button" type="button">Свернуть</button>
+                <ul class="interests-list__checkbox-list checkbox-list checkbox-list--hidden">
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="hardrock" id="music-hardrock" checked>
+                    <label class="checkbox-name__label" for="music-hardrock">Тяжелый рок</label>
+                  </li>
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="russianrap" id="music-russianrap" checked>
+                    <label class="checkbox-name__label" for="music-russianrap">Русский рэп</label>
+                  </li>
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="eurodance" id="music-eurodance">
+                    <label class="checkbox-name__label" for="music-eurodance">Евродэнс</label>
+                  </li>
+                </ul>
+                </li>
+                <li class="interests-list__item">
+                  <a class="interests-list__link" href="#">
+                    <span class="interests-list__title">Еда</span>
+                  </a>
+                  <button class="interests-list__button" type="button">Свернуть</button>
+                <ul class="interests-list__checkbox-list checkbox-list checkbox-list--hidden">
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="meateater" id="food-meateater" checked>
+                    <label class="checkbox-name__label" for="food-meateater">Мясоед</label>
+                  </li>
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="propernutrition" id="food-propernutrition">
+                    <label class="checkbox-name__label" for="food-propernutrition">Сидит на ПП</label>
+                  </li>
+                  <li class="checkbox-list__item checkbox-name">
+                    <input class="visually-hidden checkbox-name__input" type="checkbox" name="vegan" id="food-vegan">
+                    <label class="checkbox-name__label" for="food-vegan">Веган-сыроед</label>
+                  </li>
+                </ul>
+                </li>
+                <li class="interests-list__item interests-list__item--transport">
+                  <a class="interests-list__link" href="#">
+                    <span class="interests-list__title">Транспорт</span>
+                  </a>
+                  <button class="interests-list__button" type="button">Свернуть</button>
+                  <ul class="interests-list__checkbox-list interests-list__checkbox-list--transport transport-part__list transport-part__list--catalog transport-list transport-list--catalog">
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <input
+                        class="transport-list__input transport-list__input--plane transport-list__input--enabled  visually-hidden"
+                        type="checkbox" name="plane" id="transport-plane" checked>
+                      <label class="transport-list__label" for="transport-plane">
+                        <em class="transport-list__checkbox transport-list__checkbox--plane"></em>
+                      </label>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <input class="transport-list__input transport-list__input--car visually-hidden" type="checkbox"
+                        name="car" id="transport-car" checked>
+                      <label class="transport-list__label" for="transport-car">
+                        <em class="transport-list__checkbox transport-list__checkbox--car"></em>
+                      </label>
+                    </li>
+                    <li class="transport-list__item transport-list__item--catalog">
+                      <input class="transport-list__input transport-list__input--bike visually-hidden" type="checkbox"
+                        name="bike" id="transport-bike">
+                      <label class="transport-list__label" for="transport-bike">
+                        <em class="transport-list__checkbox transport-list__checkbox--bike"></em>
+                      </label>
+                    </li>
+                     <li class="transport-list__item transport-list__item--catalog">
+                      <input class="transport-list__input transport-list__input--onfoot visually-hidden" type="checkbox"
+                        name="onfoot" id="transport-onfoot" checked>
+                      <label class="transport-list__label" for="transport-onfoot">
+                        <em class="transport-list__checkbox transport-list__checkbox--onfoot"></em>
+                      </label>
+                    </li>
+                  </ul>
+                 </li>
+                <li class="interests-list__item interests-list__item--level">
+                  <a class="interests-list__link" href="#">
+                    <span class="interests-list__title">Левел</span>
+                    <button class="interests-list__button" type="button">Свернуть</button>
+                  </a>
+                  <ul class="interests-list__toggle range-toggle">
+                    <li class="range-toggle__item range-toggle__item--value">
+                      <input class="range-toggle__min" type="text" name="min-level" id="min-level" value="30">
+                      <label class="range-toggle__minimum-level visually-hidden" for="min-level">Минимальный уровень попутчика</label>
+                      <input class="range-toggle__max" type="text" name="max-level" id="max-level" value="100">
+                      <label class="range-toggle__maximum-level visually-hidden" for="max-level">Максимальный уровень попутчика</label>
+                    </li>
+                    <li class="range-toggle__item range-toggle__item--controls">
+                      <div class="range-toggle__scale">
+                        <div class="range-toggle__bar"></div>
+                      </div>
+                        <div class="range-toggle__link-container">
+                          <a class="range-toggle__toggle-minimum" aria-label="Установить минимальный уровень" href="#"></a>
+                        </div>
+                        <div class="range-toggle__link-container">
+                          <a class="range-toggle__toggle-maximum" aria-label="Установить максимальный уровень" href="#"></a>
+                        </div>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+             <div class="match__button-wrapper">
+              <button class="button button--catalog match__button" type="submit">
+                Показать
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
