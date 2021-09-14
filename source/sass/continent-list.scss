@@ -1,0 +1,50 @@
+.continent-list {
+  padding: 30px 0 0 3px;
+  margin: 0;
+  list-style: none;
+}
+
+.continent-list__item {
+  margin-bottom: 5px;
+}
+
+.continent-list__link {
+  text-decoration: none;
+  color: rgba(25, 33, 68, 0.3);
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.continent-list__link--active {
+  color: rgba(25, 33, 68, 1);
+}
+
+// не пойму, сделать Европу через JS чтоб убиралось выделеное состояние в техЗ написано btn down
+
+.continent-list__link:hover,
+.continent-list__link:focus {
+  color: rgba(25, 33, 68, 0.6);
+}
+
+.continent-list__link:active {
+  color: rgba(25, 33, 68, 1);
+}
+
+
+@media(min-width: $tablet) {
+
+  .continent-list {
+    padding: 0px 0 0 18px;
+  }
+
+  .continent-list__item {
+    padding-left: 29px;
+  }
+
+  .continent-list__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

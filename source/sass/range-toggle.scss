@@ -1,0 +1,120 @@
+.range-toggle {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.range-toggle__item--value {
+  display: flex;
+}
+
+.range-toggle__item--value {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 1px;
+    background-color: #cbced9;
+    padding-left: 3px;
+    border: 8px solid #ffffff;
+    margin-top: -9px;
+    margin-left: -15px;
+    background-position: top center;
+
+  }
+}
+
+.range-toggle__item--value input{
+  font-family: "BloggersansM", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 13px;
+  color: #1d2e5b;
+  width: 50%;
+  height: 35px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.range-toggle__item--value .range-toggle__min {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-toggle__item--value .range-toggle__max {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+
+.range-toggle__min:hover,
+.range-toggle__min:focus {
+  border-color: #c4c4c4;
+}
+
+.range-toggle__max:hover,
+.range-toggle__max:focus {
+  border: 1px solid #c4c4c4;
+}
+
+// как сделать чтоб при наведении на макс убиралась граница у мин
+
+.range-toggle__min:active,
+.range-toggle__max:active {
+  border-color: #161c35;
+}
+
+.range-toggle__item--controls {
+  position: relative;
+}
+
+.range-toggle__scale {
+  background-color: rgba(29, 46, 91, 0.2);
+  height: 3px;
+  margin-top: 20px;
+}
+
+// .range-toggle__bar {
+//   content: "";
+//   position: absolute;
+//   width: 138px;
+//   top: 0;
+//   left: 0;
+//   height: 3px;
+//   background: #1d2e5b;
+// }
+
+
+.range-toggle__toggle-minimum {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+  top: -3px;
+  left: 70px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 138px;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #1d2e5b;
+    }
+}
+
+.range-toggle__toggle-maximum {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+  top: -3px;
+  right: 2px;
+}
+

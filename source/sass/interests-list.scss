@@ -1,0 +1,111 @@
+.interests-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.interests-list__item {
+  position: relative;
+  border-top: 1px solid #f3c72b;
+  padding-top: 8px;
+}
+
+.interests-list__link {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.interests-list__link:hover,
+.interests-list__link:focus {
+  color: rgba(29, 46, 91, 0.6);
+}
+
+.interests-list__link:active {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+
+.interests-list__button {
+  font-size: 0;
+  line-height: 0;
+  width: 0px;
+  height: 6px;
+  border: 5px solid #192144;
+  border-top: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  position: absolute;
+  top: 6px;
+  right: -1px;
+  transform: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+// как сделать ховер на кнопку лдновременно со спаном-title
+
+.interests-list__button--close {
+  top: 18px;
+  transform: rotate(180deg);
+}
+// JS ставит при свёрнутом списке
+
+@media(min-width: $tablet) {
+  .interests-list {
+    padding-bottom: 8px;
+  }
+
+  .interests-list__button {
+    display: none;
+  }
+
+  .interests-list__link{
+    font-family: "BloggersansM",  Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .interests-list__item {
+    display: grid;
+    grid-template-columns: 104px 1fr;
+    padding: 33px 0 0 10px;;
+    position: unset;
+    border: none
+  }
+  .interests-list__item--transport {
+    padding: 38px 3px 0 9px;
+  }
+
+  .interests-list__item--level {
+    padding: 23px 0 0 11px;
+  }
+
+  .interests-list__checkbox-list {
+    display: grid;
+    grid-template-columns: 115px 115px 115px;
+    gap: 55px;
+  }
+
+  .interests-list__checkbox-list--transport {
+    display: flex;
+    padding: 0 0 0 30px;
+    gap: 0;
+  }
+}
+
+
+@media (min-width: $desktop) {
+  .interests-list__item {
+    position: relative;
+    border-top: 1px solid #f3c72b;
+    padding-top: 8px;
+
+}
+}

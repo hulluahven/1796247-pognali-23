@@ -1,0 +1,65 @@
+.match__title {
+  margin: 0 0 25px 0;
+  padding: 3px 0 0 2px;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  color: #1d2e5b;
+  // width: 146px;
+  // не уверен насчёт нужности в ТЗ ничего и по логике не должно
+}
+
+.match__button-wrapper {
+  margin: 0px -6px 0px -1px;
+}
+// халтура всё-таки по-моему...
+
+.match__button {
+  box-sizing: border-box;
+  padding: 13px 13px 11px 12px;
+  color: #161c35;
+  background-color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  margin-left: -2px;
+}
+
+.match__button:hover,
+.match__button:focus {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.14);
+}
+
+.match__button:active {
+  background-color: #f3c72b;
+}
+
+@media(min-width: $tablet) {
+  .match__title {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 15px 0 0 10px;
+    margin: 0px 0 38px 0;
+  }
+
+  .match__button-wrapper {
+    margin: 0px 11px 0px 13px;
+  }
+
+  .match__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 9px 18px 8px;
+  }
+}
+
+@media(min-width: $desktop) {
+  .match__title {
+    margin: 0 0 25px 0;
+    padding: 24px 0 0 25px;
+  }
+}
