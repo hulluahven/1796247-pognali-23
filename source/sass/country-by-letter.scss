@@ -7,8 +7,20 @@
   padding: 3px 0 12px 21px;
 }
 
+.country-by-letter--catalog {
+  background-color: transparent;
+  border: none;
+  padding: 19px 0 28px 5px;
+}
+
+// я понимаю, что его нужно спозиционировать так, чтоб куда угодно поставить, но как?
+
 .country-by-letter__item {
   padding-bottom: 4px;
+}
+
+.country-by-letter__item--catalog {
+  padding-bottom: 0;
 }
 
 .country-by-letter__link {
@@ -29,4 +41,11 @@
 
 .country-by-letter__link:active {
   color: rgba(29, 46, 91, 0.3);
+}
+
+@media(min-width: $tablet) {
+  .country-by-letter {
+    display: none;
+    // временно
+  }
 }

@@ -1,0 +1,191 @@
+.filter {
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #e2e5f2;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  z-index: 2;
+  margin-top: -15px;
+}
+
+.filter__countries {
+  // padding-bottom: 44px;
+  // временно для скрытия выпадашки
+  padding-bottom: 16px;
+  margin-top: -17px;
+  padding-top: 15px;
+}
+
+.filter__list-wrapper {
+  display: grid;
+  justify-content: center;
+  display: none;
+}
+
+.filter__title-wrapper {
+  display: grid;
+  grid-template-columns: 236px min-content;
+  justify-content: space-between;
+}
+
+.filter__title {
+  margin: 0;
+  padding: 22px 0 0 27px;
+  font-family: "BloggersansB", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #192144;
+  position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 10px;
+      top: 26px;
+      left: 1px;
+      background-image: url("../img/svg/filter-icon.svg");
+    }
+}
+
+.filter__button {
+  font-size: 0;
+  line-height: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 23px;
+  margin-left: 20px;
+  background-color: transparent;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 3px;
+    top: 7px;
+    right: 5px;
+    background-image: url("../img/svg/open-dots.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  opacity: 0.6;
+}
+
+.filter__button:active {
+  opacity: 0.3;
+}
+
+
+.filter__button--close {
+  &::after {
+    width: 17px;
+    height: 17px;
+    top: -2px;
+    right: 7px;
+    background-image: url("../img/svg/close-cross.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.filter__button:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
+
+.filter__alphabet-wrapper {
+  display: grid;
+  justify-content: center;
+}
+
+.filter__countries-button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #d6daed;
+  border-radius: 20px;
+  color: #192144;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 4px 8px 31px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 15px;
+      left: 63px;
+      background-image: url("../img/svg/close-cross.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+}
+
+@media (min-width: $tablet) {
+
+  .filter {
+    margin-top: -59px;
+    padding-bottom: 34px;
+  }
+
+  .filter__title-wrapper {
+    padding-left: 64%;
+    padding-top: 75px;
+  }
+
+  .filter__title {
+    display: none;
+  }
+
+  .filter__list-wrapper {
+    display: unset;
+    // временно
+  }
+
+  .filter__list {
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+  }
+
+  .filter__button {
+    font-family: "BloggersansB", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #192144;
+    text-transform: uppercase;
+    min-width: 145px;
+    margin-top: 14px;
+    padding: 16px 4px 0 0px;
+      &::after {
+        width: 30px;
+        height: 6px;
+        top: 24px;
+         right: -45px;
+      }
+  }
+
+
+
+}

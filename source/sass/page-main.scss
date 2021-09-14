@@ -1,4 +1,8 @@
 
+.page-main__inner-wrapper--catalog {
+  position: relative;
+  z-index: 3;
+}
 
 @media(min-width: $desktop){
   .page-main {

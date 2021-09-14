@@ -5,12 +5,25 @@
   list-style: none;
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   box-sizing: border-box;
+  padding: 26px 0 0 97px;
+}
+
+.transport-list--catalog {
+  padding: 22px 0 0 32px;
+  margin-bottom: 16px;
+
 }
 
 .transport-list__item {
-  padding :0;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.transport-list__item:not(:last-child) {
+  padding-right: 33px;
 }
 
 .transport-list__label {
@@ -25,17 +38,26 @@
   &::before {
     content: "";
     position: absolute;
-    left: 48px;
-    top: -3px;
+    left: -30px;
+    top: -6px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: #ffffff;
+    background-image: url("../img/svg/plane-disabled.svg");
+    background-repeat: no-repeat;
+    background-position-x: 6px;
+    background-position-y: 8px;
     box-sizing: border-box;
     z-index: 1;
+    // background-image: url("../img/svg/plane-enabled.svg");
+    // background-repeat: no-repeat;
+    // fill: opacity($color: rgba(29, 46, 91, 0.15));
+    // как сделать при отключённом боксе затемнение? или просто картинку поставить?
   }
 
 }
+
 
 .transport-list__input--enabled+label {
   background-color: #ffffff;
@@ -45,8 +67,8 @@
   &::after {
     content: "";
     position: absolute;
-    left: 56px;
-    top: 6px;
+    left: -23px;
+    top: 2px;
     width: 16px;
     height: 35px;
     background-image: url("../img/svg/plane-enabled.svg");
@@ -57,17 +79,47 @@
   }
 }
 
+.transport-list__input--plane+label:hover,
+.transport-list__input--plane+label:focus {
+  &::before {
+    opacity: 0.6;
+    box-shadow: 0px 2px 6px rgba(22, 28, 53, 0.17);
+  }
+}
+
+.transport-list__input--plane+label:hover,
+.transport-list__input--plane+label:focus {
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.transport-list__input--plane+label:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.transport-list__input--plane+label:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
 
 .transport-list__input--car+label {
   &::before {
     content: "";
-    position: absolute;
-    left: 80px;
-    top: -2px;
+    // position: absolute;
+    left: -30px;
+    top: -6px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: #ffffff;
+    background-image: url("../img/svg/car-disabled.svg");
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: 8px;
     box-sizing: border-box;
     z-index: 1;
   }
@@ -76,9 +128,9 @@
 .transport-list__input--car:checked+label {
   &::after {
     content: "";
-    position: absolute;
-    left: 87px;
-    top: 6px;
+    // position: absolute;
+    left: -23px;
+    top: 2px;
     width: 18px;
     height: 35px;
     background-image: url("../img/svg/car-enabled.svg");
@@ -88,16 +140,47 @@
   }
 }
 
+.transport-list__input--car+label:hover,
+.transport-list__input--car+label:focus {
+  &::before {
+    opacity: 0.6;
+    box-shadow: 0px 2px 6px rgba(22, 28, 53, 0.17);
+  }
+}
+
+.transport-list__input--car+label:hover,
+.transport-list__input--car+label:focus {
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.transport-list__input--car+label:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.transport-list__input--car+label:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 .transport-list__input--bike+label {
   &::before {
     content: "";
-    position: absolute;
-    left: 112px;
-    top: -2px;
+    // position: absolute;
+    left: -30px;
+    top: -6px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: #ffffff;
+    background-image: url("../img/svg/bike-disabled.svg");
+    background-repeat: no-repeat;
+    background-position-x: 4px;
+    background-position-y: 5px;
     box-sizing: border-box;
     z-index: 1;
   }
@@ -106,51 +189,121 @@
 .transport-list__input--bike:checked+label {
   &::after {
     content: "";
-    position: absolute;
-    left: 87px;
-    top: 6px;
-    width: 18px;
-    height: 35px;
-    background-image: url("../img/svg/bike-enabled");
+    // position: absolute;
+    left: -26px;
+    top: -1px;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/svg/bike-enabled.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
     z-index: 3;
+  }
+}
+
+.transport-list__input--bike+label:hover,
+.transport-list__input--bike+label:focus {
+  &::before {
+    opacity: 0.6;
+    box-shadow: 0px 2px 6px rgba(22, 28, 53, 0.17);
+  }
+}
+
+.transport-list__input--bike+label:hover,
+.transport-list__input--bike+label:focus {
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.transport-list__input--bike+label:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.transport-list__input--bike+label:active {
+  &::after {
+    opacity: 0.3;
   }
 }
 
 .transport-list__input--onfoot+label {
   &::before {
     content: "";
-    position: absolute;
-    left: 145px;
-    top: -2px;
+    // position: absolute;
+    left: -30px;
+    top: -6px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
     background-color: #ffffff;
+    background-image: url("../img/svg/runbaby-disabled.svg");
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: 8px;
     box-sizing: border-box;
     z-index: 1;
   }
 }
 
-
 .transport-list__input--onfoot:checked+label {
   &::after {
     content: "";
-    position: absolute;
-    left: 151px;
-    top: 6px;
+    // position: absolute;
+    left: -23px;
+    top: 2px;
     width: 16px;
     height: 35px;
-    background-image: url("../img/svg/onfoot-enabled.svg");
+    background-image: url("../img/svg/runbaby.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
     z-index: 3;
   }
 }
 
+.transport-list__input--onfoot+label:hover,
+.transport-list__input--onfoot+label:focus {
+  &::before {
+    opacity: 0.6;
+    box-shadow: 0px 2px 6px rgba(22, 28, 53, 0.17);
+  }
+}
+
+.transport-list__input--onfoot+label:hover,
+.transport-list__input--onfoot+label:focus {
+  &::after {
+    opacity: 0.6;
+  }
+}
+
+.transport-list__input--onfoot+label:active {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.transport-list__input--onfoot+label:active {
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet) {
   .transport-part__list-container{
     position: absolute;
+  }
+
+  .transport-list--catalog {
+    display: flex;
+    padding: 0 0 0 59px;
+  }
+
+  .transport-list--catalog .transport-list__item:not(:last-child) {
+    padding-right: 19px;
+  }
+
+  .transport-list--catalog .transport-list__item {
+    padding-bottom: 0px;
   }
 }

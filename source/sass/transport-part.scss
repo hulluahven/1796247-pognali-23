@@ -25,6 +25,11 @@
 
   }
 
+  .transport-part__list--catalog {
+    border: none;
+    padding: 0;
+  }
+
 @media (min-width: $tablet) {
   .transport-part__title {
     font-size: 20px;
