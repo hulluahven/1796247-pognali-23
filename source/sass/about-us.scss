@@ -7,11 +7,12 @@
   border-bottom-right-radius: 31px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-top: 28px;
-  padding-bottom: 62px;
+  padding-top: 32px;
+  padding-bottom: 83px;
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+  z-index: 100;
 
   &::before {
     content: "";
@@ -19,12 +20,11 @@
     left: 0px;
     top: 0px;
     height: 131px;
-    background: gray;
+    background: #141B3B;
     border-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     position: absolute;
-    // #141B3B;
   }
 
   &::after {
@@ -90,30 +90,31 @@
 }
 
 @media(min-width: $tablet) {
-
   .about-us {
     padding-right: 40px;
     padding-left: 40px;
-    padding-top: 0;
+    padding-top: 70px;
     padding-bottom: 90px;
     background-position: right;
+    border-bottom-left-radius: 57px;
+    border-bottom-right-radius: 57px;
+
     &::before {
       display: block;
       content: "";
-      width: calc(100% - 40px);
-      left: 20px;
-      top: 20px;
-      height: 221px;
+      width: calc(100% - 80px);
+      left: 40px;
+      top: 96px;
+      height: 213px;
       background: #141B3B;
       border-radius: 20px;
       position: absolute;
-
     }
 
     &::after {
       position: absolute;
       right: 8px;
-      top: 75px;
+      top: 144px;
       display: block;
       content: "";
       width: 376px;
@@ -121,9 +122,7 @@
       background-image: url("../img/backs/about-tablet.png");
       background-repeat: no-repeat;
       background-position: center;
-
     }
-
   }
 
   .about-us__wrapper {

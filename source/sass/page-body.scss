@@ -7,6 +7,15 @@
   line-height: 22px;
 }
 
+.page-body--scrolled .page-body__main{
+  padding-top: 73px;
+}
+
+@media (min-width: $tablet) {
+  .page-body--scrolled .page-body__main{
+    padding-top: 132px;
+  }
+}
 
 @media(min-width: $desktop) {
   .page-body__header.page-header--scrolled + .page-body__main .page-body__promo-list {

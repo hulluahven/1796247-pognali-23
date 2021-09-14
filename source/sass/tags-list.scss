@@ -1,22 +1,29 @@
 .tags-list {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width : 188px;
+  margin: 0 auto 6px;
+  width: 200px;
+  text-align: center;
 }
 
 .tags-list__item {
-
-}
-
-.tags-list__name {
-  font-family: "BloggersansM", Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Bloggersans", Arial, sans-serif;
   font-style: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 12px;
   color: #444444;
+  margin-right: 3px;
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 7px;
+  position: relative;
+
+  &::before{
+    content: "#";
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

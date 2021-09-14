@@ -1,17 +1,13 @@
 .promo{
   position: relative;
   background: #161c35;
-  padding-bottom: 41px;
   overflow: hidden;
 }
 
 .promo__container {
-  background-image: url("../img/covers/globe-mobile.png");
-  background-repeat: no-repeat;
-  background-position: 0px -20px;
-  position: relative;
+  overflow: hidden;
   min-height: 319px;
-  background-size: cover;
+  position: relative;
 
 }
 
@@ -26,6 +22,27 @@
   transform: translateX(-42%);
   bottom: 0;
   background-position: center bottom;
+  z-index: 2;
+}
+
+.promo__container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../img/covers/globe-mobile.png);
+  background-repeat: no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -11px;
+  background-position: center center;
+  z-index: 1;
+  background-size: 100% auto;
+}
+
+.promo__list{
+  position: relative;
+  z-index: 3;
 }
 
 .promo__header{
@@ -37,8 +54,9 @@
   margin: 0 auto;
   padding: 18px 1px 266px 0px;
   width: 280px;
+  position: relative;
+  z-index: 4;
 }
-
 
 .promo__login{
   background-color: #ffd74b;
@@ -69,21 +87,25 @@
 
 @media (min-width: $tablet) {
 .promo {
-  padding-right: 40px;
-  padding-left: 40px;
-  background-image: url("../img/covers/globetablet.png");
-  background-size: cover;
   position: relative;
+  background-color: #182044;
+}
+
+.promo__wrapper{
+  position: relative;
+  min-height: 640px;
+
   &::before {
     content: " ";
     position: absolute;
     width: 431px;
     height: 640px;
     background-image: url("../img/svg/traveller-tablet.svg");
-    left: 257px;
-    bottom: 350px;
+    left: 255px;
+    bottom: 0;
     background-position: center bottom;
     background-repeat: no-repeat;
+    z-index: 100;
   }
 }
 
@@ -99,16 +121,32 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 26px;
+    position: relative;
+    overflow: visible;
   }
 
   .promo__container {
     background-image: none;
     min-height: auto;
     margin-bottom: 84px;
+    overflow: visible;
   }
 
   .promo__container::before {
     display: none;
+  }
+
+  .promo__container::after{
+    width: 100vw;
+    height: 1000px;
+    background-image: url("../img/covers/globetablet.png");
+    background-size: 100% auto;
+    left: 50%;
+    bottom: -18px;
+    transform:translate(-50%, 100%);
+    background-position: left top;
+    background-repeat: no-repeat;
+    
   }
 
 }

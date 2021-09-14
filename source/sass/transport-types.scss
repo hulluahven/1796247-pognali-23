@@ -1,14 +1,34 @@
 .transport-types {
   list-style: none;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  width: 130px;
+  justify-content: center;
 }
 
 .transport-types__item {
   position: relative;
-  margin: 16px;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px 4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    display: block;
+  }
 }
 
 .transport-types__item-name {
@@ -33,14 +53,7 @@
 }
 
 
-.transport-types__item::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 21px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 
 .transport-types__item--plane::before {
   background-image: url("../img/svg/plane-enabled.svg");
@@ -48,14 +61,20 @@
 
 .transport-types__item--car::before {
   background-image: url("../img/svg/car-enabled.svg");
+  width: 20px;
+  height: 19px;
 }
 
 .transport-types__item--bike::before {
   background-image: url("../img/svg/bike-enabled.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .transport-types__item--onfoot::before {
   background-image: url("../img/svg/onfoot-enabled.svg");
+  width: 21px;
+  height: 23px;
 }
 
 .transport-types__item--disabled::before  {

@@ -11,7 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   top: -12px;
-  left: 15px;
+  left: 25px;
 }
 
 .country-flags--thailand {
@@ -19,7 +19,7 @@
 }
 
 .country-flags--thailand::before {
-  background-image: url("../img/Thailand.png");
+  background-image: url("../img/flags/Thailand.png");
 }
 
 .country-flags--france {
@@ -27,7 +27,7 @@
 }
 
 .country-flags--france::before {
-  background-image: url("../img/France.png");
+  background-image: url("../img/flags/France.png");
 }
 
 .country-flags--czechia {
@@ -35,7 +35,7 @@
 }
 
 .country-flags--czechia::before {
-  background-image: url("../img/Czechia.png");
+  background-image: url("../img/flags/Czechia.png");
 }
 
 @media(min-width:$desktop) {
