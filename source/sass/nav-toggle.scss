@@ -1,13 +1,15 @@
 .nav-toggle {
+  padding: 0;
   position: absolute;
-  right: 60px;
-  top: -54px;
+  right: 26px;
+  top: -50px;
   border: none;
   background: none;
   cursor: pointer;
   display: block;
-  width: 18px;
-  height: 19px;
+  width: 25px;
+  height: 24px;
+  text-align: right;
 }
 
 @media(min-width: $desktop) {

@@ -6,13 +6,16 @@
   border-bottom-right-radius: 31px;
   padding-left: 27px;
   padding-right: 26px;
-
+  padding-top: 53px;
+  position: relative;
+  z-index: 95;
+  margin-top: -22px;
+  padding-bottom: 18px;
 }
-
 
 .route__address {
   margin: 0;
-  padding: 29px 0 0 59px;
+  padding: 0 0 0 59px;
   font-family: "BloggersansB", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -29,7 +32,6 @@
     background-color: #121936;
     width: 45px;
     height: 45px;
-    position: relative;
     top: 0px;
     left: 0px;
     display: inline-block;
@@ -48,6 +50,9 @@
    }
 }
 
+.route__address-wrapper{
+  margin-bottom: 33px;
+}
 
 .route__button {
   border: solid 3px #192144;
@@ -73,7 +78,6 @@
       right: 16px;
       display: block;
   }
-
 }
 
 .route__button:hover,

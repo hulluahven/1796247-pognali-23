@@ -3,6 +3,18 @@
   list-style: none;
   padding: 0;
   margin: 0px 0 20px 0;
+  position: relative;
+
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: -33px;
+    width: 64px;
+    height: 71px;
+    background: url(../img/backs/rogovaya-mobile.png) no-repeat top left;
+  }
 }
 
 .travelers-card__item {
@@ -23,12 +35,11 @@
   margin: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  padding-bottom: 15px;
 }
 
 .travelers-card__user-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ text-align: center;
 }
 
 .travelers-card__name-link {
@@ -36,13 +47,36 @@
 }
 
 .travelers-card__name {
+  text-decoration: none;
   font-family: "BloggersansB", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #1d2e5b;
-  margin: 0 0 0 0;
+  margin: 0 0 19px -17px;
   padding: 0 0 0 0;
+  position: relative;
+  padding-left: 17px;
+  display: inline-block;
+  vertical-align: top;
 
+  &::before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 9px;
+    left: 1px;
+    position: absolute;
+  }
+}
+
+.travelers-card__name--male::before{
+  background: #81e31e;
+}
+
+.travelers-card__name--female::before{
+  background: #f97676;
 }
 
 .travelers-card__name:hover,

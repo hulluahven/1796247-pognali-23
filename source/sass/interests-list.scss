@@ -102,10 +102,36 @@
 
 
 @media (min-width: $desktop) {
-  .interests-list__item {
-    position: relative;
-    border-top: 1px solid #f3c72b;
-    padding-top: 8px;
+   .interests-list {
+    margin: 0 24px 0;
+   }
 
+  .interests-list__item {
+    display: inline-block;
+    position: relative;
+    border-top: none;
+    padding-top: 10px;
+    padding-left: 0;
 }
+
+  .interests-list__checkbox-list {
+    display: block;
+  }
+
+  .interests-list__button {
+    display: unset;
+    top: 11px;
+    right: -48px;
+  }
+
+  .interests-list__checkbox-list--transport {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0 0 12px;
+  }
+
+  .interests-list__item--level {
+    padding: 27px 0 0 24px;
+  }
+
 }

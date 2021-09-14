@@ -50,10 +50,6 @@
     background-position-y: 8px;
     box-sizing: border-box;
     z-index: 1;
-    // background-image: url("../img/svg/plane-enabled.svg");
-    // background-repeat: no-repeat;
-    // fill: opacity($color: rgba(29, 46, 91, 0.15));
-    // как сделать при отключённом боксе затемнение? или просто картинку поставить?
   }
 
 }
@@ -71,7 +67,7 @@
     top: 2px;
     width: 16px;
     height: 35px;
-    background-image: url("../img/svg/plane-enabled.svg");
+    background-image: url("../img/svg/plane.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
     z-index: 3;
@@ -133,7 +129,7 @@
     top: 2px;
     width: 18px;
     height: 35px;
-    background-image: url("../img/svg/car-enabled.svg");
+    background-image: url("../img/svg/car.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
     z-index: 3;
@@ -194,7 +190,7 @@
     top: -1px;
     width: 23px;
     height: 21px;
-    background-image: url("../img/svg/bike-enabled.svg");
+    background-image: url("../img/svg/bike.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
     z-index: 3;
@@ -305,5 +301,57 @@
 
   .transport-list--catalog .transport-list__item {
     padding-bottom: 0px;
+  }
+}
+
+@media(min-width: $desktop) {
+  .transport-list__input--plane + label {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .transport-list__input--car + label {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .transport-list__input--bike + label {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .transport-list__input--onfoot + label {
+    &::before {
+      width: 43px;
+      height: 43px;
+    }
+  }
+
+  .transport-list__input--plane:checked + label::after {
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .transport-list__input--car:checked + label::after {
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .transport-list__input--bike:checked + label::after {
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
+  }
+  .transport-list__input--onfoot:checked + label::after {
+    &::after {
+      width: 43px;
+      height: 43px;
+    }
   }
 }

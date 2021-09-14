@@ -1,10 +1,12 @@
 .wished-flags {
   list-style: none;
-  margin: 0;
+  margin: -11px 0 12px -19px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
+.wished-flags__item{
+  margin: 0 0 0 19px;
+}

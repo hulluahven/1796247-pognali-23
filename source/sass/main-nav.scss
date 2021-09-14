@@ -8,15 +8,18 @@
 
 .main-nav__wrapper {
   text-align: center;
-  padding-bottom: 27px;
-  padding-top: 75px;
+  padding-bottom: 39px;
+  padding-top: 42px;
   position: absolute;
-  width: 100%;
   top: 0;
   left: 0;
   background-color: #ffffff;
   z-index: 10;
-  display: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: calc(100vw - 17px);
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
 .main-nav--no-js .main-nav__wrapper{
@@ -24,7 +27,7 @@
 }
 
 .main-nav__list {
-  margin: -34px 0 55px;
+  margin: 0 0 54px;
 }
 
 .main-nav__login{
@@ -47,10 +50,16 @@
 .main-nav__cross {
   display: block;
   fill: #cccccc;
+  margin-left: auto;
 }
 
 .main-nav__burger {
   display: none;
+  fill: #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle{
+  top: -57px;
 }
 
 .main-nav--closed .main-nav__cross  {
@@ -61,17 +70,29 @@
   display: block;
 }
 
+.main-nav--header-scrolled .main-nav__burger  {
+  fill: #cccccc;
+}
+
 @media(min-width: $tablet) {
   .main-nav__wrapper {
-    display: none
+    padding-bottom: 89px;
   }
+
   .main-nav__toggle {
     right: unset;
-    left: 49%;
+    left: 50%;
     transform: translateX(-50%);
     top: -74px;
   }
 
+  .main-nav__cross {
+    margin-right: auto;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    top: -78px;
+  }
   .main-nav--closed .main-nav__wrapper {
     display: block;
     padding: 0;
@@ -80,6 +101,7 @@
   .main-nav--closed .main-nav__list {
     display: none;
   }
+
   .main-nav--closed .main-nav__contacts {
     display: none;
   }
@@ -87,11 +109,9 @@
   .main-nav--closed .main-nav__socials {
     display: none;
   }
-
 }
 
 @media(min-width: $desktop) {
-
   .main-nav {
     font-size: 20px;
     line-height: 20px;
@@ -105,12 +125,10 @@
     padding: 0;
     position: relative;
     background: #161c35;
-
   }
 
   .page-header--scrolled .main-nav__wrapper{
     background-color: #ffffff;
-
   }
 
   .page-header--scrolled .main-nav__list::before {
@@ -119,7 +137,6 @@
 
   .page-header--scrolled .site-list__link {
     color: #192144;
-
   }
 
   .main-nav--no-js .main-nav__wrapper{

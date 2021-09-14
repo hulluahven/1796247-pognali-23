@@ -1,61 +1,19 @@
 .level {
-  display: flex;
-  flex-direction: column;
+  display: block;
   position: absolute;
   top: 17px;
-  left: 18px;
-  background-color: rgba(0, 0, 0, 0.6);
+  left: 17px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
+  }
+
+.level--99{
+  background: url("../img/svg/mark-99.svg") no-repeat top left;
 }
 
-.level__number {
-  color: #ffffff;
-  padding-top: 5px;
-}
-
-.level__name {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  display: block;
-  margin: 0;
-  padding: 2px 4px 2px 1px;
-}
-
-.level--form {
-  display: inherit;
-  flex-direction: column;
-  position: inherit;
-  background-color: transparent;
-  width: 100px;
-  height: 97px;
-  border: 3px solid #ff8d30;
-}
-
-.level--form .level__number {
-  color: #161c35;
-  padding-top: 5px;
-  font-size: 38px;
-  line-height: 38px;
-}
-
-.level--form .level__name {
-  color: #444444;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  display: block;
-  margin: 0;
-  padding: 2px 4px 2px 1px;
+.level--80{
+  background: url("../img/svg/mark-80.svg") no-repeat top left;
 }
 
 @media(min-width: $tablet) {

@@ -118,3 +118,44 @@
   right: 2px;
 }
 
+@media (min-width: $desktop) {
+  .range-toggle {
+    padding-top: 21px;
+    margin: 1px 21px 0 0;
+  }
+
+  .range-toggle__item--value input  {
+    height: 42px;
+    width: 90%;
+  }
+
+  .range-toggle__item--value input {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .range-toggle__scale {
+    margin-top: 36px;
+  }
+
+  .range-toggle__toggle-minimum {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    left: 59px;
+  }
+
+  .range-toggle__toggle-maximum {
+    width: 13px;
+    height: 13px;
+    top: -5px;
+    right: 0px;
+  }
+
+  .range-toggle__toggle-minimum::after {
+    width: 122px;
+    top: 5px;
+    left: 1px;
+}
+
+}

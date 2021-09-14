@@ -1,17 +1,17 @@
 .promo-review{
-  margin: 0px 105px 30px 51px;
+  margin: 0px 105px 28px 51px;
 }
 
 .promo-review__quote {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   color: #ffff;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 19px;
   padding-top: 3px;
+  width: 171px;
 }
 
 .promo-review__cite {
@@ -32,7 +32,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0px 345px 77px 72px;
-    min-height: 399px;
+    min-height: 403px;
+    z-index: 100;
+    position: relative;
   }
 
   .promo-review__quote {
@@ -41,7 +43,9 @@
     font-size: 28px;
     line-height: 33px;
     text-align: left;
-    padding-bottom: 28px;
+    padding-bottom: 0;
+    width: 330px;
+    margin-bottom: 46px;
   }
 
   .promo-review__cite {

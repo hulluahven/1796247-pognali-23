@@ -16,11 +16,19 @@
   font-family: "BloggersansM", Arial, sans-serif;
   font-size: 30px;
   line-height: 35px;
+
+  &:hover{
+    color: #ffd74b;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet) {
   .site-list {
-    padding: 9px 0px 0px 96px;
+    padding: 6px 0px 0px 71px;
     list-style: none;
     text-align: left;
     margin-bottom: 154px;
