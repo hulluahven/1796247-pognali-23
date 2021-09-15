@@ -48,3 +48,9 @@
     line-height: 20px;
   }
 }
+
+@media(min-width: $desktop) {
+  .continent-list {
+    padding: 3px 0 0 421px;
+  }
+}

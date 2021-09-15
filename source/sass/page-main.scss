@@ -1,8 +1,827 @@
+.page-main__user-nav {
+    background-image: url("../../img/globe-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 46%;
+    background-size: cover;
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__user-nav {
+      background-image: url("../../img/globe-back-mobile@2x.jpg");
+    }
+  }
+  .page-main__wrapper-alignment {
+    position: relative;
+  }
+  .page-main__container {
+    min-height: 405px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .page-main__container::before {
+    content: "";
+    display: block;
+    width: 192px;
+    height: 255px;
+    background-image: url("../../img/traveller-illustration-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 192px 255px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-43%);
+  }
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-main__container::before {
+      background-image: url("../../img/traveller-illustration-mobile@2x.png");
+    }
+  }
+  .page-main__title {
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    text-align: center;
+    margin-top: 0;
+    padding: 18px 30px;
+  }
+  .page-main__list.contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 0 26px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+  }
+  .page-main__list.contacts .contacts__link {
+    margin: 0;
+    padding: 5px 39px;
+  }
+  .page-main__list.contacts .contacts__tel-number:hover .contacts__wrapper-svg--phone {
+    background-color: #f26926;
+  }
+  .page-main__list.contacts .contacts__tel-number:active .contacts__svg {
+    opacity: 1;
+    fill: rgba(22, 28, 53, 0.3);
+  }
+  .page-main__list.contacts .contacts__e-mail:hover .contacts__wrapper-svg--mail {
+    background-color: #ff8d30;
+  }
+  .page-main__list.contacts .contacts__e-mail:active .contacts__svg {
+    opacity: 1;
+    fill: rgba(22, 28, 53, 0.3);
+  }
+  .page-main__list.contacts .contacts__wrapper-svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+  }
+  .page-main__list.contacts .contacts__tel-number,
+  .page-main__list.contacts .contacts__e-mail {
+    font-size: 0;
+  }
+  .page-main__list.contacts .contacts__wrapper-svg--phone {
+    background-color: #ff8d30;
+  }
+  .page-main__list.contacts .contacts__wrapper-svg--mail {
+    background-color: #ffbd30;
+  }
+  .page-main__list.contacts .contacts__svg {
+    fill: #161c35;
+    position: relative;
+    top: 13px;
+    left: 12px;
+  }
+  .page-main__list.contacts .contacts__svg--phone {
+    top: 12px;
+  }
+  .page-main--inner-page {
+    background-color: #edeff6;
+    padding-bottom: 88px;
+  }
+  .page-main--inner-page .companions__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 13px;
+  }
+  .page-main--inner-page .companions__item {
+    padding: 13px 0 62px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    position: relative;
+  }
+  .page-main--inner-page .companions__wrapper-link {
+    display: flex;
+    flex-grow: 1;
+  }
+  .page-main--inner-page .companions__link {
+    text-decoration: none;
+    color: #1d2e5b;
+  }
+  .page-main--inner-page .companions__wrapper-name {
+    width: calc(74% - 41px);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    min-height: 146px;
+  }
+  .page-main--inner-page .companions__name {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 0;
+    padding-right: 60px;
+    position: relative;
+  }
+  .page-main--inner-page .companions__name--red::before,
+  .page-main--inner-page .companions__name--green::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    right: 22px;
+  }
+  .page-main--inner-page .companions__name--red::before {
+    background-color: #f97676;
+  }
+  .page-main--inner-page .companions__name--green::before {
+    background-color: #81e31e;
+  }
+  .page-main--inner-page .companions__img {
+    border-radius: 50%;
+    width: 100%;
+  }
+  .page-main--inner-page .companions__link-img {
+    width: 70px;
+    margin: 2px 16px 0 19px;
+  }
+  .page-main--inner-page .companions__like {
+    display: flex;
+    position: relative;
+    left: -38px;
+  }
+  .page-main--inner-page .companions__heart {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: #edeff6;
+    margin-right: 6px;
+    order: 1;
+    border: none;
+  }
+  .page-main--inner-page .companions__heart:hover .companions__svg-heart {
+    opacity: 0.5;
+  }
+  .page-main--inner-page .companions__heart:active .companions__svg-heart {
+    opacity: 0.1;
+  }
+  .page-main--inner-page .companions__heart--active {
+    background-color: #f9eaea;
+  }
+  .page-main--inner-page .companions__heart--active:hover {
+    background-color: #f9d8d8;
+  }
+  .page-main--inner-page .companions__heart--active:hover .companions__svg-heart--active {
+    opacity: 1;
+  }
+  .page-main--inner-page .companions__heart--active:active .companions__svg-heart--active {
+    opacity: 0.3;
+  }
+  .page-main--inner-page .companions__svg-heart {
+    fill: rgba(25, 33, 68, 0.3);
+    position: relative;
+    top: 2px;
+    left: 1px;
+  }
+  .page-main--inner-page .companions__svg-heart--active {
+    fill: #f02323;
+  }
+  .page-main--inner-page .companions__number-like {
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #161c35;
+    margin-top: 7px;
+    order: 2;
+  }
+  .page-main--inner-page .companions__preferences {
+    font-size: 15px;
+    line-height: 18px;
+    color: #444444;
+    margin: 12px 0 16px;
+    order: 3;
+    width: 180px;
+    position: relative;
+    left: -79px;
+    bottom: 9px;
+  }
+  .page-main--inner-page .companions__control {
+    margin-top: auto;
+  }
+  .page-main--inner-page .companions__dream-countries {
+    position: relative;
+  }
+  .page-main--inner-page .companions__dream-countries::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #edeff6;
+    position: absolute;
+    top: 10px;
+  }
+  .page-main--inner-page .companions__dream-countries--second {
+    margin-bottom: 6px;
+  }
+  .page-main--inner-page .companions__dream-countries--third {
+    margin-bottom: 4px;
+  }
+  .page-main--inner-page .companions__dream-countries--fourth {
+    margin-bottom: 5px;
+  }
+  .page-main--inner-page .dream-countries__span {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #1d2e5b;
+  }
+  .page-main--inner-page .dream-countries__list {
+    padding: 0 25px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .page-main--inner-page .dream-countries__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .page-main--inner-page .dream-countries__item--sri-lanka::before,
+  .page-main--inner-page .dream-countries__item--thailand::before,
+  .page-main--inner-page .dream-countries__item--seychelles::before,
+  .page-main--inner-page .dream-countries__item--belgium::before,
+  .page-main--inner-page .dream-countries__item--сzech::before,
+  .page-main--inner-page .dream-countries__item--usa::before,
+  .page-main--inner-page .dream-countries__item--australia::before,
+  .page-main--inner-page .dream-countries__item--dominica::before,
+  .page-main--inner-page .dream-countries__item--germany::before,
+  .page-main--inner-page .dream-countries__item--united-kingdom::before {
+    width: 26px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 13px;
+    background-size: 26px 18px;
+  }
+  .page-main--inner-page .companions__heading {
+    font-size: 15px;
+    line-height: 18px;
+    color: #444444;
+    background-color: #ffffff;
+    padding: 0 14px;
+    margin: 0 12px 16px 12px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  .page-main--inner-page .companions__wrapper-info {
+    display: flex;
+    position: relative;
+    margin-bottom: 19px;
+  }
+  .page-main--inner-page .companions__wrapper-info::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #edeff6;
+    position: absolute;
+    top: 10px;
+  }
+  .page-main--inner-page .companions__transport.transport .transport__list {
+    padding-left: 25px;
+    position: relative;
+    top: 2px;
+  }
+  .page-main--inner-page .companions__transport.transport .transport__item {
+    background-color: #edeff6;
+  }
+  .page-main--inner-page .companions__level {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    position: relative;
+    margin-left: auto;
+    top: 26px;
+    left: -20px;
+  }
+  .page-main--inner-page .companions__level::before {
+    display: none;
+  }
+  .page-main--inner-page .companions__heading--level-cir {
+    top: -29px;
+    right: 25px;
+  }
+  .page-main--inner-page .companions__heading--level {
+    display: none;
+  }
+  .page-main--inner-page .companions__number {
+    font-size: 24px;
+    line-height: 18px;
+    color: #1d2e5b;
+    top: -12px;
+    left: 8px;
+  }
+  .page-main--inner-page .companions__button {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    text-decoration: none;
+    color: #161c35;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .page-main--inner-page .companions__button--gold {
+    display: block;
+    background-color: #ffd74b;
+    border-radius: 20px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 21px;
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+  .page-main--inner-page .companions__button--gold:hover {
+    background-color: #ffbd30;
+  }
+  .page-main--inner-page .companions__button--gold:active {
+    color: rgba(22, 28, 53, 0.3);
+  }
+  .page-main--inner-page .companions__button--more {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 42px;
+    margin-bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .page-main--inner-page .companions__button--more:hover,
+  .page-main--inner-page .companions__button--more:hover::before,
+  .page-main--inner-page .companions__button--more:hover::after {
+    opacity: 0.6;
+  }
+  .page-main--inner-page .companions__button--more:active,
+  .page-main--inner-page .companions__button--more:active::before,
+  .page-main--inner-page .companions__button--more:active::after {
+    opacity: 0.3;
+  }
+  .page-main--inner-page .companions__button--more::before,
+  .page-main--inner-page .companions__button--more::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #1d2e5b;
+    position: absolute;
+    top: 19px;
+    left: 8px;
+  }
+  .page-main--inner-page .companions__button--more::before {
+    transform: rotate(90deg);
+  }
+  @media (min-width: 768px) {
+    .page-main__user-nav {
+      position: relative;
+      background-color: #182044;
+      background-image: url("../../img/globe-back-tablet@1x.jpg");
+      background-position: center 250px;
+    }
+    .page-main__container {
+      min-height: 862px;
+      box-sizing: border-box;
+      padding-bottom: 540px;
+    }
+    .page-main__container::before {
+      content: "";
+      display: block;
+      width: 372px;
+      height: 451px;
+      background-image: url("../../img/traveller-illustration-tablet@1x.png");
+      background-size: 372px 451px;
+      background-repeat: no-repeat;
+      bottom: 140px;
+      left: 50%;
+      transform: translate(-27%);
+    }
+    .page-main__title {
+      font-size: 60px;
+      line-height: 70px;
+      padding: 27px 165px 0;
+    }
+    .page-main__list.contacts {
+      display: none;
+    }
+    .page-main--inner-page {
+      padding-bottom: 102px;
+    }
+    .page-main--inner-page .companions__list {
+      padding: 0 40px;
+      margin-bottom: 39px;
+      flex-direction: column;
+    }
+    .page-main--inner-page .companions__item {
+      width: 100%;
+      padding: 31px 25px 107px 35px;
+      box-sizing: border-box;
+      display: flex;
+    }
+    .page-main--inner-page .companions__item::before {
+      display: none;
+    }
+    .page-main--inner-page .companions__item:not(:last-child) {
+      margin-bottom: 41px;
+    }
+    .page-main--inner-page .companions__item:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+    .page-main--inner-page .companions__link-img {
+      width: 36.5%;
+      margin: 2px 29px 0 0;
+      align-self: flex-start;
+    }
+    .page-main--inner-page .companions__img {
+      border-radius: 20px;
+    }
+    .page-main--inner-page .companions__like {
+      align-items: center;
+    }
+    .page-main--inner-page .companions__number-like {
+      font-size: 20px;
+      line-height: 30px;
+      margin: 0;
+    }
+    .page-main--inner-page .companions__heart {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    .page-main--inner-page .companions__svg-heart {
+      width: 20px;
+      height: 17px;
+      top: 4px;
+      left: 1px;
+    }
+    .page-main--inner-page .companions__name {
+      font-size: 30px;
+      line-height: 30px;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 4px;
+      padding-right: 29px;
+    }
+    .page-main--inner-page .companions__name::before {
+      width: 7px;
+      height: 7px;
+      top: 13px;
+      right: 0;
+    }
+    .page-main--inner-page .companions__preferences {
+      font-size: 20px;
+      line-height: 24px;
+      width: auto;
+      margin: 17px 0 0 8px;
+      padding-right: 90px;
+      left: 0;
+      bottom: 0;
+    }
+    .page-main--inner-page .companions__control {
+      order: 3;
+      display: flex;
+    }
+    .page-main--inner-page .companions__wrapper-info {
+      margin-bottom: 0;
+      position: relative;
+      flex-direction: column;
+    }
+    .page-main--inner-page .companions__wrapper-info::before {
+      display: none;
+    }
+    .page-main--inner-page .companions__wrapper-info .companions__heading {
+      display: none;
+    }
+    .page-main--inner-page .companions__transport.transport .transport__list {
+      padding-left: 7px;
+      flex-direction: column;
+      position: relative;
+      top: -5px;
+    }
+    .page-main--inner-page .companions__transport.transport .transport__item {
+      background-color: #ffffff;
+    }
+    .page-main--inner-page .companions__level {
+      width: 55px;
+      height: 55px;
+      top: 4px;
+      left: 0;
+      margin-top: auto;
+    }
+    .page-main--inner-page .companions__level::before {
+      content: "";
+      display: block;
+      width: 31px;
+      height: 1px;
+      background-color: rgba(68, 68, 68, 0.4);
+      opacity: 0.3;
+      position: absolute;
+      top: 33px;
+      left: 12px;
+    }
+    .page-main--inner-page .companions__level .companions__heading--level {
+      display: block;
+      color: rgba(68, 68, 68, 0.4);
+      background-color: transparent;
+      margin: 0;
+      top: 34px;
+      left: -1px;
+    }
+    .page-main--inner-page .companions__number {
+      font-size: 24px;
+      line-height: 24px;
+      top: -14px;
+      left: 15px;
+    }
+    .page-main--inner-page .companions__wrapper-name {
+      width: calc(74% - 41px);
+      min-height: 146px;
+      flex-direction: column;
+    }
+    .page-main--inner-page .companions__dream-countries {
+      width: 100%;
+      position: absolute;
+      top: auto;
+      bottom: 21px;
+    }
+    .page-main--inner-page .companions__dream-countries--second,
+    .page-main--inner-page .companions__dream-countries--third,
+    .page-main--inner-page .companions__dream-countries--fourth {
+      margin-bottom: 0;
+    }
+    .page-main--inner-page .dream-countries__list {
+      padding: 0 35px;
+      flex-direction: row;
+      justify-content: start;
+    }
+    .page-main--inner-page .dream-countries__item:not(:last-child) {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+    .page-main--inner-page .dream-countries__span {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .page-main--inner-page .dream-countries__item--sri-lanka::before,
+    .page-main--inner-page .dream-countries__item--thailand::before,
+    .page-main--inner-page .dream-countries__item--seychelles::before,
+    .page-main--inner-page .dream-countries__item--belgium::before,
+    .page-main--inner-page .dream-countries__item--сzech::before,
+    .page-main--inner-page .dream-countries__item--usa::before,
+    .page-main--inner-page .dream-countries__item--australia::before,
+    .page-main--inner-page .dream-countries__item--dominica::before,
+    .page-main--inner-page .dream-countries__item--germany::before,
+    .page-main--inner-page .dream-countries__item--united-kingdom::before {
+      width: 36px;
+      height: 24px;
+      margin-right: 10px;
+      background-size: 36px 24px;
+    }
+    .page-main--inner-page .companions__heading {
+      margin: 0 69px 18px;
+    }
+    .page-main--inner-page .companions__button.companions__button--gold {
+      font-size: 20px;
+      line-height: 30px;
+      padding: 10px 31px;
+      border-radius: 30px;
+      width: auto;
+      margin-right: 38px;
+      position: relative;
+      bottom: 0;
+      left: 0;
+    }
+    .page-main--inner-page .companions__button--more {
+      font-size: 20px;
+      line-height: 30px;
+      padding-left: 50px;
+      margin-bottom: 44px;
+    }
+    .page-main--inner-page .companions__button--more::before,
+    .page-main--inner-page .companions__button--more::after {
+      width: 27px;
+      height: 3px;
+      left: -1px;
+    }
+  }
+  @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .page-main__user-nav {
+      background-image: url("../../img/globe-back-tablet@2x.jpg");
+    }
+  }
+  @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+    .page-main__container::before {
+      background-image: url("../../img/traveller-illustration-tablet@2x.png");
+    }
+  }
+  @media (min-width: 1440px) {
+    .page-main__user-nav {
+      background-image: url("../../img/globe-back-desktop@1x.jpg");
+      background-position: center 0;
+      min-height: 650px;
+    }
+    .page-main__wrapper-alignment {
+      width: 1440px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    .page-main__container {
+      min-height: 650px;
+      padding-bottom: 250px;
+    }
+    .page-main__container::before {
+      content: "";
+      display: block;
+      width: 431px;
+      height: 640px;
+      background-image: url("../../img/traveller-illustration-desktop@1x.png");
+      background-size: 431px 640px;
+      background-repeat: no-repeat;
+      bottom: 0;
+      left: 50%;
+    }
+    .page-main__title {
+      text-align: left;
+      padding: 108px 0 0 127px;
+      max-width: 400px;
+    }
+    .page-main--inner-page {
+      padding-bottom: 116px;
+    }
+    .page-main--inner-page .page-main__wrapper-section {
+      width: 1440px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0 60px;
+      display: flex;
+    }
+    .page-main--inner-page .page-main__choice {
+      order: 2;
+      min-width: 285px;
+    }
+    .page-main--inner-page .companions {
+      flex-grow: 1;
 
-.page-main__inner-wrapper--catalog {
-  position: relative;
-  z-index: 3;
-}
+    }
+    .page-main--inner-page .companions__list {
+      padding: 0;
+      margin-bottom: 59px;
+    }
+    .page-main--inner-page .companions__item {
+      padding: 0;
+      display: flex;
+      min-height: 285px;
+    }
+    .page-main--inner-page .companions__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    .page-main--inner-page .companions__wrapper-link {
+      width: 76%;
+    }
+    .page-main--inner-page .companions__wrapper-name {
+      width: 55%;
+      box-sizing: border-box;
+      padding: 46px 0 47px 60px;
+    }
+    .page-main--inner-page .companions__name {
+      padding: 0;
+    }
+    .page-main--inner-page .companions__name::before {
+      right: auto;
+      left: -25px;
+      top: 12px;
+    }
+    .page-main--inner-page .companions__link-img {
+      width: 285px;
+      margin: 0;
+    }
+    .page-main--inner-page .companions__img {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .page-main--inner-page .companions__preferences {
+      width: auto;
+      margin: 17px 0 0 4px;
+      padding-right: 30px;
+    }
+    .page-main--inner-page .companions__control {
+      position: relative;
+      left: -2px;
+    }
+    .page-main--inner-page .companions__button.companions__button--gold {
+      padding: 10px 30px;
+      margin-right: 0;
+    }
+    .page-main--inner-page .companions__wrapper-info {
+      margin-top: auto;
+      width: auto;
+      flex-direction: row;
+      align-items: flex-end;
+      padding: 0;
+    }
+    .page-main--inner-page .companions__transport.transport .transport__list {
+      flex-direction: row;
+      margin-left: -18px;
+    }
+    .page-main--inner-page .companions__like {
+      left: 0;
+    }
+    .page-main--inner-page .companions__container {
+      width: 37%;
+      box-sizing: border-box;
+      padding: 49px 30px 39px 42px;
+      display: flex;
+      flex-direction: column;
+    }
+    .page-main--inner-page .companions__dream-countries {
+      position: relative;
+      width: auto;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+    .page-main--inner-page .companions__dream-countries::before {
+      display: none;
+    }
+    .page-main--inner-page .dream-countries__list {
+      padding: 0;
+      flex-direction: column;
+    }
+    .page-main--inner-page .dream-countries__item--australia::before,
+    .page-main--inner-page .dream-countries__item--belgium::before,
+    .page-main--inner-page .dream-countries__item--dominica::before,
+    .page-main--inner-page .dream-countries__item--germany::before,
+    .page-main--inner-page .dream-countries__item--seychelles::before,
+    .page-main--inner-page .dream-countries__item--sri-lanka::before,
+    .page-main--inner-page .dream-countries__item--thailand::before,
+    .page-main--inner-page .dream-countries__item--united-kingdom::before,
+    .page-main--inner-page .dream-countries__item--usa::before,
+    .page-main--inner-page .dream-countries__item--сzech::before {
+      margin-right: 18px;
+    }
+    .page-main--inner-page .dream-countries__item:not(:last-child) {
+      margin-bottom: 6px;
+    }
+    .page-main--inner-page .companions__heading {
+      display: none;
+    }
+    .page-main--inner-page .companions__transport {
+      margin-bottom: 17px;
+      margin-left: 2px;
+    }
+    .page-main--inner-page .transport__list {
+      padding-left: 0;
+    }
+    .page-main--inner-page .companions__level {
+      top: -3px;
+      margin-right: 14px;
+    }
+    .page-main--inner-page .page-main__alignment {
+      width: 1440px;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+    .page-main--inner-page .companions__button--more {
+      bottom: 0;
+      transform: translateX(-66%);
+      margin-bottom: 63px;
+    }
+  }
+  @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
+    .page-main__user-nav {
+      background-image: url("../../img/globe-back-desktop@2x.jpg");
+    }
+  }
+  @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
+    .page-main__container::before {
+      background-image: url("../../img/traveller-illustration-desktop@2x.png");
+    }
+  }
 
 @media(min-width: $desktop){
   .page-main {

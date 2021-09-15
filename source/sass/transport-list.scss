@@ -45,6 +45,7 @@
     border-radius: 50%;
     background-color: #ffffff;
     background-image: url("../img/svg/plane-disabled.svg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 6px;
     background-position-y: 8px;
@@ -65,13 +66,13 @@
     position: absolute;
     left: -23px;
     top: 2px;
-    width: 16px;
-    height: 35px;
+    width: 15px;
+    height: 15px;
     background-image: url("../img/svg/plane.svg");
+    background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
     z-index: 3;
-
   }
 }
 
@@ -105,7 +106,7 @@
 .transport-list__input--car+label {
   &::before {
     content: "";
-    // position: absolute;
+    position: absolute;
     left: -30px;
     top: -6px;
     width: 32px;
@@ -124,7 +125,7 @@
 .transport-list__input--car:checked+label {
   &::after {
     content: "";
-    // position: absolute;
+    position: absolute;
     left: -23px;
     top: 2px;
     width: 18px;
@@ -166,7 +167,7 @@
 .transport-list__input--bike+label {
   &::before {
     content: "";
-    // position: absolute;
+    position: absolute;
     left: -30px;
     top: -6px;
     width: 32px;
@@ -185,7 +186,7 @@
 .transport-list__input--bike:checked+label {
   &::after {
     content: "";
-    // position: absolute;
+    position: absolute;
     left: -26px;
     top: -1px;
     width: 23px;
@@ -227,7 +228,7 @@
 .transport-list__input--onfoot+label {
   &::before {
     content: "";
-    // position: absolute;
+    position: absolute;
     left: -30px;
     top: -6px;
     width: 32px;
@@ -246,7 +247,7 @@
 .transport-list__input--onfoot:checked+label {
   &::after {
     content: "";
-    // position: absolute;
+    position: absolute;
     left: -23px;
     top: 2px;
     width: 16px;

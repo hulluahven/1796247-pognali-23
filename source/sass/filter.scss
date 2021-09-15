@@ -10,8 +10,6 @@
 }
 
 .filter__countries {
-  // padding-bottom: 44px;
-  // временно для скрытия выпадашки
   padding-bottom: 16px;
   margin-top: -17px;
   padding-top: 15px;
@@ -139,7 +137,6 @@
       background-image: url("../img/svg/close-cross.svg");
       background-repeat: no-repeat;
       background-size: cover;
-
     }
 }
 
@@ -161,7 +158,6 @@
 
   .filter__list-wrapper {
     display: unset;
-    // временно
   }
 
   .filter__list {
@@ -182,10 +178,14 @@
         width: 30px;
         height: 6px;
         top: 24px;
-         right: -45px;
+        right: -45px;
       }
   }
+}
 
-
-
+@media(min-width: $desktop) {
+  .filter__title-wrapper {
+    padding-left: 64%;
+    padding-top: 13px;
+  }
 }

@@ -44,7 +44,7 @@
   top: 100%;
   left: 0;
   border-radius: 4px;
-  margin: 27px 0px 0 -11px;
+  margin: 6px 0px 0 -11px;
   z-index: 3;
 }
 
@@ -53,26 +53,24 @@
 }
 
 
-
-
 .transport-types__item--plane::before {
-  background-image: url("../img/svg/plane-enabled.svg");
+  background-image: url("../img/svg/plane.svg");
 }
 
 .transport-types__item--car::before {
-  background-image: url("../img/svg/car-enabled.svg");
+  background-image: url("../img/svg/car.svg");
   width: 20px;
   height: 19px;
 }
 
 .transport-types__item--bike::before {
-  background-image: url("../img/svg/bike-enabled.svg");
+  background-image: url("../img/svg/bike.svg");
   width: 24px;
   height: 24px;
 }
 
 .transport-types__item--onfoot::before {
-  background-image: url("../img/svg/onfoot-enabled.svg");
+  background-image: url("../img/svg/run.svg");
   width: 21px;
   height: 23px;
 }

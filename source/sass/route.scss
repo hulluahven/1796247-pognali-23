@@ -35,9 +35,9 @@
     top: 0px;
     left: 0px;
     display: inline-block;
-   }
+    }
 
-   &::after {
+    &::after {
     content: "";
     position: absolute;
     top: 13px;
@@ -47,10 +47,10 @@
     background-image: url("../img/svg/adressmarker.svg");
     background-repeat: no-repeat;
     background-position: center center;
-   }
+    }
 }
 
-.route__address-wrapper{
+.route__address-wrapper {
   margin-bottom: 33px;
 }
 

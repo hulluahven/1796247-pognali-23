@@ -40,7 +40,6 @@
     top: -3px;
     right: 5px;
   }
-
 }
 
 .about-us__header {
@@ -82,9 +81,6 @@
   position: relative
 }
 
-// .about-us__button-container {
-//   display: none;
-// }
 .about-us__button {
   display: none;
 }
@@ -153,11 +149,6 @@
     padding: 31px 342px 0 33px;
   }
 
-  // .about-us__button-container {
-  //   display: block;
-  //   margin: 0;
-  // }
-
   .about-us__button {
     display: block;
     padding: 28px 32px;
@@ -207,7 +198,6 @@
       background-image: url("../img/backs/about-desktop.png");
       background-repeat: no-repeat;
       background-position: center;
-
     }
   }
 
@@ -225,12 +215,12 @@
     padding: 40px 778px 85px 71px;
   }
 
- .about-us__button-container {
+  .about-us__button-container {
     margin: 0px 0 0 71px;
- }
+  }
 
- .yellow-button {
+  .yellow-button {
   margin: 0px 58px 0px 0px;
   padding: 29px 79px 29px 33px;
-}
+  }
 }

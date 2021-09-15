@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.tags-list--catalog {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
 .tags-list__item {
   font-family: "Bloggersans", Arial, sans-serif;
   font-style: normal;
@@ -26,4 +32,9 @@
     top: 0;
     left: 0;
   }
+}
+
+.tags-list__item--catalog {
+  margin-right: 4px;
+  margin-left: 0;
 }

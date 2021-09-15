@@ -1,0 +1,121 @@
+.dream-countries {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dream-countries__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dream-countries__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.dream-countries__item--sri-lanka::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-sri-lanka.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--thailand::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-thailand.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--seychelles::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-seychelles.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--belgium::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-belgium.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--сzech::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-czech.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--usa::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-usa.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--australia::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-australia.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--dominica::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-dominica.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--germany::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-germany.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}
+
+.dream-countries__item--united-kingdom::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 24px;
+  background-image: url("../../img/flag-united-kingdom.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 24px;
+}

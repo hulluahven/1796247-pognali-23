@@ -5,14 +5,11 @@
   font-size: 22px;
   line-height: 22px;
   color: #1d2e5b;
-  // width: 146px;
-  // не уверен насчёт нужности в ТЗ ничего и по логике не должно
 }
 
 .match__button-wrapper {
   margin: 0px -6px 0px -1px;
 }
-// халтура всё-таки по-моему...
 
 .match__button {
   box-sizing: border-box;
@@ -62,4 +59,10 @@
     margin: 0 0 25px 0;
     padding: 24px 0 0 25px;
   }
+
+  .match__button {
+    margin-top: 24px;
+    width: 271px;
+  }
+
 }
