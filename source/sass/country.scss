@@ -1,0 +1,152 @@
+.country__table {
+  width: 100%;
+  min-height: 206px;
+  border: 1px solid #cbced9;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+}
+
+.country__table td:not(:last-child) {
+  border-right: 1px solid #cbced9;
+}
+
+.country__table tr:not(:last-child) {
+  border-bottom: 1px solid #cbced9;
+}
+
+.country__table td {
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  padding: 0;
+}
+
+.country__label {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 23% 0;
+  background-color: #ffffff;
+  color: #1d2e5b;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.country__label:active {
+  background-color: #1d2e5b;
+  color: #ffffff;
+}
+
+.country__label:hover {
+  border: 1px solid #959bb2;
+}
+
+.country__label:focus {
+  outline: 2px solid #81b3d2;
+}
+
+.country__title {
+  display: none;
+}
+
+.country__list {
+  list-style: none;
+  padding-left: 1px;
+  margin-bottom: 26px;
+  display: none;
+  // display: block;
+}
+// country__input:checked ~ .country__list
+.country__input:checked .country__list {
+  display: block;
+}
+
+.country__selected {
+  background-color: #1d2e5b;
+  color: #ffffff;
+}
+
+.country__item a {
+  text-decoration: none;
+  color: #444444;
+  display: block;
+  padding-bottom: 4px;
+
+  &:hover {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(29, 46, 91, 0.3);
+  }
+}
+
+@media (min-width: $tablet) {
+  .country__table {
+    border: none;
+    width: 58.5%;
+    margin-right: 76px;
+
+    td:not(:last-child) {
+      border-right: none;
+    }
+
+    tr:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .country__label {
+    font-family: "BloggersansB", Arial, sans-serif;
+    font-size: 60px;
+    line-height: 24px;
+    background-color: transparent;
+    padding: 35% 0;
+  }
+
+  .country__list {
+    margin-top: 3px;
+
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .country__table {
+    display: none;
+  }
+
+  .country__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+  }
+
+  .country__letter {
+    width: 226px;
+    margin-bottom: 42px;
+  }
+
+  .country__letter:not(:nth-child(5n)) {
+    margin-right: 25px;
+  }
+
+  .country__title {
+    font-family: "BloggersansB", Arial, sans-serif;
+    font-size: 60px;
+    line-height: 24px;
+    color: #d1d7e9;
+    margin-top: 0;
+    margin-bottom: 49px;
+    display: block;
+  }
+
+  .country__list {
+    display: block;
+  }
+}

@@ -2,26 +2,21 @@
   margin: 0;
   padding: 3px 0 0 21px;
   list-style: none;
-  background-color: #ffffff;
-  border: 1px solid #cdced9;
-  padding: 3px 0 12px 21px;
+  padding: 3px 0 12px 3px;
+  position: absolute;
+  top: 213px;
+  left: 0px;
+  display: none;
 }
 
-.country-by-letter--catalog {
-  background-color: transparent;
-  border: none;
-  padding: 19px 0 28px 5px;
+.country-by-letter--enabled {
+  display: block;
 }
-
-// я понимаю, что его нужно спозиционировать так, чтоб куда угодно поставить, но как?
 
 .country-by-letter__item {
-  padding-bottom: 4px;
-}
-
-.country-by-letter__item--catalog {
   padding-bottom: 0;
 }
+
 
 .country-by-letter__link {
   margin: 0;
@@ -45,7 +40,18 @@
 
 @media(min-width: $tablet) {
   .country-by-letter {
-    display: none;
-    // временно
+    top: 48px;
+    left: 117%;
+    width: 100%;
   }
+
+  .country-by-letter__link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "BloggersansL", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+}
 }

@@ -29,11 +29,16 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #121936;
-  background-image: url("../img/svg/feedbackphone.svg");
   width: 45px;
   height: 45px;
 }
 
+.contacts-feedback-list__phone-svg{
+  fill: #ffd74b;
+  position: absolute;
+  left: -47px;
+  top: 5px;
+}
 
 .contacts-feedback-list__mail::before {
   content: "";
@@ -45,7 +50,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #121936;
-  background-image: url("../img/svg/feedbackmail.svg");
   width: 45px;
   height: 45px;
+}
+
+.contacts-feedback-list__mail-svg{
+  fill: #ffd74b;
+  position: absolute;
+  left: -47px;
+  top: 5px;
 }

@@ -37,6 +37,16 @@
   box-sizing: border-box;
 }
 
+.directions__button:hover,
+.directions__button:focus {
+  background-color: #ffbd30;
+}
+
+.directions__button:active {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+
 @media(min-width: $tablet) {
   .directions {
     padding-right: 40px;
@@ -90,7 +100,7 @@
   .directions::before {
     content: "";
     position: absolute;
-    background-image: url(../img/flags-tablet.png);
+    background-image: url("../img/flags-tablet.png");
     background-repeat: no-repeat;
     background-position: right;
     padding-bottom: 419px;

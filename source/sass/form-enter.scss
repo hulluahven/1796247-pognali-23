@@ -16,6 +16,16 @@
   cursor: pointer;
 }
 
+.form-enter__button:hover,
+.form-enter__button:focus {
+  background-color: #ffbd30;
+}
+
+.form-enter__button:active {
+  color: rgba(29, 46, 91, 0.3);
+}
+
+
 .form-enter__button-text {
   display: none;
 }

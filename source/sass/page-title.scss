@@ -31,6 +31,7 @@
 }
 
 .page-title--catalog {
+  z-index: 3;
   &::before{
     display: none;
   }
@@ -51,6 +52,7 @@
 }
 
 .page-title__text {
+  font-family: "BloggerSansB", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -59,22 +61,23 @@
   z-index: 3;
   padding: 14px 0 16px 12px;
   display: block;
-  letter-spacing: 1.5px;
-  padding: 19px 0 15px 28px;
 }
 
 .page-title__text--catalog {
+  padding: 16px 0 14px 28px;
   &::after {
     content: "";
     position: absolute;
     width: 172px;
     height: 5px;
-    top: 67px;
-    left: 25px;
+    top: 63px;
+    left: 29px;
     border-radius: 4px;
     background-color: #ff8d30;
   }
+
 }
+
 
 .page-title__link {
   text-decoration: none;

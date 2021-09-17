@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
 }
 
 .country-alphabet__item {
@@ -13,7 +14,7 @@
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-
+  cursor: pointer;
 }
 
 .country-alphabet__item:hover,
@@ -25,9 +26,8 @@
   background-color: #1d2e5b;
 }
 
-// В Н И М А Т Е Л Ь Н О!!!!!!!! разные эктивы!!!!!!!!!!!!!!!!!!!!!!!
 
-.country-alphabet__item--active {
+.country-alphabet__item--enabled {
   background-color: #edeff6;
 }
 
@@ -43,7 +43,37 @@
 
 @media (min-width: $tablet) {
   .country-alphabet {
-    display: none;
+    padding: 41px 0 0 29px;
   }
-  // временно
+
+  .country-alphabet__item {
+    width: 75px;
+    height: 85px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .country-alphabet__link {
+    font-family: "BloggersansB", Arial, sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgba(25,33,68,.3);
+  }
+
+  .country-alphabet__link:hover,
+  .country-alphabet__link:focus {
+    color: rgba(25,33,68,.6);
+  }
+
+  .country-alphabet__link:active {
+    color: rgba(25,33,68, 1);
+  }
+
+  .country-alphabet__link--enabled {
+    color: rgba(25,33,68, 1);
+  }
+
 }

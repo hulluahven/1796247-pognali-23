@@ -12,13 +12,13 @@
 .filter__countries {
   padding-bottom: 16px;
   margin-top: -17px;
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .filter__list-wrapper {
   display: grid;
   justify-content: center;
-  display: none;
+  padding-bottom: 276px;
 }
 
 .filter__title-wrapper {
@@ -29,7 +29,7 @@
 
 .filter__title {
   margin: 0;
-  padding: 22px 0 0 27px;
+  padding: 22px 0 0 31px;
   font-family: "BloggersansB", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -108,6 +108,10 @@
   }
 }
 
+// .filter__button-svg {
+//   fill: #192144;
+// }
+
 .filter__alphabet-wrapper {
   display: grid;
   justify-content: center;
@@ -123,22 +127,35 @@
   text-transform: uppercase;
   padding: 10px 4px 8px 31px;
   box-sizing: border-box;
-  letter-spacing: 1px;
   position: relative;
   cursor: pointer;
-  display: none;
     &::before {
       content: "";
       position: absolute;
       width: 15px;
       height: 15px;
-      top: 15px;
-      left: 63px;
+      top: 11px;
+      left: 87px;
       background-image: url("../img/svg/close-cross.svg");
       background-repeat: no-repeat;
       background-size: cover;
+      background-color: transparent;
     }
 }
+
+.filter__countries-button:hover,
+.filter__countries-button:focus {
+  background-color: #cbcee8;
+}
+
+.filter__countries-button:active {
+  background-color: #cbcee8;
+  color: rgba(25, 33, 68, 0.3);
+}
+.filter__countries-button:hover::before{
+  background-color: red;
+}
+
 
 @media (min-width: $tablet) {
 
@@ -157,7 +174,8 @@
   }
 
   .filter__list-wrapper {
-    display: unset;
+    justify-content: left;
+    padding-bottom: 49px;
   }
 
   .filter__list {
@@ -181,9 +199,24 @@
         right: -45px;
       }
   }
+
+  .filter__button--close {
+    margin-top: 15px;
+    margin-left: 14px;
+  }
+
+  .filter__countries-button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 38px 6px 40px 48px;
+  }
+
+
 }
 
 @media(min-width: $desktop) {
+
+
   .filter__title-wrapper {
     padding-left: 64%;
     padding-top: 13px;
