@@ -130,6 +130,7 @@
     min-height: 146px;
   }
   .page-main--inner-page .companions__name {
+    font-family: "BloggersansB", Arial, sans-serif;
     font-size: 20px;
     line-height: 20px;
     margin: 0 0 0;
@@ -249,7 +250,7 @@
   .page-main--inner-page .dream-countries__span {
     font-size: 15px;
     line-height: 18px;
-    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    font-family: "BloggerSansB", "Arial", sans-serif;
     text-transform: uppercase;
     color: #1d2e5b;
   }
@@ -433,7 +434,7 @@
       padding-bottom: 102px;
     }
     .page-main--inner-page .companions__list {
-      padding: 0 40px;
+      padding: 0;
       margin-bottom: 39px;
       flex-direction: column;
     }
@@ -691,6 +692,7 @@
     .page-main--inner-page .companions__list {
       padding: 0;
       margin-bottom: 59px;
+      padding: 0 426px 0 60px;
     }
     .page-main--inner-page .companions__item {
       padding: 0;

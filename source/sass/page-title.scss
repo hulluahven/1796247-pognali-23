@@ -64,14 +64,14 @@
 }
 
 .page-title__text--catalog {
-  padding: 16px 0 14px 28px;
+  padding: 20px 0 14px 28px;
   &::after {
     content: "";
     position: absolute;
     width: 172px;
     height: 5px;
-    top: 63px;
-    left: 29px;
+    top: 67px;
+    left: 26px;
     border-radius: 4px;
     background-color: #ff8d30;
   }
@@ -174,11 +174,12 @@
 }
 
   .page-title__text--catalog {
-    padding: 118px 0 69px 196px;
+    padding: 118px 0 72px 196px;
+    letter-spacing: 0;
       &::after {
         width: 288px;
         height: 8px;
-        top: 184px;
+        top: 247px;
         left: 199px;
       }
 

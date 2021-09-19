@@ -344,11 +344,15 @@
   .companions__selection {
     padding-bottom: 34px;
     order: 2;
-    width: 285px;
+    width: 237px;
+    position: absolute;
+    right: 131px;
+    top: 96px;
   }
 
   .companions__wrapper {
     display: flex;
+    padding-top: 94px;
   }
 
   .companions__wrapper-alignment {

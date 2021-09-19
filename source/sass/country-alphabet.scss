@@ -8,50 +8,68 @@
 }
 
 .country-alphabet__item {
-  width: 43px;
+  // width: 44px;
+  width: auto;
   height: 41px;
-  border: 1px solid #d6d9e6;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.country-alphabet__item:hover,
-.country-alphabet__item:focus {
-  border-color: #1d2e5b;
-}
-
-.country-alphabet__item.country-alphabet__link:active {
-  background-color: #1d2e5b;
-}
-
-
-.country-alphabet__item--enabled {
-  background-color: #edeff6;
+  position: relative;
 }
 
 .country-alphabet__link {
   text-decoration: none;
   font-family: "BloggersansM", Arial, sans-serif;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 14px;
   text-align: center;
   color: #1d2e5b;
-  padding-top: 8px;
+  padding: 13px;
+  display: block;
+  cursor: pointer;
+  border: 1px solid #d6d9e6;
+  background-color: #ffffff;
 }
+
+.country-alphabet__link:hover,
+.country-alphabet__link:focus {
+  border: 1px solid #1d2e5b;
+  z-index: 2;
+  position: relative;
+}
+
+.country-alphabet__link:active {
+  background-color: #1d2e5b;
+  border: 1px solid #1d2e5b;
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+}
+
+.country-alphabet__link--enabled {
+  background-color: #1d2e5b;
+  border: 1px solid #1d2e5b;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+.country-alphabet__link--enabled:hover,
+.country-alphabet__link--enabled:focus {
+  border: 1px solid #1d2e5b;
+  z-index: 2;
+  position: relative;
+}
+
 
 @media (min-width: $tablet) {
   .country-alphabet {
-    padding: 41px 0 0 29px;
+    padding: 43px 0 0 29px;
+    height: 416px;
   }
 
   .country-alphabet__item {
-    width: 75px;
-    height: 85px;
+    width: 77px;
+    height: 83px;
     border: none;
     background-color: transparent;
-    display: flex;
     justify-content: center;
     cursor: pointer;
   }
@@ -61,19 +79,38 @@
     font-size: 60px;
     line-height: 60px;
     color: rgba(25,33,68,.3);
+    background-color: transparent;
+    border: none;
+    padding: 9px;
   }
 
   .country-alphabet__link:hover,
   .country-alphabet__link:focus {
     color: rgba(25,33,68,.6);
+    border: none;
   }
 
   .country-alphabet__link:active {
     color: rgba(25,33,68, 1);
+    background-color: transparent;
+    border: none;
   }
 
   .country-alphabet__link--enabled {
     color: rgba(25,33,68, 1);
+    border: none;
   }
 
+  .country-alphabet__link--enabled:hover,
+  .country-alphabet__link--enabled:focus,
+  .country-alphabet__link--enabled:active{
+    color: rgba(25,33,68, 1);
+  }
+
+}
+
+@media(min-width: $desktop) {
+  .country-alphabet {
+   display: none;
+  }
 }
