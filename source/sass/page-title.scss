@@ -124,7 +124,7 @@
       position: absolute;
       width: 288px;
       height: 8px;
-      top: 213px;
+      top: 214px;
       left: 74px;
       border-radius: 4px;
       background-color: #ff8d30;
@@ -150,7 +150,12 @@
     font-size: 60px;
     line-height: 60px;
     letter-spacing: 1px;
-    font-family: 'BloggerSansB';
+    font-family: "BloggerSansB", Arial, sans-serif;
+}
+
+.page-title__text--catalog {
+  padding: 88px 0 70px 74px;
+  letter-spacing: 0;
 }
 
   .page-title__link {
