@@ -1,10 +1,16 @@
 .companions-cards{
-  background-color: #e5e5e5;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 26px;
+  padding-right: 26px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   margin-top: -24px;
   position: relative;
   z-index: 1;
+}
+
+@media(min-width:$tablet) {
+  .companions-cards {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

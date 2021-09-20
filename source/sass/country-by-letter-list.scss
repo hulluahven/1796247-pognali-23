@@ -22,26 +22,27 @@
     padding: 37px 0 0 79px;
   }
 
-
 }
 
 @media(min-width: $desktop) {
   .country-by-letter-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 64px 0 0 79px;
+    padding: 64px 0 0 0;
     gap: 2px;
-
+    box-sizing: border-box;
+    margin-right: 114px;
+    margin-left: 116px;
   }
 
 
   .country-by-letter-list__item {
     display: block;
-    // padding-left: 66px;
-    // padding-bottom: 46px;
-    margin-left: 65px;
+    margin-left: 0;
     margin-bottom: 47px;
   }
+
+
 
   .country-by-letter-list__letter {
     font-family: "BloggersansB", Arial, sans-serif;

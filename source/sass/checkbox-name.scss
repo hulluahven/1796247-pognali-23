@@ -33,14 +33,6 @@
 
 }
 
-// .checkbox-name__input+label:hover,
-// .checkbox-name__input+label:focus {
-//   &::before {
-//     opacity: 0.6;
-//   }
-// }
-// hover таким способом не срабатывает
-
 
 .checkbox-name__input:checked+label {
   &::after {
@@ -62,7 +54,7 @@
   opacity: 0.3;
 }
 
-// а для active такой способ работает
+
 
 @media(min-width: $tablet) {
   .checkbox-name {
@@ -84,7 +76,8 @@
     &:before {
       width: 24px;
       height: 24px;
-      left: -36px
+      left: -38px;
+      top: -3px;
     }
   }
 

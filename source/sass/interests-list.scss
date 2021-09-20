@@ -8,7 +8,17 @@
 .interests-list__item {
   position: relative;
   border-top: 1px solid #f3c72b;
-  padding-top: 8px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.interests-list__item--level {
+  padding-top: 3px;
+
+}
+
+.interests-list__item--transport {
+  padding: 9px 0 5px 0;
 }
 
 .interests-list__link {
@@ -42,14 +52,13 @@
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   position: absolute;
-  top: 6px;
+  top:12px;
   right: -1px;
   transform: none;
   padding: 0;
   margin: 0;
   background-color: transparent;
 }
-// как сделать ховер на кнопку лдновременно со спаном-title
 
 .interests-list__button--close {
   top: 18px;
@@ -60,6 +69,7 @@
 @media(min-width: $tablet) {
   .interests-list {
     padding-bottom: 8px;
+    margin: 0 0 65px;
   }
 
   .interests-list__button {
@@ -75,16 +85,21 @@
   .interests-list__item {
     display: grid;
     grid-template-columns: 104px 1fr;
-    padding: 33px 0 0 10px;;
+    padding-top: 2px;
+    padding-bottom: 7px;
     position: unset;
-    border: none
+    border: none;
+    margin: 0px 0px 0px 9px;
+    gap: 2px;
   }
+
   .interests-list__item--transport {
-    padding: 38px 3px 0 9px;
+    padding: 9px 3px 0 2px;
   }
 
   .interests-list__item--level {
-    padding: 23px 0 0 11px;
+    padding: 23px 0 0 2px;
+    position: relative;
   }
 
   .interests-list__checkbox-list {
@@ -102,9 +117,9 @@
 
 
 @media (min-width: $desktop) {
-    .interests-list {
-    margin: 0 24px 0;
-    }
+  .interests-list {
+    margin: 0 15px;
+  }
 
   .interests-list__item {
     display: inline-block;
@@ -131,7 +146,7 @@
   }
 
   .interests-list__item--level {
-    padding: 27px 0 0 24px;
+    padding: 32px 0 0 0px;
   }
 
 }

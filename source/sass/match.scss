@@ -40,11 +40,11 @@
     font-size: 30px;
     line-height: 30px;
     padding: 15px 0 0 10px;
-    margin: 0px 0 38px 0;
+    margin: 0 0 77px;
   }
 
   .match__button-wrapper {
-    margin: 0px 11px 0px 13px;
+    margin: 0 11px 13px 13px;
   }
 
   .match__button {
@@ -60,9 +60,14 @@
     padding: 24px 0 0 25px;
   }
 
+  .match__button-wrapper {
+    margin: 1px 18px 15px 25px;
+  }
+
   .match__button {
-    margin-top: 24px;
-    width: 271px;
+    margin-top: 81px;
+    width: 194px;
+    padding: 14px 9px 14px 9px;
   }
 
 }

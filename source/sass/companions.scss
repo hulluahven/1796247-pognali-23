@@ -65,7 +65,7 @@
 }
 
 .companions__text {
-  font-family: "BloggersansL" Arial, sans-serif;
+  font-family: "BloggersansL", Arial, sans-serif;
   font-size: 16px;
   font-weight: 22px;
   color: #ffffff;
@@ -97,7 +97,7 @@
 }
 
 .companions__link {
-  font-family: "BloggersansB" Arial, sans-serif;
+  font-family: "BloggersansB", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   position: relative;
@@ -198,7 +198,7 @@
 }
 
 .companions__number {
-  font-family: "BloggersansB" Arial, sans-serif;
+  font-family: "BloggersansB", Arial, sans-serif;
   font-size: 24px;
   line-height: 24px;
   position: absolute;
@@ -216,14 +216,17 @@
 
 @media (min-width: $tablet) {
   .companions {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .companions__wrapper {
     padding-top: 68px;
   }
 
+  .companions__selection {
+    margin-bottom: 42px;
+  }
 
   .companions__wrapper-content {
     border-bottom-left-radius: 60px;
@@ -254,7 +257,7 @@
   }
 
   .companions__title {
-    font-family: "BloggersansB" Arial, sans-serif;
+    font-family: "BloggersansB", Arial, sans-serif;
     font-size: 45px;
     line-height: 45px;
     color: #ff8d30;
@@ -347,12 +350,13 @@
     width: 237px;
     position: absolute;
     right: 131px;
-    top: 96px;
+    top: 69px;
+    z-index: 20;
   }
 
   .companions__wrapper {
     display: flex;
-    padding-top: 94px;
+    padding-top: 71px;
   }
 
   .companions__wrapper-alignment {

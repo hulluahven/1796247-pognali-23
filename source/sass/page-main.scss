@@ -39,7 +39,7 @@
   .page-main__title {
     font-size: 36px;
     line-height: 40px;
-    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    font-family: "BloggerSansB", "Arial", sans-serif;
     text-align: center;
     margin-top: 0;
     padding: 18px 30px;
@@ -100,7 +100,7 @@
   }
   .page-main--inner-page {
     background-color: #edeff6;
-    padding-bottom: 88px;
+    padding-bottom: 161px;
   }
   .page-main--inner-page .companions__list {
     list-style: none;
@@ -206,7 +206,7 @@
   .page-main--inner-page .companions__number-like {
     font-size: 14px;
     line-height: 21px;
-    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    font-family: "BloggerSansB", "Arial", sans-serif;
     text-transform: uppercase;
     color: #161c35;
     margin-top: 7px;
@@ -342,7 +342,7 @@
   .page-main--inner-page .companions__button {
     font-size: 17px;
     line-height: 30px;
-    font-family: "BloggerSans-Bold", "Arial", sans-serif;
+    font-family: "BloggerSansB", "Arial", sans-serif;
     text-decoration: none;
     color: #161c35;
     text-align: center;
@@ -431,7 +431,7 @@
       display: none;
     }
     .page-main--inner-page {
-      padding-bottom: 102px;
+      padding-bottom: 178px;
     }
     .page-main--inner-page .companions__list {
       padding: 0;
@@ -691,8 +691,8 @@
     }
     .page-main--inner-page .companions__list {
       padding: 0;
-      margin-bottom: 59px;
-      padding: 0 426px 0 60px;
+      margin-bottom: 162px;
+      padding: 0 462px 0 91px;
     }
     .page-main--inner-page .companions__item {
       padding: 0;
@@ -812,6 +812,9 @@
       bottom: 0;
       transform: translateX(-66%);
       margin-bottom: 63px;
+      position: absolute;
+      left: 38%;
+      padding-left: 50px;
     }
   }
   @media (min-width: 1440px) and (min-resolution: 144dpi), (min-width: 1440px) and (min-resolution: 1.5dppx) {
